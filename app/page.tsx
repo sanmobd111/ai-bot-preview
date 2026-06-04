@@ -10,8 +10,8 @@ export default function Home() {
   return (
 
     <>
+      <HeroSection />
       <Container>
-        <HeroSection />
         <MembershipSection />
         <NetworkStatsSection />
       </Container>

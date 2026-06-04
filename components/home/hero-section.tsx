@@ -1,9 +1,9 @@
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
     return (
 
-        <section className="lg:p-2 h-screen box-border">
+        <section className="px-4 pt-4 lg:pt-2 lg:p-2 h-screen box-border">
             <div className="relative bg-black text-white  rounded-2xl overflow-hidden h-full">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
