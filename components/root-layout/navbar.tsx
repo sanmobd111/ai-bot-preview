@@ -1,11 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, UserCircle2 } from "lucide-react";
 
 export default function Navbar() {
     const [isTop, setIsTop] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null);
+    // const [previousScrollY, setPreviousScrollY] = useState(0);
+    const previousScrollRef = useRef(0);
 
     const links = [
         "About Us",
@@ -16,18 +19,20 @@ export default function Navbar() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            console.log(window.scrollY, window.innerHeight)
             if (window.scrollY > (window.innerHeight - 98)) {
                 setIsTop(true);
             } else {
                 setIsTop(false);
             }
+            setScrollDirection(window.scrollY > previousScrollRef.current ? "down" : "up");
+            previousScrollRef.current = window.scrollY;
         });
     }, []);
 
+
     return (
         <>
-            <nav className="z-30 fixed top-4 lg:top-8 max-w-400 w-full left-1/2 -translate-x-1/2 text-white px-4 lg:px-0">
+            <nav className={`z-30 fixed top-4 lg:top-8 max-w-400 w-full left-1/2 -translate-x-1/2 text-white px-4 lg:px-0 ${scrollDirection === "down" ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"} transition-transform duration-300 ease-in-out`}>
                 <div className={`rounded-xl backdrop-blur-md ${!isTop ? "bg-[#0000001a]" : "bg-[#191919cc]"} transition-all duration-300 ease-in-out`}>
                     <div className="flex items-center justify-between px-4 py-2 md:px-8 md:py-3">
                         {/* Desktop Links */}

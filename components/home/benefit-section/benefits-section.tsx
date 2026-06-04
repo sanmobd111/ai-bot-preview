@@ -95,16 +95,16 @@ const benefits = [
 ]
 export default function TravelBenefitsSection() {
     return (
-        <section className="bg-[#f4f4f2] py-6 lg:py-10">
-            <div className="mx-auto max-w-[1800px] px-4">
-                <div className="grid gap-8 lg:grid-cols-[50%_50%]">
+        <section className="bg-[#f4f4f2] py-6 lg:py-10 px-4 lg:px-0">
+            <div className="mx-auto max-w-[1600px]">
+                <div className=" grid grid-cols-1 gap-8 lg:gap-0 lg:justify-between lg:grid-cols-[48%_48%]">
 
                     {/* LEFT SIDE */}
-                    <div className="relative overflow-hidden rounded-[22px]">
+                    <div className="relative overflow-hidden rounded-[22px] w-full">
                         <img
                             src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2000"
                             alt=""
-                            className="w-full object-cover h-full"
+                            className="w-full object-cover h-[500px] lg:h-full"
                         />
 
                         <div className="absolute inset-0 bg-black/35" />
