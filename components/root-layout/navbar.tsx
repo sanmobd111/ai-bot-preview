@@ -16,7 +16,6 @@ export default function Navbar() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            console.log(window.scrollY, window.innerHeight)
             if (window.scrollY > (window.innerHeight - 98)) {
                 setIsTop(true);
             } else {

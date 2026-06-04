@@ -3,15 +3,18 @@ import HeroSection from "@/components/home/hero-section";
 import MembershipSection from "@/components/home/membership-section";
 import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
+import Container from "@/components/shared/container";
 
 
 export default function Home() {
   return (
 
     <>
-      <HeroSection />
-      <MembershipSection />
-      <NetworkStatsSection />
+      <Container>
+        <HeroSection />
+        <MembershipSection />
+        <NetworkStatsSection />
+      </Container>
       <BenefitsSection />
       <PartnersSection />
     </>
