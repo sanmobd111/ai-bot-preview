@@ -19,15 +19,15 @@ const stats = [
 
 export default function NetworkStatsSection() {
     return (
-        <section className="bg-[#f5f5f3] py-16 md:py-24">
-            <div className="mx-auto max-w-400 px-5 md:px-8">
+        <section className="py-16 md:py-24">
+            <div className="mx-auto max-w-400">
 
                 {/* Heading */}
                 <div className="mb-12 text-center md:mb-16">
                     <h2
                         className="
               font-serif
-              text-[clamp(2.5rem,6vw,5rem)]
+              text-[clamp(2.5rem,3.5vw,5rem)]
               leading-none
               tracking-[-0.04em]
               text-[#2e2e2e]
@@ -60,7 +60,7 @@ export default function NetworkStatsSection() {
                             <h3
                                 className="
                   font-serif
-                  text-[clamp(3rem,5vw,4.5rem)]
+                  text-[clamp(3rem,3vw,4.5rem)]
                   leading-none
                   tracking-[-0.05em]
                   text-[#2e2e2e]

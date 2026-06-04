@@ -38,8 +38,8 @@ const cards = [
 
 export default function MembershipSection() {
     return (
-        <section className="bg-[#f5f5f3] py-12 md:py-16 lg:py-24">
-            <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 md:py-16 lg:py-24">
+            <div className="mx-auto max-w-400">
 
                 {/* Header */}
                 <div className="mb-10 md:mb-14 lg:mb-20">
