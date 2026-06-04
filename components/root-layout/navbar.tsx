@@ -15,7 +15,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="z-30 mt-4 rounded-xl bg-slate-900/70 backdrop-blur-md fixed top-6 w-[70%] left-1/2 -translate-x-1/2 text-white">
+            <nav className="z-30 mt-4 rounded-xl bg-[#0000001a] backdrop-blur-md fixed top-6 max-w-400 w-full left-1/2 -translate-x-1/2 text-white">
                 <div className="flex items-center justify-between px-4 py-2 md:px-8 md:py-3">
                     {/* Desktop Links */}
                     <div className="hidden items-center gap-8 text-sm font-medium lg:flex">
@@ -41,12 +41,12 @@ export default function Navbar() {
 
                     {/* Actions */}
                     <div className="flex items-center gap-2">
-                        <button className="hidden items-center gap-2 rounded-xl border border-white/20 bg-black/20 px-4 py-2 text-sm sm:flex">
+                        <button className="hidden items-center gap-2 rounded-xl border border-white/20 bg-black/20 px-4 py-2 text-sm sm:flex cursor-pointer">
                             <UserCircle2 size={18} />
                             Login
                         </button>
 
-                        <button className="rounded-xl bg-white px-4 py-2 text-sm font-medium text-black md:px-6 md:py-3">
+                        <button className="rounded-xl bg-white px-4 py-2 text-sm font-medium text-black md:px-6 md:py-2 cursor-pointer">
                             Apply Now
                         </button>
                     </div>

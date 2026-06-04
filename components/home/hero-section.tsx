@@ -30,7 +30,7 @@ export default function HeroSection() {
                         insider experiences, and connections that open doors.
                     </p>
 
-                    <button className="mt-8 flex items-center gap-3 rounded-2xl bg-white px-6 py-3 text-black shadow-xl transition hover:scale-105">
+                    <button className="mt-8 flex items-center gap-3 rounded-2xl bg-white px-6 py-3 text-black shadow-xl transition hover:scale-105 cursor-pointer">
                         Preview Membership
                         <span className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 text-white">
                             <ArrowRight size={16} />
@@ -40,7 +40,7 @@ export default function HeroSection() {
 
                 {/* logos */}
 
-                <div className="absolute bottom-28 left-1/2 z-10 hidden -translate-x-1/2 items-center gap-20 opacity-50 md:flex">
+                {/* <div className="absolute bottom-28 left-1/2 z-10 hidden -translate-x-1/2 items-center gap-20 opacity-50 md:flex">
                     <span className="text-xl font-semibold">UNITED</span>
                     <span className="text-4xl">AUDI</span>
                     <span className="text-3xl">Virgin Atlantic</span>
@@ -53,7 +53,7 @@ export default function HeroSection() {
                         size={40}
                         className="animate-bounce text-white/80"
                     />
-                </div>
+                </div> */}
             </div>
         </section>
     );
