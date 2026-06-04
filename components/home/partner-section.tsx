@@ -21,7 +21,7 @@ export default function PartnersSection() {
   return (
     <section className="overflow-hidden bg-[#f6f4f1] py-24">
       {/* Background Marquees */}
-      <div className="relative">
+      <div className="hidden md:block relative">
         <div className="space-y-6">
           {[...Array(4)].map((_, row) => (
             <Marquee
@@ -52,10 +52,10 @@ export default function PartnersSection() {
         </div>
         {/* Content */}
         <div className="absolute top-0 left-0 z-10 flex h-full w-full items-center justify-center">
-          <div 
+          <div
             className="mx-auto max-w-2xl max-h-2xl p-12  text-center"
             style={{
-              background: `radial-gradient(circle at center, white 0%, white 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.4) 70%, transparent 100%)`
+              background: `radial-gradient(circle at center, white 0%, white 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.4) 70%, transparent 100%)`,
             }}
           >
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
@@ -82,7 +82,8 @@ export default function PartnersSection() {
 
             <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-600">
               Unlock negotiated pricing, priority treatment, and the experiences
-              our members can't access anywhere else.This isn’t a list of discounts — it's fast-track access to what you deserve.
+              our members can't access anywhere else.This isn’t a list of
+              discounts — it's fast-track access to what you deserve.
             </p>
 
             <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 font-medium shadow-md">
@@ -90,6 +91,71 @@ export default function PartnersSection() {
               <ArrowRight className="h-5 w-5 text-gray-500" />
             </button>
           </div>
+        </div>
+      </div>
+
+      <div className="block md:hidden ">
+        <div className="mx-auto max-w-2xl max-h-2xl p-12  text-center">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+            Our Partners
+          </p>
+
+          <h2
+            className="
+                font-serif
+                text-[clamp(2.2rem,6vw,4rem)]
+                leading-none
+                tracking-[-0.04em]
+                text-[#2e2e2e]
+              "
+          >
+            Exceptional benefits
+            <br />
+            from the world's
+            <br />
+            <span className="italic font-light text-zinc-500">
+              leading brands.
+            </span>
+          </h2>
+
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-600">
+            Unlock negotiated pricing, priority treatment, and the experiences
+            our members can't access anywhere else.This isn’t a list of
+            discounts — it's fast-track access to what you deserve.
+          </p>
+
+          <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 font-medium shadow-md">
+            Preview Membership
+            <ArrowRight className="h-5 w-5 text-gray-500" />
+          </button>
+        </div>
+        <div className="space-y-3">
+          {[...Array(2)].map((_, row) => (
+            <Marquee
+              key={row}
+              speed={35}
+              direction={row % 2 === 0 ? "left" : "right"}
+              autoFill
+              gradient={true}
+              gradientColor="#f6f4f1"
+              gradientWidth={200}
+            >
+              {partners.map((logo, index) => (
+                <div
+                  key={index}
+                  className="mx-2 flex h-[90px] w-[150px] items-center justify-center rounded-xl bg-gray-200"
+                >
+                  <Image
+                    src={logo}
+                    alt="Partner Logo"
+                    width={140}
+                    height={60}
+                    className="w-[70px]"
+                  />
+                </div>
+              ))}
+            </Marquee>
+          ))}
         </div>
       </div>
     </section>
