@@ -1,4 +1,5 @@
 import BenefitsSection from "@/components/home/benefit-section/benefits-section";
+import FaqSection from "@/components/home/faq-section";
 import HeroSection from "@/components/home/hero-section";
 import JoinFounderSection from "@/components/home/join-founder-section";
 import MembershipSection from "@/components/home/membership-section";
@@ -18,6 +19,7 @@ export default function Home() {
       </Container>
       <BenefitsSection />
       <PartnersSection />
+      <FaqSection />
       <JoinFounderSection />
     </>
   );
