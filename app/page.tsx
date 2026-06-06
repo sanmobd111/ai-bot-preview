@@ -4,6 +4,7 @@ import JoinFounderSection from "@/components/home/join-founder-section";
 import MembershipSection from "@/components/home/membership-section";
 import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
+import TestimonialSection from "@/components/home/testimonials-section/testimonials-section";
 import Container from "@/components/shared/container";
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       </Container>
       <BenefitsSection />
       <PartnersSection />
+      <TestimonialSection />
       <JoinFounderSection />
     </>
   );

@@ -1,0 +1,11 @@
+.founders-swiper {
+  overflow: visible !important;
+}
+
+.founders-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.founders-swiper .swiper-slide {
+  height: auto;
+}
