@@ -1,0 +1,121 @@
+// app/components/FAQ.tsx
+"use client";
+
+import { ArrowRight, Minus, Plus } from "lucide-react";
+import React, { useState } from "react";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+const faqData: FAQItem[] = [
+  {
+    question: "Is FoundersCard a credit card?",
+    answer:
+      "FoundersCard isn't a credit card itself; rather, it's a membership program that unlocks VIP benefits and provides exceptional access, designed to complement and enhance your existing credit card strategy.",
+  },
+  {
+    question: "Why can't I see the full list of benefits before joining?",
+    answer:
+      "We keep some benefits exclusive to members to ensure value. Once you join, you'll get immediate access to our complete benefits directory.",
+  },
+  {
+    question: "Is membership available internationally?",
+    answer:
+      "Yes, FoundersCard has a global community of over 300,000 members. Benefits vary by region, but we offer valuable perks worldwide.",
+  },
+  {
+    question: "If I join today, when can I begin using my membership?",
+    answer:
+      "You can start using your membership immediately after joining. You'll receive instant digital access to all benefits.",
+  },
+  {
+    question: "Are all FoundersCard benefits available to all members?",
+    answer:
+      "Most benefits are available to all members, though some may have geographic or partner-specific restrictions.",
+  },
+  {
+    question: "How does redeeming benefits work?",
+    answer:
+      "Benefits are redeemed through our online portal or by following specific instructions for each partner offer.",
+  },
+];
+
+const FaqSection: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <div className="bg-[#f4f3f1]">
+      <div className="max-w-400 mx-auto px-4 py-12 ">
+        {/* Header Section */}
+        <p className="mb-8 text-sm font-semibold uppercase tracking-wide">
+          FAQS
+        </p>
+        <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-8 lg:gap-14">
+          <div className="space-y-8 w-full lg:w-1/2">
+            <h2 className="text-5xl font-light leading-[1.15] md:text-6xl">
+              Have Questions?
+            </h2>
+            <p className="max-w-lg text-base font-medium text-zinc-600 ">
+              Founded in 2009 to empower entrepreneurs with the exceptional
+              benefits and access they deserve, FoundersCard has grown into a
+              global community of over 300,000 members.
+            </p>
+            {/* Button */}
+            <button className="cursor-pointer inline-flex items-center gap-3 rounded-xl bg-black px-4 py-3 text-white font-medium shadow-md">
+              Get in touch
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
+                <ArrowRight size={16} />
+              </span>
+            </button>
+          </div>
+
+          {/*  faqs */}
+          <div className="grid w-full grid-cols-1 gap-4 lg:w-1/2">
+            {faqData.map((item, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-xl bg-white p-5 transition-all duration-300"
+              >
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="flex w-full cursor-pointer items-center justify-between text-left"
+                >
+                  <h3 className="text-xl font-normal">{item.question}</h3>
+
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-white">
+                    <Plus
+                      size={18}
+                      className={`transition-transform duration-300 ${
+                        openIndex === index ? "rotate-45" : "rotate-0"
+                      }`}
+                    />
+                  </span>
+                </button>
+
+                <div
+                  className={`grid transition-all duration-500 ease-in-out ${
+                    openIndex === index
+                      ? "grid-rows-[1fr] opacity-100 mt-4"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="text-zinc-600 leading-7">{item.answer}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FaqSection;
