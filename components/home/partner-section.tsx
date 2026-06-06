@@ -86,9 +86,11 @@ export default function PartnersSection() {
               discounts — it's fast-track access to what you deserve.
             </p>
 
-            <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 font-medium shadow-md">
+            <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 font-medium shadow-md">
               Preview Membership
-              <ArrowRight className="h-5 w-5 text-gray-500" />
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2b2b2b] text-white">
+              <ArrowRight size={18} />
+            </span>
             </button>
           </div>
         </div>
