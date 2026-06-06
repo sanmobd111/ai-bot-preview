@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
 const testimonials = [
@@ -50,7 +51,7 @@ function useViewport() {
 }
 
 export default function TestimonialSlider() {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const width = useViewport();
