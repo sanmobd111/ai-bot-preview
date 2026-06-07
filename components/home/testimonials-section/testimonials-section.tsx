@@ -79,7 +79,7 @@ export default function TestimonialSlider() {
             : width - 40;
 
   return (
-    <section className="overflow-hidden bg-black py-16 md:py-24">
+    <section className="overflow-hidden py-16 md:py-24 relative">
       {/* Heading */}
       <div className="mb-12 md:mb-20 text-center px-4">
         <h2
@@ -100,33 +100,44 @@ export default function TestimonialSlider() {
         </h2>
       </div>
 
-      <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        onSlideChange={(swiper) =>
-          setActiveIndex(swiper.realIndex)
-        }
-        speed={800}
-        spaceBetween={24}
-        slidesOffsetBefore={width >= 1024 ? offset : 16}
-        slidesOffsetAfter={width >= 1024 ? offset : 16}
-        slidesPerView={
-          width >= 1024
-            ? 3
-            : width >= 768
-              ? 2
-              : 1
-        }
-        className="founders-swiper"
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover object-center -z-10"
       >
-        {testimonials.map((item) => (
-          <SwiperSlide
-            key={item.id}
+        <source src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/raining-cards-e35ae06dd5e29ab7f33269c9ed89d1d6c9bcb60eea83d1695eaaa32b275cd2bf.mp4" type="video/mp4" data-src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/raining-cards-e35ae06dd5e29ab7f33269c9ed89d1d6c9bcb60eea83d1695eaaa32b275cd2bf.mp4" />
+      </video>
+
+      <div>
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          onSlideChange={(swiper) =>
+            setActiveIndex(swiper.realIndex)
+          }
+          speed={800}
+          spaceBetween={24}
+          slidesOffsetBefore={width >= 1024 ? offset : 16}
+          slidesOffsetAfter={width >= 1024 ? offset : 16}
+          slidesPerView={
+            width >= 1024
+              ? 3
+              : width >= 768
+                ? 2
+                : 1
+          }
+          className="founders-swiper"
+        >
+          {testimonials.map((item) => (
+            <SwiperSlide
+              key={item.id}
             // style={{
             //   width: `${slideWidth}px`,
             // }}
-          >
-            <div
-              className="
+            >
+              <div
+                className="
                 min-h-[320px]
                 md:min-h-[360px]
                 xl:min-h-[400px]
@@ -138,15 +149,15 @@ export default function TestimonialSlider() {
                 p-6 md:p-8 xl:p-10
                 text-white
               "
-            >
-              <div className="flex h-full flex-col justify-between">
-                <div>
-                  <div className="mb-8 md:mb-10 text-center">
-                    ★★★★★
-                  </div>
+              >
+                <div className="flex h-full flex-col justify-between">
+                  <div>
+                    <div className="mb-8 md:mb-10 text-center">
+                      ★★★★★
+                    </div>
 
-                  <h3
-                    className="
+                    <h3
+                      className="
                       mb-4 md:mb-6
                       text-center
                       text-xl
@@ -154,43 +165,43 @@ export default function TestimonialSlider() {
                       xl:text-3xl
                       font-serif
                     "
-                  >
-                    {item.title}
-                  </h3>
+                    >
+                      {item.title}
+                    </h3>
 
-                  <p
-                    className="
+                    <p
+                      className="
                       text-center
                       text-sm
                       md:text-base
                       xl:text-lg
                       text-white/70
                     "
-                  >
-                    {item.text}
-                  </p>
-                </div>
-
-                <div className="text-center mt-8">
-                  <div className="font-semibold">
-                    JOHN DOE
+                    >
+                      {item.text}
+                    </p>
                   </div>
 
-                  <div className="text-sm text-white/40">
-                    CEO / FOUNDER
+                  <div className="text-center mt-8">
+                    <div className="font-semibold">
+                      JOHN DOE
+                    </div>
+
+                    <div className="text-sm text-white/40">
+                      CEO / FOUNDER
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      {/* Navigation */}
-      <div className="mt-8 md:mt-12 flex items-center justify-center gap-3 md:gap-4">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="
+        {/* Navigation */}
+        <div className="mt-8 md:mt-12 flex items-center justify-center gap-3 md:gap-4">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="
             w-10 h-10
             md:w-12 md:h-12
             rounded-full
@@ -201,12 +212,12 @@ export default function TestimonialSlider() {
             transition
             hover:bg-white/10
           "
-        >
-          <ChevronLeft size={16} />
-        </button>
+          >
+            <ChevronLeft size={16} />
+          </button>
 
-        <div
-          className="
+          <div
+            className="
             h-10 md:h-12
             px-4 md:px-6
             rounded-full
@@ -214,21 +225,21 @@ export default function TestimonialSlider() {
             border border-white/10
             flex items-center gap-2
           "
-        >
-          {testimonials.map((_, index) => (
-            <span
-              key={index}
-              className={`transition-all duration-300 ${activeIndex === index
-                ? "w-8 h-2 bg-white rounded-full"
-                : "w-2 h-2 bg-white/30 rounded-full"
-                }`}
-            />
-          ))}
-        </div>
+          >
+            {testimonials.map((_, index) => (
+              <span
+                key={index}
+                className={`transition-all duration-300 ${activeIndex === index
+                  ? "w-8 h-2 bg-white rounded-full"
+                  : "w-2 h-2 bg-white/30 rounded-full"
+                  }`}
+              />
+            ))}
+          </div>
 
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="
             w-10 h-10
             md:w-12 md:h-12
             rounded-full
@@ -239,9 +250,10 @@ export default function TestimonialSlider() {
             transition
             hover:bg-white/10
           "
-        >
-          <ChevronRight size={16} />
-        </button>
+          >
+            <ChevronRight size={16} />
+          </button>
+        </div>
       </div>
     </section>
   );

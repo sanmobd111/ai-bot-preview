@@ -5,13 +5,16 @@ export default function HeroSection() {
 
         <section className="px-4 pt-4 lg:pt-2 lg:p-2 h-screen box-border">
             <div className="relative bg-black text-white  rounded-2xl overflow-hidden h-full">
-                <div
+                <video
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{
-                        backgroundImage:
-                            "url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=2070&auto=format&fit=crop')",
-                    }}
-                />
+                    autoPlay
+                    muted
+                    playsInline
+                    loop
+                    preload="metadata"
+                    style={{ background: "url('https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-poster-5bbf21bb0f378d85a80a81986db33dfb9ffc65b0de237d9abd7c209e6a30377a.jpg') center/cover no-repeat" }}>
+                    <source src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-d33fb2346e42dea7711a39bae4a32125e0ee938ac242198ac298ae578d9d2ded.mp4" type="video/mp4" />
+                </video>
 
                 <div className="absolute inset-0 bg-black/60" />
 
@@ -55,6 +58,6 @@ export default function HeroSection() {
                     />
                 </div> */}
             </div>
-        </section>
+        </section >
     );
 }
