@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Ref } from "react";
 
 
-export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLElement | null>, contentRef?: Ref<HTMLDivElement> | undefined }) {
+export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLElement | null>, contentRef?: React.RefObject<HTMLDivElement | null> }) {
   const navigationLinks = [
     {
       name: "Become a Member",
