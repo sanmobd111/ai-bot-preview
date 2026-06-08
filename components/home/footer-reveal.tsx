@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function FooterRevealPage() {
     const footerRef = useRef<HTMLElement>(null);
-    const footerContentRef = useRef<HTMLElement>(null);
+    const footerContentRef = useRef<HTMLDivElement>(null);
     const topSectionRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
@@ -43,42 +43,7 @@ export default function FooterRevealPage() {
 
     return (
         <main className="relative">
-
-            {/* Top Section */}
-            {/* <section
-                ref={topSectionRef}
-                className="
-          relative
-          z-10
-          min-h-screen
-          bg-white
-          flex
-          items-center
-          justify-center
-          text-6xl
-        "
-            >
-                Top Section
-            </section> */}
-
             <JoinFounderSection ref={topSectionRef} />
-
-            {/* Footer */}
-            {/* <footer
-                ref={footerRef}
-                className="
-          sticky
-          bottom-0
-          bg-black
-          text-white
-          flex
-          items-center
-          justify-center
-          text-7xl
-        "
-            >
-                Footer
-            </footer> */}
             <Footer ref={footerRef} contentRef={footerContentRef} />
         </main>
     );
