@@ -1,8 +1,8 @@
 "use client";
 
-import Marquee from "react-fast-marquee";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { ArrowBigDown, ArrowRight } from "lucide-react";
+import ScrollMarquee from "../shared/scroll-marque";
 
 const partners = [
   "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/partners/audi-row2-a03bed49f3bf722b2545d9e7ee725ea49e9dfc75d9d09e63ea7fbcf45bd8c3b0.svg",
@@ -22,16 +22,12 @@ export default function PartnersSection() {
     <section className="overflow-hidden bg-[#f6f4f1] py-24">
       {/* Background Marquees */}
       <div className="hidden md:block relative">
-        <div className="space-y-6">
+        <div className="">
           {[...Array(4)].map((_, row) => (
-            <Marquee
+            <ScrollMarquee
               key={row}
-              speed={35}
-              direction={row % 2 === 0 ? "left" : "right"}
-              autoFill
-              gradient={true}
-              gradientColor="#f6f4f1"
-              gradientWidth={200}
+              direction={row % 2 === 0 ? "right" : "left"}
+              containerClasseName="py-3"
             >
               {partners.map((logo, index) => (
                 <div
@@ -47,7 +43,7 @@ export default function PartnersSection() {
                   />
                 </div>
               ))}
-            </Marquee>
+            </ScrollMarquee>
           ))}
         </div>
         {/* Content */}
@@ -89,8 +85,8 @@ export default function PartnersSection() {
             <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 font-medium shadow-md">
               Preview Membership
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2b2b2b] text-white">
-              <ArrowRight size={18} />
-            </span>
+                <ArrowRight size={18} />
+              </span>
             </button>
           </div>
         </div>
@@ -133,14 +129,8 @@ export default function PartnersSection() {
         </div>
         <div className="space-y-3">
           {[...Array(2)].map((_, row) => (
-            <Marquee
+            <ScrollMarquee
               key={row}
-              speed={35}
-              direction={row % 2 === 0 ? "left" : "right"}
-              autoFill
-              gradient={true}
-              gradientColor="#f6f4f1"
-              gradientWidth={200}
             >
               {partners.map((logo, index) => (
                 <div
@@ -156,7 +146,8 @@ export default function PartnersSection() {
                   />
                 </div>
               ))}
-            </Marquee>
+            </ScrollMarquee>
+
           ))}
         </div>
       </div>
