@@ -5,9 +5,10 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
+import { Ref } from "react";
 
 
-export default function Footer() {
+export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLElement | null>, contentRef?: Ref<HTMLDivElement> | undefined }) {
   const navigationLinks = [
     {
       name: "Become a Member",
@@ -43,8 +44,11 @@ export default function Footer() {
     },
   ];
   return (
-    <section className="bg-[#f4f3f1] py-12 md:py-16">
-      <div className="mx-auto w-full  px-4 md:px-8 lg:px-16">
+    <footer className="bg-[#f4f3f1]  relative overflow-y-hidden rounded-t-2xl z-10" ref={ref}>
+      <div
+        className="mx-auto w-full  px-4 md:px-8 lg:px-16py-12 md:py-16"
+        ref={contentRef}
+      >
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 ">
@@ -125,102 +129,102 @@ export default function Footer() {
             </div>
 
             <div className="lg:col-span-2 flex flex-col gap-8 lg:flex-row ">
-{/* Contact */}
-            <div>
-              <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
-                Contact
-              </h3>
+              {/* Contact */}
+              <div>
+                <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
+                  Contact
+                </h3>
 
-              <div className="space-y-3 text-[16px] font-medium text-[#333]">
-                <p>
-                  590 Madison Ave, New York,
-                  <br />
-                  NY 10022
-                </p>
+                <div className="space-y-3 text-[16px] font-medium text-[#333]">
+                  <p>
+                    590 Madison Ave, New York,
+                    <br />
+                    NY 10022
+                  </p>
 
-                <div>
-                  <Link
-                    href="#"
-                    className="relative inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
-                  >
-                    800.963.1988
-                  </Link>
+                  <div>
+                    <Link
+                      href="#"
+                      className="relative inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+                    >
+                      800.963.1988
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      href="#"
+                      className="relative inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+                    >
+                      Email Us
+                    </Link>
+                  </div>
                 </div>
-                <div>
-                  <Link
-                    href="#"
-                    className="relative inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
-                  >
-                    Email Us
-                  </Link>
+              </div>
+
+              {/* Social */}
+              <div>
+                <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
+                  Socials
+                </h3>
+
+                <div className="flex gap-1 md:gap-3">
+                  {[
+                    { icon: FaInstagram },
+                    { icon: FaLinkedin },
+                    { icon: FaFacebook },
+                    { icon: FaXTwitter },
+                  ].map((item, index) => {
+                    const Icon = item.icon;
+
+                    return (
+                      <Link
+                        key={index}
+                        href="#"
+                        className="flex md:h-11 md:w-11 w-8 h-8  items-center justify-center rounded-lg bg-[#e8e5e1] transition hover:text-white hover:bg-black"
+                      >
+                        <Icon size={20} />
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             </div>
 
-            {/* Social */}
-            <div>
-              <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
-                Socials
-              </h3>
 
-              <div className="flex gap-1 md:gap-3">
-              {[
-                { icon: FaInstagram },
-                { icon: FaLinkedin  },
-                { icon: FaFacebook },
-                { icon: FaXTwitter },
-              ].map((item, index) => {
-                const Icon = item.icon;
-
-                return (
-                  <Link
-                    key={index}
-                    href="#"
-                    className="flex md:h-11 md:w-11 w-8 h-8  items-center justify-center rounded-lg bg-[#e8e5e1] transition hover:text-white hover:bg-black"
-                  > 
-                    <Icon size={20} />
-                  </Link>
-                );
-              })}
-            </div>
-            </div>
-            </div>
-
-            
           </div>
         </div>
         <Image
-        src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/fc-logo-footer-2026-7e5c2efdeb2b81e77b4766539aa4bd69f27f068d1e7814e544d2c30bdf0db099.svg"
-        alt="FoundersCard Logo"
-        width={2000}
-        height={40}
-        className="mx-auto mt-12 lg:mt-22"
+          src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/fc-logo-footer-2026-7e5c2efdeb2b81e77b4766539aa4bd69f27f068d1e7814e544d2c30bdf0db099.svg"
+          alt="FoundersCard Logo"
+          width={2000}
+          height={40}
+          className="mx-auto mt-12 lg:mt-16 aspect-10/1"
         />
         <div className="flex mt-8 justify-between items-center gap-12 lg:gap-24">
-            <p className="text-[11px] md:w-1/2 font-semibold uppercase tracking-widest text-gray-500">
-                © 2026 FOUNDERSCARD
-            </p>
-            <div className="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-4">
-                <div>
-                  <Link
-                    href="#"
-                    className="relative text-[11px] font-semibold tracking-widest text-gray-500 uppercase inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
-                  >
-                    TERMS
-                  </Link>
-                </div>
-                <div>
-                  <Link
-                    href="#"
-                    className="relative text-[11px] font-semibold tracking-widest text-gray-500 uppercase inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
-                  >
-                    PRIVACY
-                  </Link>
-                </div>
+          <p className="text-[11px] md:w-1/2 font-semibold uppercase tracking-widest text-gray-500">
+            © 2026 FOUNDERSCARD
+          </p>
+          <div className="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-4">
+            <div>
+              <Link
+                href="#"
+                className="relative text-[11px] font-semibold tracking-widest text-gray-500 uppercase inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+              >
+                TERMS
+              </Link>
             </div>
+            <div>
+              <Link
+                href="#"
+                className="relative text-[11px] font-semibold tracking-widest text-gray-500 uppercase inline-block after:absolute after:left-0 after:-bottom-0 after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-500 hover:after:w-full"
+              >
+                PRIVACY
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
-    </section>
+    </footer>
   );
 }

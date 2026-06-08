@@ -3,14 +3,15 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export default function JoinFounderSection() {
+export default function JoinFounderSection({ ref }: { ref: React.RefObject<HTMLElement | null> }) {
   return (
     <section
-      className="relative h-[600px] w-full overflow-hidden bg-cover bg-center"
+      className="relative h-[600px] z-[9] w-full overflow-hidden bg-cover bg-center translate-y-10"
       // style={{
       //   backgroundImage:
       //     "url('https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=2070&auto=format&fit=crop')",
       // }}
+      ref={ref}
     >
       <video
         autoPlay
