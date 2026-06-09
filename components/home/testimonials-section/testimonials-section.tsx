@@ -141,7 +141,6 @@ export default function TestimonialSlider() {
               <ZoomIn
                 className="
                 min-h-[320px]
-                delay-[500ms]
                 md:min-h-[360px]
                 xl:min-h-[400px]
                 rounded-[24px]
