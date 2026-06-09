@@ -1,9 +1,7 @@
-import {
-    Plane,
-    Users,
-    Smartphone,
-    Briefcase,
-} from "lucide-react";
+
+import CharacterReveal from "../shared/character-reveal";
+import TextReveal from "../shared/text-reveal";
+import ZoomIn from "../shared/zoom-in";
 
 const cards = [
     {
@@ -37,18 +35,21 @@ const cards = [
 ];
 
 export default function MembershipSection() {
+
     return (
         <section className="py-12 md:py-16 lg:py-24">
             <div className="mx-auto max-w-400">
 
                 {/* Header */}
                 <div className="mb-10 md:mb-14 lg:mb-20">
-                    <p className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs">
+                    <TextReveal
+                        className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
+                    >
                         Membership, Reimagined
-                    </p>
+                    </TextReveal>
 
                     <div className="grid gap-8 lg:grid-cols-[1.4fr_0.8fr] lg:gap-16">
-                        <h1
+                        <CharacterReveal
                             className="
                 font-serif
                 leading-[1.2]
@@ -63,13 +64,14 @@ export default function MembershipSection() {
                             <span className="italic font-light text-zinc-500">
                                 the doers.
                             </span>
-                        </h1>
+                        </CharacterReveal>
 
                         <div className="flex items-end">
-                            <p className="max-w-md text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35]">
+                            <TextReveal
+                                className="max-w-md text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
                                 A network that rewards your ambition — created by
                                 those who know the journey.
-                            </p>
+                            </TextReveal>
                         </div>
                     </div>
                 </div>
@@ -77,7 +79,7 @@ export default function MembershipSection() {
                 {/* Cards */}
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
                     {cards.map((card) => (
-                        <div
+                        <ZoomIn
                             key={card.title}
                             className="
                 group
@@ -87,6 +89,7 @@ export default function MembershipSection() {
                 h-[380px]
                 sm:h-[420px]
                 lg:h-[500px]
+                delay-[500ms]
               "
                         >
                             <img
@@ -130,7 +133,7 @@ export default function MembershipSection() {
                                     {card.description}
                                 </p>
                             </div>
-                        </div>
+                        </ZoomIn>
                     ))}
                 </div>
             </div>

@@ -69,7 +69,7 @@ export default function PartnersSection() {
             >
               Exceptional benefits
               <br />
-              from the world's
+              from the world&apos;s
               <br />
               <span className="italic font-light text-zinc-500">
                 leading brands.
@@ -78,8 +78,8 @@ export default function PartnersSection() {
 
             <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-600">
               Unlock negotiated pricing, priority treatment, and the experiences
-              our members can't access anywhere else.This isn’t a list of
-              discounts — it's fast-track access to what you deserve.
+              our members can&apos;t access anywhere else.This isn’t a list of
+              discounts — it&apos;s fast-track access to what you deserve.
             </p>
 
             <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 font-medium shadow-md">
@@ -109,7 +109,7 @@ export default function PartnersSection() {
           >
             Exceptional benefits
             <br />
-            from the world's
+            from the world&apos;s
             <br />
             <span className="italic font-light text-zinc-500">
               leading brands.
@@ -118,8 +118,8 @@ export default function PartnersSection() {
 
           <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-600">
             Unlock negotiated pricing, priority treatment, and the experiences
-            our members can't access anywhere else.This isn’t a list of
-            discounts — it's fast-track access to what you deserve.
+            our members can&apos;t access anywhere else.This isn’t a list of
+            discounts — it&apos;s fast-track access to what you deserve.
           </p>
 
           <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 font-medium shadow-md">
