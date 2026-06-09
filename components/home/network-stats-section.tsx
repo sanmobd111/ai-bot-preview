@@ -56,7 +56,6 @@ export default function NetworkStatsSection() {
                             className="
                 rounded-3xl
                 bg-[#e6e5e1]
-                delay-[500ms]
                 p-6
                 md:p-7
                 lg:p-8

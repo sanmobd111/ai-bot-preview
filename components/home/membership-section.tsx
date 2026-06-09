@@ -9,28 +9,28 @@ const cards = [
         description:
             "Preferred rates, upgrades, and elite status across air, hotel, and car.",
         image:
-            "https://images.unsplash.com/photo-1540339832862-474599807836?q=80&w=1200",
+            "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-travel-b2ad9d86d872895799a9ae654f43b07857774e0cbfe8548cf424095546ff068f.jpg",
     },
     {
         title: "Expand your network",
         description:
             "A powerful network of founders, operators, and leaders who open doors.",
         image:
-            "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200",
+            "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-connect-e80f688b9ae68390b8f4f0ece251678ddaacf1f9cb807bddbde8c7a02ab6558e.jpg",
     },
     {
         title: "Your Founders Advisor",
         description:
             "Explore and instantly redeem valuable member benefits in seconds.",
         image:
-            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200",
+            "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-benefits-00267a432b889babc23bad083be97a708800e592f55ae2e0a916d9680b9811c1.jpg",
     },
     {
         title: "Run your business smarter",
         description:
             "Preferred access to tools, services and savings that unlock growth.",
         image:
-            "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200",
+            "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-business-06c64a737a85944dc7759e471ae570bb27bb13faa0ae3d71bcbf40fc7b57e7cf.jpg",
     },
 ];
 
@@ -89,7 +89,6 @@ export default function MembershipSection() {
                 h-[380px]
                 sm:h-[420px]
                 lg:h-[500px]
-                delay-[500ms]
               "
                         >
                             <img

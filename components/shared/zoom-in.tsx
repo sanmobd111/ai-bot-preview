@@ -11,13 +11,15 @@ type ZoomInProps = {
   className?: string;
   scale?: number;
   duration?: number;
+  delay?: number;
 };
 
 export default function ZoomIn({
   children,
   className = "",
   scale = 0.8,
-  duration = 1.5,
+  duration = 1,
+  delay = 1,
 }: ZoomInProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -34,6 +36,7 @@ export default function ZoomIn({
         scale: 1,
         opacity: 1,
         duration,
+        delay,
         ease: "power3.out",
         scrollTrigger: {
           trigger: ref.current,
