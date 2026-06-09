@@ -6,6 +6,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
+import ZoomIn from "@/components/shared/zoom-in";
+import CharacterReveal from "@/components/shared/character-reveal";
 
 const testimonials = [
   {
@@ -82,7 +84,7 @@ export default function TestimonialSlider() {
     <section className="overflow-hidden py-16 md:py-24 relative">
       {/* Heading */}
       <div className="mb-12 md:mb-20 text-center px-4">
-        <h2
+        <CharacterReveal
           className="
             text-4xl
             md:text-5xl
@@ -97,7 +99,7 @@ export default function TestimonialSlider() {
           <span className="italic font-serif">
             Our Members
           </span>
-        </h2>
+        </CharacterReveal>
       </div>
 
       <video
@@ -136,9 +138,10 @@ export default function TestimonialSlider() {
             //   width: `${slideWidth}px`,
             // }}
             >
-              <div
+              <ZoomIn
                 className="
                 min-h-[320px]
+                delay-[500ms]
                 md:min-h-[360px]
                 xl:min-h-[400px]
                 rounded-[24px]
@@ -192,7 +195,7 @@ export default function TestimonialSlider() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ZoomIn>
             </SwiperSlide>
           ))}
         </Swiper>

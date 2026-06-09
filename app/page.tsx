@@ -25,7 +25,6 @@ export default function Home() {
       <TestimonialSection />
       <MembershipAudienceSection />
       <FaqSection />
-      {/* <JoinFounderSection /> */}
       <FooterReveal />
     </>
   );

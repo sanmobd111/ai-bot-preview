@@ -1,18 +1,26 @@
+import CharacterReveal from "../shared/character-reveal";
+import Counter from "../shared/counter";
+import ZoomIn from "../shared/zoom-in";
+
 const stats = [
     {
-        value: "300,000+",
+        value: 300000,
+        suffix: "+",
         label: "Active members",
     },
     {
-        value: "130+",
+        value: 130,
+        suffix: "+",
         label: "Member countries",
     },
     {
-        value: "80%",
+        value: 80,
+        suffix: "%",
         label: "Founder, Entrepreneur, Owner, C-level title",
     },
     {
-        value: "$5,000",
+        value: 5000,
+        suffix: "$",
         label: "Estimated annual member savings",
     },
 ];
@@ -24,7 +32,7 @@ export default function NetworkStatsSection() {
 
                 {/* Heading */}
                 <div className="mb-12 text-center md:mb-16">
-                    <h2
+                    <CharacterReveal
                         className="
               font-serif
               text-[clamp(2.5rem,3.5vw,5rem)]
@@ -37,17 +45,18 @@ export default function NetworkStatsSection() {
                         <span className="italic font-light text-zinc-500">
                             no other.
                         </span>
-                    </h2>
+                    </CharacterReveal>
                 </div>
 
                 {/* Stats Grid */}
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                     {stats.map((item) => (
-                        <div
+                        <ZoomIn
                             key={item.label}
                             className="
                 rounded-3xl
                 bg-[#e6e5e1]
+                delay-[500ms]
                 p-6
                 md:p-7
                 lg:p-8
@@ -66,7 +75,11 @@ export default function NetworkStatsSection() {
                   text-[#2e2e2e]
                 "
                             >
-                                {item.value}
+                                {/* {item.value} */}
+                                <Counter
+                                    value={item.value}
+                                    suffix={item.suffix}
+                                />
                             </h3>
 
                             <p
@@ -80,7 +93,7 @@ export default function NetworkStatsSection() {
                             >
                                 {item.label}
                             </p>
-                        </div>
+                        </ZoomIn>
                     ))}
                 </div>
             </div>
