@@ -46,7 +46,6 @@ export default function StaggerReveal({
         trigger: parentContainerRef.current,
         start: "top 50%",
         once: true,
-        markers: true,
       },
     });
 
