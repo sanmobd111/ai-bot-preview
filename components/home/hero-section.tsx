@@ -16,7 +16,7 @@ const logos = [
 export default function HeroSection() {
     return (
 
-        <section className="px-4 pt-4 lg:pt-2 lg:p-2 h-screen box-border">
+        <section className="px-4 pt-4 lg:pt-2 lg:p-2 lg:px-2 h-screen box-border">
             <div className="relative bg-black text-white  rounded-2xl overflow-hidden h-full">
                 <video
                     className="absolute inset-0 bg-cover bg-center w-full h-full object-cover object-center "
@@ -33,9 +33,9 @@ export default function HeroSection() {
                     className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0.7)_40%,rgba(0,0,0,0.9)_70%,black_85%,black_100%)]"
                 />
 
-                <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+                <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[10%]">
                     <h1
-                        className="max-w-5xl text-4xl font-light leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+                        className="max-w-5xl text-4xl font-light! leading-[0.7] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl feature-display"
                         style={{ fontFamily: "Georgia, serif" }}
                     >
                         Where ambition
