@@ -35,8 +35,7 @@ export default function HeroSection() {
 
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[10%]">
                     <h1
-                        className="max-w-5xl text-4xl font-light! leading-[0.7] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl feature-display"
-                        style={{ fontFamily: "Georgia, serif" }}
+                        className="max-w-5xl text-4xl feature-display font-light leading-[0.7] sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
                     >
                         Where ambition
                         <br />

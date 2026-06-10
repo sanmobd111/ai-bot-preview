@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className={`rounded-xl backdrop-blur-md ${!isTop ? "bg-[#0000001a]" : "bg-[#191919cc]"} transition-all duration-300 ease-in-out`}>
                     <div className="flex items-center justify-between px-4 py-2 md:px-4 xl:px-8 relative">
                         {/* Desktop Links */}
-                        <div className="hidden items-center lg:gap-4 text-sm font-medium lg:flex">
+                        <div className="hidden items-center lg:gap-4 text-sm lg:flex">
                             {links.map((link) => (
                                 <a
                                     href="#"
