@@ -26,7 +26,7 @@ export default function ScrollMarquee({
         // Initial direction
         const tween = gsap.to(track, {
             xPercent: direction === "left" ? -50 : 0,
-            duration: 30,
+            duration: 100,
             ease: "none",
             repeat: -1,
         });
