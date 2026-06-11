@@ -1,5 +1,6 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
-import ScrollMarquee from "../shared/scroll-marque";
+import ScrollMarquee from "../../shared/scroll-marque";
+import "./hero-section.css"
 const logos = [
     "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/stripe-b55043bb176ed277e6da0e540ea5b0763160550354d3d0b58dfb1fbefc9e19d3.svg",
     "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/ihg-d02ef1ed385f722af5296be29ce349efe814e99a6915610f7d1f5f3e6508b586.svg",
@@ -16,7 +17,7 @@ const logos = [
 export default function HeroSection() {
     return (
 
-        <section className="px-4 pt-4 lg:pt-2 lg:p-2 lg:px-2 h-screen box-border">
+        <section className="p-2 h-screen lg:h-[130vh] xl:h-screen box-border">
             <div className="relative bg-black text-white  rounded-2xl overflow-hidden h-full">
                 <video
                     className="absolute inset-0 bg-cover bg-center w-full h-full object-cover object-center "
@@ -33,45 +34,59 @@ export default function HeroSection() {
                     className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0.7)_40%,rgba(0,0,0,0.9)_70%,black_85%,black_100%)]"
                 />
 
-                <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[10%]">
+                <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[4%]">
                     <h1
-                        className="max-w-5xl text-4xl feature-display font-light leading-[0.7] sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
+                        className="max-w-5xl text-[45px] feature-display font-light leading-[0.8]  md:text-7xl xl:text-8xl 2xl:text-[120px]"
                     >
                         Where ambition
                         <br />
                         <span className="italic">meets access</span>
                     </h1>
 
-                    <p className="mt-6 max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl">
+                    <p className="mt-6 lg:mt-8 2xl:mt-12 max-w-2xl 2xl:max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl">
                         Empowering entrepreneurs and leaders with premium benefits,
                         insider experiences, and connections that open doors.
                     </p>
-
-                    <button className="mt-8 flex items-center gap-3 rounded-2xl bg-white px-6 py-3 text-black shadow-xl transition hover:scale-105 cursor-pointer">
-                        Preview Membership
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 text-white">
+                    <button className="mt-10 lg:mt-16 flex items-center gap-3 rounded-xl bg-white px-6 py-2.5 2xl:py-3 text-black shadow-xl transition cursor-pointer text-sm cta-button relative overflow-hidden group/cta-button">
+                        <div className="overflow-hidden">
+                            <div className="original-text duration-300">Preview Membership</div>
+                        </div>
+                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white opacity-0">
                             <ArrowRight size={16} />
+                        </span>
+                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white absolute top-1/2 -translate-y-1/2 right-6 overflow-hidden z-10">
+                            <div className="flex items-center gap-4 transition-transform duration-300 group-hover/cta-button:translate-x-4 -translate-x-4">
+                                <ArrowRight size={16} className="w-4 shrink-0" />
+                                <ArrowRight size={16} className="w-4 shrink-0" />
+                            </div>
                         </span>
                     </button>
                 </div>
 
-                <div className="absolute bottom-8 z-10 w-[80%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-6">
+                <div className="absolute bottom-8 z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-6">
                     <ScrollMarquee
-                        containerClasseName="py-6"
+                        containerClasseName="py-6 2xl:max-w-6xl"
                         gradientColor="black"
                     >
-                        <img src={logos?.[1]} alt="logo" className="mx-8 flex w-32 items-center justify-center opacity-70" />
-                        <img src={logos?.[2]} alt="logo" className="mx-8 flex w-44 items-center justify-center opacity-70" />
-                        <img src={logos?.[3]} alt="logo" className="mx-4 flex w-16 items-center justify-center opacity-70" />
-                        <img src={logos?.[4]} alt="logo" className="mx-8 flex w-20 items-center justify-center opacity-70" />
-                        <img src={logos?.[0]} alt="logo" className="mx-8 flex w-24 items-center justify-center opacity-70" />
-                        <img src={logos?.[5]} alt="logo" className="mx-8 flex w-32 items-center justify-center opacity-70" />
-                        <img src={logos?.[6]} alt="logo" className="mx-6 flex w-12 items-center justify-center opacity-70" />
-                        <img src={logos?.[7]} alt="logo" className="mx-6 flex w-44 items-center justify-center opacity-70" />
-                        <img src={logos?.[8]} alt="logo" className="mx-6 flex w-32 items-center justify-center opacity-70" />
-                        <img src={logos?.[9]} alt="logo" className="mx-6 flex w-36 items-center justify-center opacity-70" />
-                        <img src={logos?.[0]} alt="logo" className="mx-8 flex w-24 items-center justify-center opacity-70" />
+                        <img src={logos?.[1]} alt="logo" className="mx-10 flex w-28 items-center justify-center opacity-70" />
 
+                        <img src={logos?.[2]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-40" />
+
+                        <img src={logos?.[3]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-12" />
+
+                        <img src={logos?.[4]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-16" />
+
+                        <img src={logos?.[0]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-20" />
+
+                        <img src={logos?.[5]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
+
+                        <img src={logos?.[6]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-8" />
+
+                        <img src={logos?.[7]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-40" />
+
+                        <img src={logos?.[8]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-28" />
+
+                        <img src={logos?.[9]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-32" />
                     </ScrollMarquee>
                     <div className="">
                         <ChevronDown

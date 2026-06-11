@@ -1,4 +1,4 @@
-import Navbar from "@/components/root-layout/navbar/navbar";
+import Navbar from "@/components/root-layout/navbar/navbar/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 import { featureDisplay, neueMontreal } from "@/assets/fonts";
