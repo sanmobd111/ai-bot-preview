@@ -80,11 +80,11 @@ export default function HeroSection() {
 
                         <img src={logos?.[5]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[6]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-8" />
+                        <img src={logos?.[6]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-8" />
 
-                        <img src={logos?.[7]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-40" />
+                        <img src={logos?.[7]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-40" />
 
-                        <img src={logos?.[8]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-28" />
+                        <img src={logos?.[8]} alt="logo" className="mx-12 flex items-center justify-center opacity-70 w-28" />
 
                         <img src={logos?.[9]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-32" />
                     </ScrollMarquee>

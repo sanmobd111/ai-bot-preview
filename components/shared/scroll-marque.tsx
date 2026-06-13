@@ -23,39 +23,99 @@ export default function ScrollMarquee({
 
         if (!track) return;
 
-        // Initial direction
-        const tween = gsap.to(track, {
-            xPercent: direction === "left" ? -50 : 0,
-            duration: 100,
-            ease: "none",
-            repeat: -1,
-        });
+        let xPercent =
+            direction === "left" ? 0 : -50;
+
+        const BASE_SPEED = 0.05;
+
+        let currentDirection =
+            direction === "left" ? -1 : 1;
+
+        let velocity =
+            currentDirection * BASE_SPEED;
+
+        let targetVelocity = velocity;
 
         let lastScrollY = window.scrollY;
 
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
+        let scrollTimeout: ReturnType<
+            typeof setTimeout
+        >;
 
-            const scrollingDown =
-                currentScrollY > lastScrollY;
+        const tick = () => {
+            velocity +=
+                (targetVelocity - velocity) * 0.08;
 
-            gsap.to(tween, {
-                timeScale: scrollingDown ? 1 : -1,
-                duration: 0.3,
-                overwrite: true,
+            xPercent += velocity;
+
+            // Infinite seamless loop
+            if (xPercent <= -50) {
+                xPercent += 50;
+            }
+
+            if (xPercent >= 0) {
+                xPercent -= 50;
+            }
+
+            gsap.set(track, {
+                xPercent,
             });
-
-            lastScrollY = currentScrollY;
         };
 
-        window.addEventListener("scroll", handleScroll);
+        gsap.ticker.add(tick);
+
+        const handleScroll = () => {
+            const currentScrollY =
+                window.scrollY;
+
+            const delta =
+                currentScrollY - lastScrollY;
+
+            lastScrollY = currentScrollY;
+
+            if (delta === 0) return;
+
+            // Scroll down => left
+            // Scroll up => right
+            currentDirection =
+                delta > 0 ? -1 : 1;
+
+            const speed = Math.min(
+                2,
+                Math.max(
+                    BASE_SPEED,
+                    Math.abs(delta) / 100
+                )
+            );
+
+            targetVelocity =
+                currentDirection * speed;
+
+            clearTimeout(scrollTimeout);
+
+            // Return to normal speed
+            // but KEEP last direction
+            scrollTimeout = setTimeout(() => {
+                targetVelocity =
+                    currentDirection *
+                    BASE_SPEED;
+            }, 120);
+        };
+
+        window.addEventListener(
+            "scroll",
+            handleScroll,
+            { passive: true }
+        );
 
         return () => {
             window.removeEventListener(
                 "scroll",
                 handleScroll
             );
-            tween.kill();
+
+            clearTimeout(scrollTimeout);
+            gsap.ticker.remove(tick);
         };
     }, [direction]);
 
@@ -74,7 +134,7 @@ export default function ScrollMarquee({
             {/* Marquee Track */}
             <div
                 ref={trackRef}
-                className={`flex w-max whitespace-nowrap ${direction === "left" ? "translate-x-0" : "-translate-x-1/2"}`}
+                className="flex w-max whitespace-nowrap"
             >
                 <div className="flex shrink-0">
                     {children}
