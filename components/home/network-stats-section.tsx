@@ -27,22 +27,22 @@ const stats = [
 
 export default function NetworkStatsSection() {
     return (
-        <section className="py-16 md:py-24">
+        <section className="py-10">
             <div className="mx-auto max-w-400">
 
                 {/* Heading */}
                 <div className="mb-12 text-center md:mb-16">
                     <CharacterReveal
                         className="
-              font-serif
-              text-[clamp(2.5rem,3.5vw,5rem)]
+            text-[45px]
+            md:text-[55px]
               leading-none
               tracking-[-0.04em]
               text-[#2e2e2e]
             "
                     >
                         A network like{" "}
-                        <span className="italic font-light text-zinc-500">
+                        <span className="italic inline-block font-light text-zinc-500 feature-display">
                             no other.
                         </span>
                     </CharacterReveal>
@@ -59,7 +59,6 @@ export default function NetworkStatsSection() {
                 p-6
                 md:p-7
                 lg:p-8
-                min-h-[170px]
                 flex
                 flex-col
                 justify-between
@@ -67,10 +66,12 @@ export default function NetworkStatsSection() {
                         >
                             <h3
                                 className="
-                  font-serif
-                  text-[clamp(3rem,3vw,4.5rem)]
+                text-6xl
+                md:text-[52px]
+                font-light
+                feature-display
                   leading-none
-                  tracking-[-0.05em]
+                  tracking-[0.02em]
                   text-[#2e2e2e]
                 "
                             >
@@ -83,7 +84,8 @@ export default function NetworkStatsSection() {
 
                             <p
                                 className="
-                  mt-6
+                                mt-2
+                  lg:mt-6
                   text-sm
                   md:text-base
                   leading-relaxed

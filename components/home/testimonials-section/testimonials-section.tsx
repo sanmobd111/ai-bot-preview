@@ -69,17 +69,6 @@ export default function TestimonialSlider() {
             ? 80
             : 20;
 
-  const slideWidth =
-    width >= 1536
-      ? 470
-      : width >= 1280
-        ? 440
-        : width >= 1024
-          ? 400
-          : width >= 768
-            ? 340
-            : width - 40;
-
   return (
     <section className="overflow-hidden py-16 md:py-24 relative">
       {/* Heading */}
@@ -134,9 +123,6 @@ export default function TestimonialSlider() {
           {testimonials.map((item) => (
             <SwiperSlide
               key={item.id}
-            // style={{
-            //   width: `${slideWidth}px`,
-            // }}
             >
               <ZoomIn
                 className="

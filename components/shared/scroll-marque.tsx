@@ -26,7 +26,7 @@ export default function ScrollMarquee({
         let xPercent =
             direction === "left" ? 0 : -50;
 
-        const BASE_SPEED = 0.05;
+        const BASE_SPEED = 0.02;
 
         let currentDirection =
             direction === "left" ? -1 : 1;
@@ -44,7 +44,7 @@ export default function ScrollMarquee({
 
         const tick = () => {
             velocity +=
-                (targetVelocity - velocity) * 0.08;
+                (targetVelocity - velocity) * 0.1;
 
             xPercent += velocity;
 

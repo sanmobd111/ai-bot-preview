@@ -14,7 +14,7 @@ export default function CharacterReveal({ children, className }: { children: Rea
         if (!textRef.current) return;
 
         const split = new SplitType(textRef.current, {
-            types: "chars",
+            types: "words",
         });
 
         gsap.from(split.chars, {
@@ -23,6 +23,7 @@ export default function CharacterReveal({ children, className }: { children: Rea
             stagger: 0.03,
             duration: 1,
             ease: "power4.out",
+            display: "inline-block",
             scrollTrigger: {
                 trigger: textRef.current,
                 start: "top 80%",
