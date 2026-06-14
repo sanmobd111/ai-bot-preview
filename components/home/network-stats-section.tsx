@@ -27,24 +27,28 @@ const stats = [
 
 export default function NetworkStatsSection() {
     return (
-        <section className="py-10">
+        <section className="py-10 xl:py-16 2xl:py-24 mt-6 lg:mt-0">
             <div className="mx-auto max-w-400">
 
                 {/* Heading */}
-                <div className="mb-12 text-center md:mb-16">
+                <div className="mb-12 text-center md:mb-14">
                     <CharacterReveal
                         className="
             text-[45px]
             md:text-[55px]
+            xl:text-[60px]
               leading-none
               tracking-[-0.04em]
               text-[#2e2e2e]
             "
                     >
                         A network like{" "}
-                        <span className="italic inline-block font-light text-zinc-500 feature-display">
-                            no other.
-                        </span>
+                        <div className="italic inline-block font-light text-zinc-500 feature-display">
+                            no 
+                        </div>
+                        <div className="italic inline-block font-light text-zinc-500 feature-display">
+                            other. 
+                        </div>
                     </CharacterReveal>
                 </div>
 
@@ -66,7 +70,7 @@ export default function NetworkStatsSection() {
                         >
                             <h3
                                 className="
-                text-6xl
+                text-[46px]
                 md:text-[52px]
                 font-light
                 feature-display
@@ -85,7 +89,6 @@ export default function NetworkStatsSection() {
                             <p
                                 className="
                                 mt-2
-                  lg:mt-6
                   text-sm
                   md:text-base
                   leading-relaxed

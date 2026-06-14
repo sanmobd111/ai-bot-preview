@@ -75,7 +75,7 @@ export default function MembershipSlider() {
                             ? 4
                             : width >= 768
                                 ? 2.5
-                                : 1.5
+                                : 1.15
                     }
                     className="founders-swiper"
                 >

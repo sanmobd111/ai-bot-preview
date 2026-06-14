@@ -17,7 +17,7 @@ const logos = [
 export default function HeroSection() {
     return (
 
-        <section className="p-2 h-screen lg:h-[130vh] xl:h-screen box-border">
+        <section className="p-2 h-screen lg:h-[120vh] xl:h-screen box-border">
             <div className="relative bg-black text-white  rounded-2xl overflow-hidden h-full">
                 <video
                     className="absolute inset-0 bg-cover bg-center w-full h-full object-cover object-center "
@@ -36,14 +36,14 @@ export default function HeroSection() {
 
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[4%]">
                     <h1
-                        className="max-w-5xl text-[45px] feature-display font-light leading-[0.8]  md:text-7xl xl:text-8xl 2xl:text-[120px]"
+                        className="max-w-5xl text-[45px] feature-display font-normal leading-[0.8]  md:text-7xl xl:text-8xl 2xl:text-[120px]"
                     >
                         Where ambition
                         <br />
                         <span className="italic">meets access</span>
                     </h1>
 
-                    <p className="mt-6 lg:mt-8 2xl:mt-12 max-w-2xl 2xl:max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl">
+                    <p className="mt-6 lg:mt-8 2xl:mt-10 max-w-2xl xl:max-w-3xl 2xl:max-w-lg text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
                         Empowering entrepreneurs and leaders with premium benefits,
                         insider experiences, and connections that open doors.
                     </p>
