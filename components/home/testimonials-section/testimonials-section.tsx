@@ -8,6 +8,8 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import ZoomIn from "@/components/shared/zoom-in";
 import CharacterReveal from "@/components/shared/character-reveal";
+import TextReveal from "@/components/shared/text-reveal";
+import { GrStar } from "react-icons/gr";
 
 const testimonials = [
   {
@@ -60,32 +62,43 @@ export default function TestimonialSlider() {
 
   const offset =
     width >= 1536
-      ? 220
+      ? 130
       : width >= 1280
-        ? 160
+        ? 70
         : width >= 1024
-          ? 120
+          ? 20
           : width >= 768
-            ? 80
-            : 20;
+            ? 50
+            : 30;
 
   return (
     <section className="overflow-hidden py-16 md:py-24 relative">
-      {/* Heading */}
-      <div className="mb-12 md:mb-20 text-center px-4">
+      <TextReveal
+        className="mb-4 text-center md:mb-7 2xl:mb-8 tracking-[0.2em] text-white text-xs reveal-text flex justify-center items-center gap-1"
+      >
+        <GrStar className="text-green-400 text-lg -mt-1" />
+        Trustpilot
+        <GrStar className="text-sm -mt-1" />
+        <GrStar className="text-sm -mt-1" />
+        <GrStar className="text-sm -mt-1" />
+        <GrStar className="text-sm -mt-1" />
+        <GrStar className="text-sm -mt-1" />
+        4.6/5
+      </TextReveal>
+      <div className="mb-12 xl:mb-16 2xl;:mb-20 text-center px-4">
         <CharacterReveal
           className="
-            text-4xl
-            md:text-5xl
-            lg:text-6xl
-            xl:text-7xl
+            text-5xl
+            xl:text-[55px]
+            2xl:text-7xl
             font-light
             text-white
             leading-none
+            pb-1
           "
         >
-          Empowering{" "}
-          <span className="italic font-serif">
+          <span className="font-normal">Empowering</span> {" "}
+          <span className="italic feature-display">
             Our Members
           </span>
         </CharacterReveal>
@@ -109,14 +122,14 @@ export default function TestimonialSlider() {
           }
           speed={800}
           spaceBetween={24}
-          slidesOffsetBefore={width >= 1024 ? offset : 16}
-          slidesOffsetAfter={width >= 1024 ? offset : 16}
+          slidesOffsetBefore={offset}
+          slidesOffsetAfter={offset}
           slidesPerView={
-            width >= 1024
+            width > 1024
               ? 3
-              : width >= 768
-                ? 2
-                : 1
+              : width > 768
+                ? 2.5
+                : 1.1
           }
           className="founders-swiper"
         >
@@ -126,9 +139,8 @@ export default function TestimonialSlider() {
             >
               <ZoomIn
                 className="
-                min-h-[320px]
-                md:min-h-[360px]
-                xl:min-h-[400px]
+                h-[400px]
+                md:h-[420px]
                 rounded-[24px]
                 md:rounded-[32px]
                 border border-white/10
@@ -139,19 +151,17 @@ export default function TestimonialSlider() {
               "
               >
                 <div className="flex h-full flex-col justify-between">
-                  <div>
-                    <div className="mb-8 md:mb-10 text-center">
-                      ★★★★★
-                    </div>
+                  <div className="text-center">
+                    ★★★★★
+                  </div>
 
+                  <div className="flex-1 flex flex-col items-center justify-center">
                     <h3
                       className="
                       mb-4 md:mb-6
                       text-center
-                      text-xl
-                      md:text-2xl
-                      xl:text-3xl
-                      font-serif
+                      text-2xl
+                      feature-display
                     "
                     >
                       {item.title}
@@ -160,23 +170,27 @@ export default function TestimonialSlider() {
                     <p
                       className="
                       text-center
-                      text-sm
-                      md:text-base
-                      xl:text-lg
-                      text-white/70
+                      text-base
+                      text-white
                     "
                     >
                       {item.text}
                     </p>
                   </div>
 
-                  <div className="text-center mt-8">
-                    <div className="font-semibold">
-                      JOHN DOE
-                    </div>
+                  <div className="flex items-center justify-center gap-4">
+                    <img
+                    src={"https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/bio-brian-j-63282fd8235b598acd4e9e0bda8a78142f76784088f75a83f63c78dda864dfd4.png"}
+                    className="w-12 h-12 rounded-sm"
+                      />
+                    <div className="text-center">
+                      <div className="font-semibold">
+                        JOHN DOE
+                      </div>
 
-                    <div className="text-sm text-white/40">
-                      CEO / FOUNDER
+                      <div className="text-sm text-white/40">
+                        CEO
+                      </div>
                     </div>
                   </div>
                 </div>

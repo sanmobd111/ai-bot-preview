@@ -23,24 +23,20 @@ export default function ScrollMarquee({
 
         if (!track) return;
 
+        const BASE_SPEED = 0.02;
+
+        const baseDirection =
+            direction === "left" ? -1 : 1;
+
         let xPercent =
             direction === "left" ? 0 : -50;
 
-        const BASE_SPEED = 0.02;
-
-        let currentDirection =
-            direction === "left" ? -1 : 1;
-
         let velocity =
-            currentDirection * BASE_SPEED;
+            baseDirection * BASE_SPEED;
 
         let targetVelocity = velocity;
 
         let lastScrollY = window.scrollY;
-
-        let scrollTimeout: ReturnType<
-            typeof setTimeout
-        >;
 
         const tick = () => {
             velocity +=
@@ -48,7 +44,7 @@ export default function ScrollMarquee({
 
             xPercent += velocity;
 
-            // Infinite seamless loop
+            // Infinite loop
             if (xPercent <= -50) {
                 xPercent += 50;
             }
@@ -75,11 +71,6 @@ export default function ScrollMarquee({
 
             if (delta === 0) return;
 
-            // Scroll down => left
-            // Scroll up => right
-            currentDirection =
-                delta > 0 ? -1 : 1;
-
             const speed = Math.min(
                 2,
                 Math.max(
@@ -88,18 +79,15 @@ export default function ScrollMarquee({
                 )
             );
 
+            // Scroll up => inverse direction
+            // Scroll down => normal direction
+            const currentDirection =
+                delta < 0
+                    ? -baseDirection
+                    : baseDirection;
+
             targetVelocity =
                 currentDirection * speed;
-
-            clearTimeout(scrollTimeout);
-
-            // Return to normal speed
-            // but KEEP last direction
-            scrollTimeout = setTimeout(() => {
-                targetVelocity =
-                    currentDirection *
-                    BASE_SPEED;
-            }, 120);
         };
 
         window.addEventListener(
@@ -114,7 +102,6 @@ export default function ScrollMarquee({
                 handleScroll
             );
 
-            clearTimeout(scrollTimeout);
             gsap.ticker.remove(tick);
         };
     }, [direction]);
