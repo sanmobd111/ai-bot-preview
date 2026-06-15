@@ -90,7 +90,7 @@ export default function MembershipSlider() {
                                    relative
                                    overflow-hidden
                                    rounded-2xl
-                                   aspect-[5/6]
+                                   aspect-[9/11]
                                  "
                             >
                                 <img
@@ -106,7 +106,7 @@ export default function MembershipSlider() {
                                    "
                                 />
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                                <div className="absolute inset-0 bg-black/30" />
 
                                 <div className="absolute bottom-0 p-5 md:p-6 text-white">
                                     <h3

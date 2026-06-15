@@ -19,7 +19,7 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="overflow-hidden bg-[#f6f4f1] py-24">
+    <section className="overflow-hidden bg-[#ebebe6] py-24">
       {/* Background Marquees */}
       <div className="hidden md:block relative">
         <div className="">
@@ -32,7 +32,7 @@ export default function PartnersSection() {
               {partners.map((logo, index) => (
                 <div
                   key={index}
-                  className="mx-4 flex h-[120px] w-[190px] items-center justify-center rounded-xl bg-gray-200"
+                  className="mx-4 flex h-[120px] w-[190px] items-center justify-center rounded-xl bg-[#f5f5f0]"
                 >
                   <Image
                     src={logo}
@@ -47,22 +47,34 @@ export default function PartnersSection() {
           ))}
         </div>
         {/* Content */}
-        <div className="absolute top-0 left-0 z-10 flex h-full w-full items-center justify-center">
+        <div className="absolute top-0 left-0 z-10 flex h-full w-full items-center justify-center
+
+    before:content-['']
+    before:absolute
+    before:inset-0
+    before:m-auto
+
+    before:w-full
+    before:max-w-[900px]
+    before:aspect-[900/620]
+
+    before:rounded-[1000px]
+    before:bg-[#f5f5f0]
+    before:blur-[50px]
+
+    before:z-[1]
+        ">
           <div
-            className="mx-auto max-w-2xl max-h-2xl p-12  text-center"
-            style={{
-              background: `radial-gradient(circle at center, white 0%, white 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.4) 70%, transparent 100%)`,
-            }}
+            className="mx-auto max-w-2xl max-h-2xl p-12  text-center rounded-full relative z-10 "
           >
-            <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+            <p className="mb-4 lg:mb-10 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
               Our Partners
             </p>
 
             <h2
               className="
-                font-serif
                 text-[clamp(2.2rem,6vw,4rem)]
-                leading-none
+                leading-[1]
                 tracking-[-0.04em]
                 text-[#2e2e2e]
               "
@@ -71,7 +83,7 @@ export default function PartnersSection() {
               <br />
               from the world&apos;s
               <br />
-              <span className="italic font-light text-zinc-500">
+              <span className="italic text-zinc-500 feature-display">
                 leading brands.
               </span>
             </h2>
@@ -131,11 +143,12 @@ export default function PartnersSection() {
           {[...Array(2)].map((_, row) => (
             <ScrollMarquee
               key={row}
+              direction={row % 2 === 0 ? "right" : "left"}
             >
               {partners.map((logo, index) => (
                 <div
                   key={index}
-                  className="mx-2 flex h-[90px] w-[150px] items-center justify-center rounded-xl bg-gray-200"
+                  className="mx-2 flex h-[90px] w-[150px] items-center justify-center rounded-xl bg-[#f5f5f0]"
                 >
                   <Image
                     src={logo}
