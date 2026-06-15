@@ -19,9 +19,9 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="overflow-hidden bg-[#ebebe6] py-24">
+    <section className="overflow-hidden bg-[#ebebe6] py-0 lg:py-24">
       {/* Background Marquees */}
-      <div className="hidden md:block relative">
+      <div className="hidden lg:block relative">
         <div className="">
           {[...Array(4)].map((_, row) => (
             <ScrollMarquee
@@ -94,7 +94,7 @@ export default function PartnersSection() {
               discounts — it&apos;s fast-track access to what you deserve.
             </p>
 
-            <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 font-medium shadow-md">
+            <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 font-medium">
               Preview Membership
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2b2b2b] text-white">
                 <ArrowRight size={18} />
@@ -104,39 +104,48 @@ export default function PartnersSection() {
         </div>
       </div>
 
-      <div className="block md:hidden ">
-        <div className="mx-auto max-w-2xl max-h-2xl p-12  text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+      <div className="block lg:hidden pb-8 md:pb-16">
+        <div className="mx-auto max-w-2xl max-h-2xl p-6  text-center mb-8">
+          <p className="mb-8 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
             Our Partners
           </p>
 
           <h2
             className="
-                font-serif
-                text-[clamp(2.2rem,6vw,4rem)]
+                text-[clamp(2.2rem,13vw,10rem)]
+                md:text-[clamp(2.2rem,7vw,10rem)]
                 leading-none
                 tracking-[-0.04em]
                 text-[#2e2e2e]
               "
           >
-            Exceptional benefits
-            <br />
-            from the world&apos;s
-            <br />
-            <span className="italic font-light text-zinc-500">
+            Exceptional {" "}
+            <br className="block md:hidden" />
+            benefits  from the <br className="block md:hidden" /> world&apos;s {" "}
+            <span className="italic font-light text-zinc-500 feature-display">
               leading brands.
             </span>
           </h2>
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-600">
+          <p className="mx-auto mt-8 max-w-2xl text-gray-600 md:text-xl">
             Unlock negotiated pricing, priority treatment, and the experiences
             our members can&apos;t access anywhere else.This isn’t a list of
             discounts — it&apos;s fast-track access to what you deserve.
           </p>
 
-          <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 font-medium shadow-md">
-            Preview Membership
-            <ArrowRight className="h-5 w-5 text-gray-500" />
+          <button className="mt-10 lg:mt-16 flex items-center gap-3 rounded-xl bg-white px-6 py-2.5 2xl:py-3 text-black transition cursor-pointer text-sm cta-button relative overflow-hidden group/cta-button mx-auto">
+            <div className="overflow-hidden">
+              <div className="original-text duration-300">Preview Membership</div>
+            </div>
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white opacity-0">
+              <ArrowRight size={16} />
+            </span>
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white absolute top-1/2 -translate-y-1/2 right-6 overflow-hidden z-10">
+              <div className="flex items-center gap-4 transition-transform duration-300 group-hover/cta-button:translate-x-4 -translate-x-4">
+                <ArrowRight size={16} className="w-4 shrink-0" />
+                <ArrowRight size={16} className="w-4 shrink-0" />
+              </div>
+            </span>
           </button>
         </div>
         <div className="space-y-3">
