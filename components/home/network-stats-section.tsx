@@ -46,6 +46,7 @@ export default function NetworkStatsSection() {
                         <div className="italic inline-block font-light text-zinc-500 feature-display">
                             no 
                         </div>
+                        {" "}
                         <div className="italic inline-block font-light text-zinc-500 feature-display">
                             other. 
                         </div>

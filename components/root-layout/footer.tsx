@@ -46,7 +46,7 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
   return (
     <footer className="bg-[#f4f3f1]  relative overflow-y-hidden rounded-t-2xl z-10" ref={ref}>
       <div
-        className="mx-auto w-full  px-4 md:px-8 lg:px-16py-12 md:py-16"
+        className="px-4 md:px-8 lg:px-24 py-12 md:py-16 md:pt-20 mx-auto"
         ref={contentRef}
       >
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">

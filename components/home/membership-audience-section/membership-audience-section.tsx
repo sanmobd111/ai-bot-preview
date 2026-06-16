@@ -6,6 +6,7 @@ import "./membership-audience-section.css";
 import TextReveal from "@/components/shared/text-reveal";
 import CharacterReveal from "@/components/shared/character-reveal";
 import StaggerReveal from "@/components/shared/stagger-reveal";
+import Container from "@/components/shared/container";
 
 export default function MembershipAudienceSection() {
     const [activeTab, setActiveTab] = useState(0);
@@ -120,23 +121,24 @@ export default function MembershipAudienceSection() {
 
 
     return (
-        <section className="px-4 py-10 lg:px-6">
-            <div className="mb-10 md:mb-14 lg:mb-20">
+        <section className="px-4 py-10 bg-[#f5f5f0]">
+            <div className="mb-10 md:mb-14 lg:mb-20 mt-12 w-[90%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                 >
                     OUR MEMBERS
                 </TextReveal>
 
-                <div className="grid gap-8 lg:grid-cols-[1.4fr_0.8fr] lg:gap-16">
+                <div className="max-w-2xl mb-4">
                     <CharacterReveal
                         className="
-                            font-serif
+                            feature-display
+                            font-light
                             leading-[1.2]
                             tracking-[-0.04em]
                             text-zinc-900
-                            text-[clamp(2.75rem,4vw,6rem)]
-                          "
+                                text-[88px]
+                            "
                     >
                         Designed for every
                         <br />
@@ -146,15 +148,15 @@ export default function MembershipAudienceSection() {
                         </span>
                     </CharacterReveal>
 
-                    <div className="flex items-end">
-                        <TextReveal
-                            className="max-w-md text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
-                            FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
-                        </TextReveal>
-                    </div>
+                </div>
+                <div className="flex justify-end">
+                    <TextReveal
+                        className="max-w-xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                        FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
+                    </TextReveal>
                 </div>
             </div>
-            <div className="relative overflow-hidden rounded-[32px] min-h-[850px]"
+            <div className="relative overflow-hidden rounded-4xl min-h-[850px]"
                 ref={parentContainerRef}
             >
                 {
@@ -172,8 +174,9 @@ export default function MembershipAudienceSection() {
                 <div className="absolute inset-0 bg-black/45 z-[6] " />
 
                 {/* Tabs */}
-                <div className="absolute top-4 left-4 right-4 z-20">
-                    <div className="flex rounded-2xl bg-white/10 backdrop-blur-xl p-2">
+                <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-lg">
+                    <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-sm duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
+                    <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
                         {audiences.map((item, index) => (
                             <button
                                 key={item.id}
@@ -181,7 +184,7 @@ export default function MembershipAudienceSection() {
                                 className={`
                   flex-1
                   rounded-xl
-                  py-3
+                  py-1
                   px-4
                   text-xs
                   md:text-sm
@@ -190,12 +193,12 @@ export default function MembershipAudienceSection() {
                   duration-300
 
                   ${activeTab === index
-                                        ? "bg-white text-black"
+                                        ? "text-black"
                                         : "text-white"
                                     }
                 `}
                             >
-                                <span className="font-semibold mr-2">
+                                <span className="mr-2">
                                     0{index + 1}.
                                 </span>
 
@@ -208,7 +211,7 @@ export default function MembershipAudienceSection() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-2 pt-20">
+                <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_35%] justify-between pt-20">
                     {/* Left Side */}
                     <div className="flex items-end p-4 md:p-6 lg:p-10">
                         <div>
@@ -226,68 +229,20 @@ export default function MembershipAudienceSection() {
 
                     {/* Right Side */}
                     <div className="flex items-center p-4 md:p-6 lg:p-10">
-                        {/* <div className="max-w-[620px]">
-                            <h3 className="text-white text-2xl md:text-3xl lg:text-4xl font-light leading-tight">
-                                {current.title}
-                            </h3>
-
-                            <p className="mt-8 text-white/90 text-base md:text-lg leading-relaxed">
-                                {current.description}
-                            </p>
-
-                            <div className="mt-10">
-                                {current.features.map((item, index) => (
-                                    <div
-                                        key={index}
-                                        className="border-t border-white/20 py-5"
-                                    >
-                                        <h4 className="font-semibold text-white">
-                                            {item.title}
-                                        </h4>
-
-                                        <p className="mt-1 text-white/80">
-                                            {item.text}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <button
-                                className="
-                  mt-8
-                  inline-flex
-                  items-center
-                  gap-3
-                  rounded-full
-                  bg-white
-                  px-6
-                  py-4
-                  text-black
-                  transition
-                  hover:scale-105
-                "
-                            >
-                                Preview Membership
-
-                                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-white">
-                                    <ArrowRight size={16} />
-                                </span>
-                            </button>
-                        </div> */}
                         <StaggerReveal
                             parentContainerRef={parentContainerRef}
                             animationKey={activeTab}
                             delay={1}
                         >
-                            <h3 className="reveal-item text-white text-4xl">
+                            <h3 className="reveal-item text-white text-[45px] leading-[1]">
                                 {current.title}
                             </h3>
 
-                            <p className="reveal-item mt-8 text-white/90">
+                            <p className="reveal-item mt-8 text-white/90 text-lg">
                                 {current.description}
                             </p>
 
-                            <div className="mt-10">
+                            <div className="mt-6">
                                 {current.features.map((item, index) => (
                                     <div
                                         key={index}
@@ -304,21 +259,19 @@ export default function MembershipAudienceSection() {
                                 ))}
                             </div>
 
-                            <button
-                                className="
-      reveal-item
-      mt-8
-      inline-flex
-      items-center
-      gap-3
-      rounded-full
-      bg-white
-      px-6
-      py-4
-      text-black
-    "
-                            >
-                                Preview Membership
+                            <button className="mt-6 lg:mt-8 flex items-center gap-3 rounded-xl bg-white px-6 py-2.5 2xl:py-3 text-black shadow-xl transition cursor-pointer text-sm cta-button relative overflow-hidden group/cta-button">
+                                <div className="overflow-hidden">
+                                    <div className="original-text duration-300">Preview Membership</div>
+                                </div>
+                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white opacity-0">
+                                    <ArrowRight size={16} />
+                                </span>
+                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white absolute top-1/2 -translate-y-1/2 right-6 overflow-hidden z-10">
+                                    <div className="flex items-center gap-4 transition-transform duration-300 group-hover/cta-button:translate-x-4 -translate-x-4">
+                                        <ArrowRight size={16} className="w-4 shrink-0" />
+                                        <ArrowRight size={16} className="w-4 shrink-0" />
+                                    </div>
+                                </span>
                             </button>
                         </StaggerReveal>
                     </div>

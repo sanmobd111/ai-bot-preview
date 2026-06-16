@@ -7,7 +7,13 @@ import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CharacterReveal({ children, className }: { children: React.ReactNode, className?: string }) {
+export default function CharacterReveal({
+    children,
+    className,
+}: {
+    children: React.ReactNode;
+    className?: string;
+}) {
     const textRef = useRef<HTMLHeadingElement>(null);
 
     useEffect(() => {
@@ -17,33 +23,32 @@ export default function CharacterReveal({ children, className }: { children: Rea
             types: "words",
         });
 
-        gsap.from(split.chars, {
-            yPercent: 200,
-            opacity: 0,
-            stagger: 0.03,
-            duration: 1,
-            ease: "power4.out",
+        gsap.set(split.words, {
             display: "inline-block",
+        });
+
+        const animation = gsap.from(split.words, {
+            yPercent: 120,
+            opacity: 0,
+            stagger: 0.08,
+            duration: 0.8,
+            ease: "power4.out",
             scrollTrigger: {
                 trigger: textRef.current,
                 start: "top 80%",
-                toggleActions: "play none none reverse",
                 once: true,
             },
         });
 
         return () => {
+            animation.scrollTrigger?.kill();
             split.revert();
-            ScrollTrigger.getAll().forEach((st) => st.kill());
         };
     }, []);
 
     return (
         <div className="overflow-hidden">
-            <h1
-                ref={textRef}
-                className={className}
-            >
+            <h1 ref={textRef} className={className}>
                 {children}
             </h1>
         </div>
