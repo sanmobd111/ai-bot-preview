@@ -51,14 +51,14 @@ const FaqSection: React.FC = () => {
 
   return (
     <div className="bg-[#f4f3f1]">
-      <div className="max-w-400 mx-auto px-4 py-12 ">
+      <div className="w-[90%] mx-auto px-4 py-12 ">
         {/* Header Section */}
-        <p className="mb-8 text-sm font-semibold uppercase tracking-wide">
+        <p className="mb-8 text-sm uppercase tracking-wide">
           FAQS
         </p>
-        <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-8 lg:gap-14">
-          <div className="space-y-8 w-full lg:w-1/2">
-            <h2 className="text-5xl font-light leading-[1.15] md:text-6xl">
+        <div className="grid grid-cols-[40%_50%] justify-between md:items-start gap-12 md:gap-8 lg:gap-14">
+          <div className="space-y-8 w-full">
+            <h2 className="text-5xl font-light leading-[1.15] md:text-6xl feature-display">
               Have Questions?
             </h2>
             <p className="max-w-lg text-base font-medium text-zinc-600 ">
@@ -76,7 +76,7 @@ const FaqSection: React.FC = () => {
           </div>
 
           {/*  faqs */}
-          <div className="grid w-full grid-cols-1 gap-4 lg:w-1/2">
+          <div className="grid w-full grid-cols-1 gap-4">
             {faqData.map((item, index) => (
               <div
                 key={index}
@@ -91,19 +91,17 @@ const FaqSection: React.FC = () => {
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-white">
                     <Plus
                       size={18}
-                      className={`transition-transform duration-300 ${
-                        openIndex === index ? "rotate-45" : "rotate-0"
-                      }`}
+                      className={`transition-transform duration-300 ${openIndex === index ? "rotate-45" : "rotate-0"
+                        }`}
                     />
                   </span>
                 </button>
 
                 <div
-                  className={`grid transition-all duration-500 ease-in-out ${
-                    openIndex === index
+                  className={`grid transition-all duration-500 ease-in-out ${openIndex === index
                       ? "grid-rows-[1fr] opacity-100 mt-4"
                       : "grid-rows-[0fr] opacity-0"
-                  }`}
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <p className="text-zinc-600 leading-7">{item.answer}</p>
