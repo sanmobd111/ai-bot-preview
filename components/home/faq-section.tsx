@@ -51,12 +51,12 @@ const FaqSection: React.FC = () => {
 
   return (
     <div className="bg-[#f4f3f1]">
-      <div className="w-[90%] mx-auto px-4 py-12 ">
+      <div className="w-[90%] mx-auto lg:px-4 py-12 ">
         {/* Header Section */}
         <p className="mb-8 text-sm uppercase tracking-wide">
           FAQS
         </p>
-        <div className="grid grid-cols-[40%_50%] justify-between md:items-start gap-12 md:gap-8 lg:gap-14">
+        <div className="grid lg:grid-cols-[40%_50%] justify-between md:items-start gap-12 md:gap-8 lg:gap-14">
           <div className="space-y-8 w-full">
             <h2 className="text-5xl font-light leading-[1.15] md:text-6xl feature-display">
               Have Questions?

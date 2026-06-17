@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import ScrollMarquee from "../shared/scroll-marque";
+import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 
 const partners = [
   "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/partners/audi-row2-a03bed49f3bf722b2545d9e7ee725ea49e9dfc75d9d09e63ea7fbcf45bd8c3b0.svg",
@@ -93,13 +94,9 @@ export default function PartnersSection() {
               our members can&apos;t access anywhere else.This isn’t a list of
               discounts — it&apos;s fast-track access to what you deserve.
             </p>
-
-            <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 font-medium">
-              Preview Membership
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2b2b2b] text-white">
-                <ArrowRight size={18} />
-              </span>
-            </button>
+            <div className="flex justify-center">
+              <AnimatedPreviewButton />
+            </div>
           </div>
         </div>
       </div>

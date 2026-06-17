@@ -38,9 +38,15 @@ export default function ScrollMarquee({
 
         let lastScrollY = window.scrollY;
 
+        let resetTimer: ReturnType<
+            typeof setTimeout
+        >;
+
         const tick = () => {
+            // Smoothly move velocity towards targetVelocity
             velocity +=
-                (targetVelocity - velocity) * 0.1;
+                (targetVelocity - velocity) *
+                0.1;
 
             xPercent += velocity;
 
@@ -65,12 +71,15 @@ export default function ScrollMarquee({
                 window.scrollY;
 
             const delta =
-                currentScrollY - lastScrollY;
+                currentScrollY -
+                lastScrollY;
 
-            lastScrollY = currentScrollY;
+            lastScrollY =
+                currentScrollY;
 
             if (delta === 0) return;
 
+            // Increase speed based on scroll amount
             const speed = Math.min(
                 2,
                 Math.max(
@@ -79,8 +88,8 @@ export default function ScrollMarquee({
                 )
             );
 
-            // Scroll up => inverse direction
-            // Scroll down => normal direction
+            // Scroll up = reverse direction
+            // Scroll down = normal direction
             const currentDirection =
                 delta < 0
                     ? -baseDirection
@@ -88,6 +97,16 @@ export default function ScrollMarquee({
 
             targetVelocity =
                 currentDirection * speed;
+
+            // Reset timer
+            clearTimeout(resetTimer);
+
+            // Return to normal speed
+            resetTimer = setTimeout(() => {
+                targetVelocity =
+                    currentDirection *
+                    BASE_SPEED;
+            }, 120);
         };
 
         window.addEventListener(
@@ -101,6 +120,8 @@ export default function ScrollMarquee({
                 "scroll",
                 handleScroll
             );
+
+            clearTimeout(resetTimer);
 
             gsap.ticker.remove(tick);
         };
