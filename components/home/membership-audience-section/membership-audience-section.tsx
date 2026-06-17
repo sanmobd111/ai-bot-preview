@@ -122,7 +122,7 @@ export default function MembershipAudienceSection() {
 
 
     return (
-        <section className="px-4 py-10 bg-[#f5f5f0]">
+        <section className="px-4 py-6 md:py-8 lg:py-10 bg-[#f5f5f0]">
             <div className="mb-10 md:mb-14 lg:mb-20 mt-12 lg:w-[90%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
@@ -178,8 +178,8 @@ export default function MembershipAudienceSection() {
                 <div className="absolute inset-0 bg-black/45 z-[6] " />
 
                 {/* Tabs */}
-                <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-lg">
-                    <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-sm duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
+                <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
+                    <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
                     <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
                         {audiences.map((item, index) => (
                             <button
@@ -224,7 +224,7 @@ export default function MembershipAudienceSection() {
                                     {current.heroTitle}
                                 </span>
 
-                                <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif italic font-light reveal-item">
+                                <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl  italic font-light reveal-item feature-display">
                                     {current.heroItalic}
                                 </span>
                             </StaggerReveal>
@@ -268,7 +268,7 @@ export default function MembershipAudienceSection() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="lg:hidden">
                 {
                     audiences.map((item, index) => (
                         <MembershipCard
