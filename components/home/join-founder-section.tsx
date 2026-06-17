@@ -19,7 +19,7 @@ export default function JoinFounderSection({ ref }: { ref: React.RefObject<HTMLE
       </video>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full  max-w-7xl items-center xl:justify-end px-5 md:px-6 -translate-y-5">
+      <div className="relative z-10 mx-auto flex h-full  max-w-6xl items-center xl:justify-end px-5 md:px-6 -translate-y-5">
         <div className="w-full xl:w-1/2  text-white">
           {/* Small Heading */}
           <p className="mb-9 text-sm uppercase tracking-wide">
