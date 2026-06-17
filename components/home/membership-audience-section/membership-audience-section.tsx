@@ -1,12 +1,12 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { ArrowRight } from "lucide-react";
-import "./membership-audience-section.css";
-import TextReveal from "@/components/shared/text-reveal";
 import CharacterReveal from "@/components/shared/character-reveal";
+import PreviewButton from "@/components/shared/preview-button/preview-button";
 import StaggerReveal from "@/components/shared/stagger-reveal";
-import Container from "@/components/shared/container";
+import TextReveal from "@/components/shared/text-reveal";
+import { Plus, X } from "lucide-react";
+import { useRef, useState } from "react";
+import "./membership-audience-section.css";
 
 export default function MembershipAudienceSection() {
     const [activeTab, setActiveTab] = useState(0);
@@ -122,7 +122,7 @@ export default function MembershipAudienceSection() {
 
     return (
         <section className="px-4 py-10 bg-[#f5f5f0]">
-            <div className="mb-10 md:mb-14 lg:mb-20 mt-12 w-[90%] mx-auto">
+            <div className="mb-10 md:mb-14 lg:mb-20 mt-12 lg:w-[90%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                 >
@@ -137,7 +137,10 @@ export default function MembershipAudienceSection() {
                             leading-[1.2]
                             tracking-[-0.04em]
                             text-zinc-900
-                                text-[88px]
+                                lg:text-[88px]
+                                text-5xl
+                                my-6
+                                lg:my-0
                             "
                     >
                         Designed for every
@@ -151,12 +154,12 @@ export default function MembershipAudienceSection() {
                 </div>
                 <div className="flex justify-end">
                     <TextReveal
-                        className="max-w-xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                        className="lg:max-w-xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
                         FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
                     </TextReveal>
                 </div>
             </div>
-            <div className="relative overflow-hidden rounded-4xl min-h-[850px]"
+            <div className="relative overflow-hidden rounded-4xl min-h-[850px] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -211,7 +214,7 @@ export default function MembershipAudienceSection() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_35%] justify-between pt-20">
+                <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_32%] 2xl:grid-cols-[50%_35%] justify-between pt-20">
                     {/* Left Side */}
                     <div className="flex items-end p-4 md:p-6 lg:p-10">
                         <div>
@@ -238,7 +241,7 @@ export default function MembershipAudienceSection() {
                                 {current.title}
                             </h3>
 
-                            <p className="reveal-item mt-8 text-white/90 text-lg">
+                            <p className="reveal-item mt-8 text-white text-lg">
                                 {current.description}
                             </p>
 
@@ -259,24 +262,161 @@ export default function MembershipAudienceSection() {
                                 ))}
                             </div>
 
-                            <button className="mt-6 lg:mt-8 flex items-center gap-3 rounded-xl bg-white px-6 py-2.5 2xl:py-3 text-black shadow-xl transition cursor-pointer text-sm cta-button relative overflow-hidden group/cta-button">
-                                <div className="overflow-hidden">
-                                    <div className="original-text duration-300">Preview Membership</div>
-                                </div>
-                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white opacity-0">
-                                    <ArrowRight size={16} />
-                                </span>
-                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white absolute top-1/2 -translate-y-1/2 right-6 overflow-hidden z-10">
-                                    <div className="flex items-center gap-4 transition-transform duration-300 group-hover/cta-button:translate-x-4 -translate-x-4">
-                                        <ArrowRight size={16} className="w-4 shrink-0" />
-                                        <ArrowRight size={16} className="w-4 shrink-0" />
-                                    </div>
-                                </span>
-                            </button>
+                            <PreviewButton className="mt-6! lg:mt-8!" />
                         </StaggerReveal>
                     </div>
                 </div>
             </div>
+            <div>
+                {
+                    audiences.map((item, index) => (
+                        <MembershipCard
+                            key={index}
+                            current={item}
+                            index={index}
+                            label={item.tab}
+                        />
+                    ))
+                }
+            </div>
         </section>
+    );
+}
+
+function MembershipCard({ current, index, label }: { current: any, index: number, label: string }) {
+    const [open, setOpen] =
+        useState(false);
+    const parentContainerRef = useRef<HTMLDivElement>(null);
+    return (
+        <div
+            className="
+      w-full
+      border-y
+      border-[#ebebe6]
+      py-4
+      "
+        >
+            {/* Header */}
+
+            <div className="flex items-center justify-between">
+
+                <div className="flex gap-8">
+
+                    <span
+                        className="
+            text-lg
+            text-zinc-700 flex items-center gap-4
+            "
+                    >
+                        <span className="text-[#696969]">0{index + 1}. </span><span className="font-medium">{label}</span>
+                    </span>
+
+                </div>
+
+                <button
+                    onClick={() =>
+                        setOpen(!open)
+                    }
+                    className="
+          flex
+          h-12
+          w-12
+          items-center
+          justify-center
+          rounded-full
+          bg-zinc-800
+          text-white
+          transition-all
+          duration-300
+          hover:scale-105
+          "
+                >
+                    {open ? (
+                        <X size={18} />
+                    ) : (
+                        <Plus size={18} />
+                    )}
+                </button>
+
+            </div>
+
+            {/* Collapse Area */}
+
+            <div
+                className={`
+        overflow-hidden
+        transition-all
+        duration-700
+
+        ${open
+                        ? "max-h-[1400px] opacity-100 mt-8"
+                        : "max-h-0 opacity-0"
+                    }
+        `}
+                ref={parentContainerRef}
+            >
+                {/* Image */}
+
+                <div
+                    className="
+          overflow-hidden
+          rounded-xl
+          "
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                        alt=""
+                        className="
+            h-[520px]
+            w-full
+            object-cover
+            "
+                    />
+                </div>
+
+                {/* Content */}
+
+                <div className="mt-8">
+                    <div className="flex items-center px-2">
+                        <StaggerReveal
+                            trigger="active"
+                            active={open}
+                            animationKey={`${index}-${open}`}
+                            delay={0.7}
+                        >
+                            <h3 className="reveal-item text-black text-[30px] leading-[1]">
+                                {current.title}
+                            </h3>
+
+                            <p className="reveal-item mt-8 text-[#696969] text-lg">
+                                {current.description}
+                            </p>
+
+                            <div className="mt-10 ">
+                                {current.features.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="reveal-item border-y border-[#ebebe6] py-5"
+                                    >
+                                        <h4 className="font-medium text-black">
+                                            {item.title}
+                                        </h4>
+
+                                        <p className="mt-1 text-[#696969]">
+                                            {item.text}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <PreviewButton className="mt-6! lg:mt-8!" />
+                        </StaggerReveal>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     );
 }

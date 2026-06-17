@@ -1,6 +1,6 @@
-import { ArrowRight, ChevronDown } from "lucide-react";
-import ScrollMarquee from "../../shared/scroll-marque";
-import "./hero-section.css"
+import { ChevronDown } from "lucide-react";
+import PreviewButton from "../shared/preview-button/preview-button";
+import ScrollMarquee from "../shared/scroll-marque";
 const logos = [
     "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/stripe-b55043bb176ed277e6da0e540ea5b0763160550354d3d0b58dfb1fbefc9e19d3.svg",
     "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/ihg-d02ef1ed385f722af5296be29ce349efe814e99a6915610f7d1f5f3e6508b586.svg",
@@ -47,20 +47,7 @@ export default function HeroSection() {
                         Empowering entrepreneurs and leaders with premium benefits,
                         insider experiences, and connections that open doors.
                     </p>
-                    <button className="mt-10 lg:mt-16 flex items-center gap-3 rounded-xl bg-white px-6 py-2.5 2xl:py-3 text-black shadow-xl transition cursor-pointer text-sm cta-button relative overflow-hidden group/cta-button">
-                        <div className="overflow-hidden">
-                            <div className="original-text duration-300">Preview Membership</div>
-                        </div>
-                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white opacity-0">
-                            <ArrowRight size={16} />
-                        </span>
-                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-800 text-white absolute top-1/2 -translate-y-1/2 right-6 overflow-hidden z-10">
-                            <div className="flex items-center gap-4 transition-transform duration-300 group-hover/cta-button:translate-x-4 -translate-x-4">
-                                <ArrowRight size={16} className="w-4 shrink-0" />
-                                <ArrowRight size={16} className="w-4 shrink-0" />
-                            </div>
-                        </span>
-                    </button>
+                    <PreviewButton />
                 </div>
 
                 <div className="absolute bottom-8 z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-6">
