@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
 import Footer from "../root-layout/footer";
 import JoinFounderSection from "./join-founder-section";
 
@@ -13,36 +13,96 @@ export default function FooterRevealPage() {
     const footerContentRef = useRef<HTMLDivElement>(null);
     const topSectionRef = useRef<HTMLElement>(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const footer = footerRef.current;
+        const footerContent =
+            footerContentRef.current;
+        const topSection =
+            topSectionRef.current;
 
-        if (!footer) return;
+        if (
+            !footer ||
+            !footerContent ||
+            !topSection
+        ) {
+            return;
+        }
 
-        const contentHeight =
-            footerContentRef.current?.offsetHeight ?? 0;
+        const ctx = gsap.context(() => {
+            const updateAnimation = () => {
+                const contentHeight =
+                    footerContent.offsetHeight;
 
-        gsap.fromTo(
-            footerContentRef.current,
-            {
-                y: -contentHeight,
-            },
-            {
-                y: 0,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: topSectionRef.current,
-                    start: "bottom bottom",
-                    end: `+=${contentHeight - 100}`,
-                    scrub: true,
-                },
-            }
-        );
+                // Kill previous trigger
+                ScrollTrigger.getAll().forEach(
+                    (st) => {
+                        if (
+                            st.vars.trigger ===
+                            topSection
+                        ) {
+                            st.kill();
+                        }
+                    }
+                );
 
-        // return () => ctx.revert();
+                // Set initial position before paint
+                gsap.set(footerContent, {
+                    y: -contentHeight,
+                    force3D: true,
+                });
+
+                gsap.to(footerContent, {
+                    y: 0,
+
+                    ease: "none",
+
+                    force3D: true,
+
+                    scrollTrigger: {
+                        trigger: topSection,
+
+                        start:
+                            "bottom bottom",
+
+                        end: `+=${contentHeight - 40
+                            }`,
+
+                        scrub: true,
+
+                        invalidateOnRefresh:
+                            true,
+
+                        // markers: true,
+                    },
+                });
+            };
+
+            updateAnimation();
+
+            const onLoad = () => {
+                updateAnimation();
+
+                ScrollTrigger.refresh();
+            };
+
+            window.addEventListener(
+                "load",
+                onLoad
+            );
+
+            return () => {
+                window.removeEventListener(
+                    "load",
+                    onLoad
+                );
+            };
+        }, footer);
+
+        return () => ctx.revert();
     }, []);
 
     return (
-        <main className="relative">
+        <main className="relative bg-[#f5f5f0]  pb-4 md:pb-8">
             <JoinFounderSection ref={topSectionRef} />
             <Footer ref={footerRef} contentRef={footerContentRef} />
         </main>

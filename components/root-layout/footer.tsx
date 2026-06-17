@@ -5,7 +5,6 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
-import { Ref } from "react";
 
 
 export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLElement | null>, contentRef?: React.RefObject<HTMLDivElement | null> }) {
@@ -44,20 +43,20 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
     },
   ];
   return (
-    <footer className="bg-[#f4f3f1]  relative overflow-y-hidden rounded-t-2xl z-10" ref={ref}>
+    <footer className="relative overflow-y-hidden rounded-t-2xl bg-[#f5f5f0] z-[20]" ref={ref}>
       <div
-        className="px-4 md:px-8 lg:px-24 py-12 md:py-16 md:pt-20 mx-auto"
+        className="px-4 md:px-8 lg:px-20 pt-12 md:pt-14 mx-auto"
         ref={contentRef}
       >
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
+        <div className="flex flex-col lg:flex-row justify-between">
           {/* Left Content */}
-          <div className="w-full lg:w-1/2 ">
-            <h2 className="max-w-3xl text-3xl font-normal leading-tight text-[#2d2d2d]">
+          <div className="w-full lg:w-[42%] ">
+            <h2 className="text-3xl font-normal leading-tight text-[#2d2d2d] feature-display">
               Stay updated on the latest from FoundersCard
             </h2>
 
             {/* Newsletter */}
-            <form className="mt-8 flex w-full max-w-3xl overflow-hidden rounded-lg bg-[#eceae7] p-2">
+            <form className="mt-8 flex w-full overflow-hidden rounded-lg bg-[#eceae7] p-2">
               <input
                 type="email"
                 placeholder="Enter email address"
@@ -107,14 +106,14 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2  grid grid-cols-2 lg:grid-cols-3 gap-8 md:grid">
+          <div className="w-full lg:w-[47%] xl:w-[42%]  grid grid-cols-2 lg:grid-cols-3 justify-between lg:gap-[60px] overflow-visible">
             {/* Navigation */}
-            <div>
-              <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
+            <div className=" mt-10 lg:mt-0">
+              <h3 className="mb-5 text-xs uppercase tracking-widest text-gray-500">
                 Navigation
               </h3>
 
-              <ul className="space-y-1 text-[16px] font-medium text-[#333]">
+              <ul className="space-y-1 text-[16px] text-[#333]">
                 {navigationLinks.map((item) => (
                   <li key={item.name}>
                     <Link
@@ -128,14 +127,40 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
               </ul>
             </div>
 
-            <div className="lg:col-span-2 flex flex-col gap-8 lg:flex-row ">
-              {/* Contact */}
+            {/* Contact */}
+            <div className="mt-10 lg:mt-0">
+              <div className="w-max lg:hidden mb-10">
+                <h3 className="mb-5 text-xs uppercase tracking-widest text-gray-500">
+                  Socials
+                </h3>
+
+                <div className="flex gap-1 md:gap-2">
+                  {[
+                    { icon: FaInstagram },
+                    { icon: FaLinkedin },
+                    { icon: FaFacebook },
+                    { icon: FaXTwitter },
+                  ].map((item, index) => {
+                    const Icon = item.icon;
+
+                    return (
+                      <Link
+                        key={index}
+                        href="#"
+                        className="flex md:h-9 md:w-9 w-8 h-8  items-center justify-center rounded-lg bg-[#e8e5e1] transition hover:text-white hover:bg-black"
+                      >
+                        <Icon size={20} />
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
               <div>
-                <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
+                <h3 className="mb-5 text-xs uppercase tracking-widest text-gray-500">
                   Contact
                 </h3>
 
-                <div className="space-y-3 text-[16px] font-medium text-[#333]">
+                <div className="space-y-3 text-[16px] text-[#333]">
                   <p>
                     590 Madison Ave, New York,
                     <br />
@@ -160,37 +185,35 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
                   </div>
                 </div>
               </div>
-
-              {/* Social */}
-              <div>
-                <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-gray-500">
-                  Socials
-                </h3>
-
-                <div className="flex gap-1 md:gap-3">
-                  {[
-                    { icon: FaInstagram },
-                    { icon: FaLinkedin },
-                    { icon: FaFacebook },
-                    { icon: FaXTwitter },
-                  ].map((item, index) => {
-                    const Icon = item.icon;
-
-                    return (
-                      <Link
-                        key={index}
-                        href="#"
-                        className="flex md:h-11 md:w-11 w-8 h-8  items-center justify-center rounded-lg bg-[#e8e5e1] transition hover:text-white hover:bg-black"
-                      >
-                        <Icon size={20} />
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
             </div>
 
+            {/* Social */}
+            <div className="w-max hidden lg:block">
+              <h3 className="mb-5 text-xs uppercase tracking-widest text-gray-500">
+                Socials
+              </h3>
 
+              <div className="flex gap-1 md:gap-2">
+                {[
+                  { icon: FaInstagram },
+                  { icon: FaLinkedin },
+                  { icon: FaFacebook },
+                  { icon: FaXTwitter },
+                ].map((item, index) => {
+                  const Icon = item.icon;
+
+                  return (
+                    <Link
+                      key={index}
+                      href="#"
+                      className="flex md:h-9 md:w-9 w-8 h-8  items-center justify-center rounded-lg bg-[#e8e5e1] transition hover:text-white hover:bg-black"
+                    >
+                      <Icon size={20} />
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
         <Image
@@ -198,7 +221,7 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
           alt="FoundersCard Logo"
           width={2000}
           height={40}
-          className="mx-auto mt-12 lg:mt-16 aspect-10/1"
+          className="mx-auto mt-12 lg:mt-16 xl:mt-30 aspect-10/1"
         />
         <div className="flex mt-8 justify-between items-center gap-12 lg:gap-24">
           <p className="text-[11px] md:w-1/2 font-semibold uppercase tracking-widest text-gray-500">
@@ -224,7 +247,6 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
           </div>
         </div>
       </div>
-
     </footer>
   );
 }

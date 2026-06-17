@@ -1,16 +1,11 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 
 export default function JoinFounderSection({ ref }: { ref: React.RefObject<HTMLElement | null> }) {
   return (
     <section
-      className="relative h-[600px] z-[9] w-full overflow-hidden bg-cover bg-center translate-y-10"
-      // style={{
-      //   backgroundImage:
-      //     "url('https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=2070&auto=format&fit=crop')",
-      // }}
+      className="relative h-[540px] lg:h-[640px] z-[9] w-full overflow-hidden bg-cover bg-center translate-y-10"
       ref={ref}
     >
       <video
@@ -24,28 +19,21 @@ export default function JoinFounderSection({ ref }: { ref: React.RefObject<HTMLE
       </video>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full  max-w-7xl items-center justify-end px-6">
-        <div className="w-full md:w-1/2  text-white">
+      <div className="relative z-10 mx-auto flex h-full  max-w-7xl items-center xl:justify-end px-5 md:px-6 -translate-y-5">
+        <div className="w-full xl:w-1/2  text-white">
           {/* Small Heading */}
-          <p className="mb-8 text-sm font-semibold uppercase tracking-wide">
+          <p className="mb-9 text-sm uppercase tracking-wide">
             JOIN FOUNDERSCARD
           </p>
 
           {/* Main Title */}
-          <h2 className="text-4xl font-light leading-[1.15] md:text-6xl">
-            For the driven, the daring, <span className=" italic  font-serif">
+          <h2 className="leading-[1.15] tracking-tight text-[46px] md:text-5xl lg:text-[55px] xl:text-6xl">
+            For the driven, the daring, <span className=" italic  feature-display">
               the doers.
             </span>
 
           </h2>
-
-          {/* Button */}
-          <button className="mt-10 cursor-pointer inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-black font-medium shadow-md">
-            Preview Membership
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2b2b2b] text-white">
-              <ArrowRight size={18} />
-            </span>
-          </button>
+          <AnimatedPreviewButton className="lg:mt-9!" />
         </div>
       </div>
     </section>

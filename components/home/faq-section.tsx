@@ -51,12 +51,12 @@ const FaqSection: React.FC = () => {
 
   return (
     <div className="bg-[#f4f3f1]">
-      <div className="w-[90%] mx-auto lg:px-4 py-12 ">
+      <div className="xl:w-[90%] mx-auto px-5 lg:px-4 py-12 ">
         {/* Header Section */}
         <p className="mb-8 text-sm uppercase tracking-wide">
           FAQS
         </p>
-        <div className="grid lg:grid-cols-[40%_50%] justify-between md:items-start gap-12 md:gap-8 lg:gap-14">
+        <div className="grid lg:grid-cols-[46%_45%] xl:grid-cols-[40%_50%] justify-between md:items-start gap-12 md:gap-8 lg:gap-0">
           <div className="space-y-8 w-full">
             <h2 className="text-5xl font-light leading-[1.15] md:text-6xl feature-display">
               Have Questions?
@@ -84,11 +84,11 @@ const FaqSection: React.FC = () => {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="flex w-full cursor-pointer items-center justify-between text-left"
+                  className="flex w-full cursor-pointer items-center justify-between text-left gap-4"
                 >
-                  <h3 className="text-xl font-normal">{item.question}</h3>
+                  <h3 className="text-lg md:text-xl font-normal feature-display">{item.question}</h3>
 
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-white">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-white shrink-0">
                     <Plus
                       size={18}
                       className={`transition-transform duration-300 ${openIndex === index ? "rotate-45" : "rotate-0"
