@@ -397,7 +397,7 @@ function MembershipCard({ current, index, label }: { current: any, index: number
                             </p>
 
                             <div className="mt-6 md:mt-10 ">
-                                {current.features.map((item, index) => (
+                                {current.features.map((item: any, index: number) => (
                                     <div
                                         key={index}
                                         className="reveal-item border-y border-[#ebebe6] py-5 last:border-b-0"
