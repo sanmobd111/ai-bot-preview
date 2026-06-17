@@ -50,7 +50,7 @@ export default function StaggerReveal({
       opacity: 0,
     });
 
-    let tl = gsap.timeline({
+    const tl = gsap.timeline({
       paused: trigger === "active",
     });
 

@@ -1,12 +1,13 @@
 "use client";
 
 import CharacterReveal from "@/components/shared/character-reveal";
-import PreviewButton from "@/components/shared/preview-button/preview-button";
+import AnimatedPreviewButton from "@/components/shared/preview-button/animated-preview-button/animated-preview-button";
 import StaggerReveal from "@/components/shared/stagger-reveal";
 import TextReveal from "@/components/shared/text-reveal";
 import { Plus, X } from "lucide-react";
 import { useRef, useState } from "react";
 import "./membership-audience-section.css";
+import SecondaryPreviewButton from "@/components/shared/preview-button/secondary-preview-button";
 
 export default function MembershipAudienceSection() {
     const [activeTab, setActiveTab] = useState(0);
@@ -262,7 +263,7 @@ export default function MembershipAudienceSection() {
                                 ))}
                             </div>
 
-                            <PreviewButton className="mt-6! lg:mt-8!" />
+                            <AnimatedPreviewButton className="mt-6! lg:mt-8!" />
                         </StaggerReveal>
                     </div>
                 </div>
@@ -298,13 +299,14 @@ function MembershipCard({ current, index, label }: { current: any, index: number
         >
             {/* Header */}
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-4 md:gap-0">
 
                 <div className="flex gap-8">
 
                     <span
                         className="
-            text-lg
+            md:text-lg
+            text-base
             text-zinc-700 flex items-center gap-4
             "
                     >
@@ -319,8 +321,10 @@ function MembershipCard({ current, index, label }: { current: any, index: number
                     }
                     className="
           flex
-          h-12
-          w-12
+          h-8
+          md:h-12
+          w-8
+          md:w-12
           items-center
           justify-center
           rounded-full
@@ -364,10 +368,10 @@ function MembershipCard({ current, index, label }: { current: any, index: number
           "
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                        src={current.image}
                         alt=""
                         className="
-            h-[520px]
+            aspect-[7/5]
             w-full
             object-cover
             "
@@ -388,15 +392,15 @@ function MembershipCard({ current, index, label }: { current: any, index: number
                                 {current.title}
                             </h3>
 
-                            <p className="reveal-item mt-8 text-[#696969] text-lg">
+                            <p className="reveal-item mt-6 md:mt-8 text-[#696969] text-lg">
                                 {current.description}
                             </p>
 
-                            <div className="mt-10 ">
+                            <div className="mt-6 md:mt-10 ">
                                 {current.features.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="reveal-item border-y border-[#ebebe6] py-5"
+                                        className="reveal-item border-y border-[#ebebe6] py-5 last:border-b-0"
                                     >
                                         <h4 className="font-medium text-black">
                                             {item.title}
@@ -409,7 +413,7 @@ function MembershipCard({ current, index, label }: { current: any, index: number
                                 ))}
                             </div>
 
-                            <PreviewButton className="mt-6! lg:mt-8!" />
+                            <SecondaryPreviewButton className="mt-8!" />
                         </StaggerReveal>
                     </div>
 

@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import PreviewButton from "../shared/preview-button/preview-button";
+import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 import ScrollMarquee from "../shared/scroll-marque";
 const logos = [
     "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/stripe-b55043bb176ed277e6da0e540ea5b0763160550354d3d0b58dfb1fbefc9e19d3.svg",
@@ -47,7 +47,7 @@ export default function HeroSection() {
                         Empowering entrepreneurs and leaders with premium benefits,
                         insider experiences, and connections that open doors.
                     </p>
-                    <PreviewButton />
+                    <AnimatedPreviewButton />
                 </div>
 
                 <div className="absolute bottom-8 z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-6">

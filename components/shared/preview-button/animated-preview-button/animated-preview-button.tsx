@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
-import "./preview-button.css"
+import "./animated-preview-button.css"
 
-export default function PreviewButton({ className }: { className?: string }) {
+export default function AnimatedPreviewButton({ className }: { className?: string }) {
     return (
         <button className={`mt-10 md:mt-12 lg:mt-16 flex items-center gap-3 rounded-xl bg-white px-6 py-2.5 2xl:py-3 text-black transition cursor-pointer text-sm cta-button relative overflow-hidden group/cta-button ${className}`}>
             <div className="overflow-hidden">

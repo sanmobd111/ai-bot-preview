@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import ScrollMarquee from "../shared/scroll-marque";
-import PreviewButton from "../shared/preview-button/preview-button";
+import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 
 const partners = [
   "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/partners/audi-row2-a03bed49f3bf722b2545d9e7ee725ea49e9dfc75d9d09e63ea7fbcf45bd8c3b0.svg",
@@ -95,7 +95,7 @@ export default function PartnersSection() {
               discounts — it&apos;s fast-track access to what you deserve.
             </p>
             <div className="flex justify-center">
-              <PreviewButton />
+              <AnimatedPreviewButton />
             </div>
           </div>
         </div>
