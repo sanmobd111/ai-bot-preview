@@ -13,9 +13,10 @@ type BenefitProps = {
     }[];
     title1: string;
     title2: string;
+    subTitle: string;
 };
 
-export default function Benefit({ benefits, benefitCards, title1, title2 }: BenefitProps) {
+export default function Benefit({ benefits, benefitCards, title1, title2, subTitle }: BenefitProps) {
     return (
         <div className="flex flex-col">
             {/* Heading */}
@@ -28,9 +29,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2 }: Bene
                 </h2>
 
                 <p className="mt-5 max-w-4xl text-lg leading-relaxed text-zinc-600">
-                    Unlock insider rates, instant recognition, and elevated
-                    experiences across airlines, hotels, car rentals, lounges,
-                    and essential travel services.
+                    {subTitle}
                 </p>
             </div>
 
