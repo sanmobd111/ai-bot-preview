@@ -10,6 +10,7 @@ type BenefitProps = {
     benefitCards: {
         title: string;
         image: string;
+        icon: React.ReactNode;
     }[];
     title1: string;
     title2: string;
@@ -20,10 +21,10 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
     return (
         <div className="flex flex-col">
             {/* Heading */}
-            <div className="mb-10">
-                <h2 className="font-serif text-[clamp(3rem,4vw,5.5rem)] leading-[0.95] tracking-[-0.05em] text-zinc-900">
+            <div className="mb-6">
+                <h2 className="text-[clamp(3rem,3.5vw,5.5rem)] leading-[0.95] tracking-[-0.05em] text-zinc-900">
                     {title1}{" "}
-                    <span className="italic font-light text-zinc-500">
+                    <span className="italic font-light text-zinc-500 feature-display">
                         {title2}
                     </span>
                 </h2>
@@ -34,7 +35,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             </div>
 
             {/* Benefits */}
-            <div className="mb-14 space-y-4">
+            <div className="mb-8 space-y-0.5">
                 {benefits.map((item) => (
                     <div
                         key={item.title}
@@ -45,7 +46,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                             className="mt-1 shrink-0 text-zinc-900"
                         />
 
-                        <p className="text-lg leading-relaxed text-zinc-700">
+                        <p className=" leading-relaxed text-zinc-700">
                             <span className="font-semibold text-zinc-900">
                                 {item.title}:
                             </span>{" "}
@@ -56,8 +57,8 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             </div>
 
             {/* Slider Header */}
-            <div className="mb-6 flex items-center justify-between">
-                <h3 className="font-serif text-4xl lg:text-5xl text-zinc-900">
+            <div className="mb-4 flex items-center justify-between">
+                <h3 className="text-4xl lg:text-[28px] text-zinc-900 feature-display">
                     Discover Benefits
                 </h3>
 
@@ -88,7 +89,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                         slidesPerView: 2,
                     },
                     1280: {
-                        slidesPerView: 2.6,
+                        slidesPerView: 3.6,
                     },
                 }}
                 className="w-full"
@@ -108,7 +109,8 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                                 <Plus size={20} />
                             </button>
 
-                            <div className="absolute bottom-5 left-5">
+                            <div className="absolute bottom-5 left-5 flex items-center justify-center">
+                                {card.icon}
                                 <span className="rounded-full bg-white/15 px-4 py-2 text-sm text-white backdrop-blur-md">
                                     {card.title}
                                 </span>
