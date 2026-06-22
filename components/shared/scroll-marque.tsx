@@ -129,7 +129,7 @@ export default function ScrollMarquee({
 
     return (
         <div
-            className={`relative w-full overflow-hidden border-x border-black ${containerClasseName}`}
+            className={`relative w-full overflow-hidden ${containerClasseName}`}
         >
             {/* Left Fade */}
             <div
