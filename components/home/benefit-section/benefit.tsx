@@ -1,8 +1,12 @@
+import AnimatedPreviewButton from "@/components/shared/preview-button/animated-preview-button/animated-preview-button";
 import { Check, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import { useState } from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import BenefitCard from "./benefit-card";
 
 type BenefitProps = {
+    index: number;
     benefits: {
         title: string;
         text: string;
@@ -17,11 +21,13 @@ type BenefitProps = {
     subTitle: string;
 };
 
-export default function Benefit({ benefits, benefitCards, title1, title2, subTitle }: BenefitProps) {
+export default function Benefit({ benefits, benefitCards, title1, title2, subTitle, index }: BenefitProps) {
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
             {/* Heading */}
-            <div className="mb-6">
+            <div className="mb-6 px-10">
                 <h2 className="text-[clamp(3rem,3.5vw,5.5rem)] leading-[0.95] tracking-[-0.05em] text-zinc-900">
                     {title1}{" "}
                     <span className="italic font-light text-zinc-500 feature-display">
@@ -35,7 +41,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             </div>
 
             {/* Benefits */}
-            <div className="mb-8 space-y-0.5">
+            <div className="mb-8 space-y-0.5 px-10">
                 {benefits.map((item) => (
                     <div
                         key={item.title}
@@ -57,17 +63,21 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             </div>
 
             {/* Slider Header */}
-            <div className="mb-4 flex items-center justify-between">
+            <div className="mb-4 flex items-center justify-between px-10">
                 <h3 className="text-4xl lg:text-[28px] text-zinc-900 feature-display">
                     Discover Benefits
                 </h3>
 
                 <div className="flex gap-3">
-                    <button className="travel-prev flex h-12 w-12 items-center justify-center rounded-full bg-zinc-200 transition hover:bg-zinc-300">
+                    <button
+                        className={`travel-prev-${index} flex h-10 w-10 items-center justify-center rounded-full ${isBeginning ? "bg-zinc-200" : "bg-white"}`}
+                    >
                         <ChevronLeft size={18} />
                     </button>
 
-                    <button className="travel-next flex h-12 w-12 items-center justify-center rounded-full bg-zinc-200 transition hover:bg-zinc-300">
+                    <button
+                        className={`travel-next-${index} flex h-10 w-10 items-center justify-center rounded-full ${isEnd ? "bg-zinc-200" : "bg-white"}`}
+                    >
                         <ChevronRight size={18} />
                     </button>
                 </div>
@@ -77,10 +87,15 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             <Swiper
                 modules={[Navigation]}
                 navigation={{
-                    prevEl: ".travel-prev",
-                    nextEl: ".travel-next",
+                    prevEl: `.travel-prev-${index}`,
+
+                    nextEl: `.travel-next-${index}`,
                 }}
-                spaceBetween={16}
+
+                slidesOffsetAfter={40}
+                slidesOffsetBefore={40}
+
+                spaceBetween={6}
                 breakpoints={{
                     320: {
                         slidesPerView: 1.15,
@@ -89,14 +104,34 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                         slidesPerView: 2,
                     },
                     1280: {
+                        slidesPerView: 2.00001,
+                    },
+                    1440: {
                         slidesPerView: 3.6,
                     },
                 }}
                 className="w-full"
+                onSwiper={(swiper) => {
+                    setIsBeginning(swiper.isBeginning);
+                    setIsEnd(swiper.isEnd);
+                }}
+
+                onReachBeginning={() => {
+                    setIsBeginning(true);
+                }}
+
+                onReachEnd={() => {
+                    setIsEnd(true);
+                }}
+
+                onFromEdge={(swiper) => {
+                    setIsBeginning(swiper.isBeginning);
+                    setIsEnd(swiper.isEnd);
+                }}
             >
                 {benefitCards.map((card) => (
                     <SwiperSlide key={card.title}>
-                        <div className="group relative overflow-hidden rounded-[24px]">
+                        {/* <div className="group relative overflow-hidden rounded-xl aspect-[7/9]">
                             <img
                                 src={card.image}
                                 alt={card.title}
@@ -105,26 +140,31 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
 
-                            <button className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md">
+                            <button className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md">
                                 <Plus size={20} />
                             </button>
 
-                            <div className="absolute bottom-5 left-5 flex items-center justify-center">
+                            <div className="absolute bottom-5 left-3 flex items-center gap-2 justify-center  backdrop-blur-md  bg-white/15 text-white py-1.5 px-3 rounded-full">
                                 {card.icon}
-                                <span className="rounded-full bg-white/15 px-4 py-2 text-sm text-white backdrop-blur-md">
+                                <span className="rounded-full text-xs ">
                                     {card.title}
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
+                        <BenefitCard card={card} />
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <button className="relative bg-blue-400 cursor-pointer flex justify-center py-2 rounded-xl text-white mt-6">
-                <span className="font-semibold text-lg">Preview Membership</span>
-                <span className="flex items-center justify-center absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white text-black w-6 h-6 ">
-                    <ChevronRight size={16} />
-                </span>
-            </button>
+            <span className="px-10 my-6">Some benefits require an upgraded membership plan.</span>
+            <AnimatedPreviewButton
+                bgColor="#155dfc"
+                hoverBgColor="#51a2ff"
+                textColor="#ffffff"
+                className="mx-10 md:mt-0! xl:mt-0!"
+                arrowBgColor="#ffffff"
+                arrowColor="#155dfc"
+
+            />
         </div>
     )
 }
