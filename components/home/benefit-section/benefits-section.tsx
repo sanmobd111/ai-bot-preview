@@ -1,168 +1,3 @@
-// "use client";
-
-
-
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import Benefit from "./benefit";
-
-// // const benefitCards = [
-// //     {
-// //         title: "Global Airline Collection",
-// //         image:
-// //             "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200",
-// //     },
-// //     {
-// //         title: "Car Rental & Ground Transport",
-// //         image:
-// //             "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200",
-// //     },
-// //     {
-// //         title: "Founders Hotel Collection",
-// //         image:
-// //             "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
-// //     },
-// //     {
-// //         title: "Luxury Lounge Access",
-// //         image:
-// //             "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200",
-// //     },
-// // ];
-
-// // const benefits = [
-// //     {
-// //         title: "Loyalty Status",
-// //         text: "Complimentary Platinum, Gold, and Silver status with leading airline, hotel, and car rental brands.",
-// //     },
-// //     {
-// //         title: "Preferred Air & Car Savings",
-// //         text: "VIP pricing with 15+ global airlines, rental brands and transportation partners.",
-// //     },
-// //     {
-// //         title: "Hotel Rates & Privileges",
-// //         text: "Deep savings at luxury hotels worldwide plus preferred member pricing.",
-// //     },
-// //     {
-// //         title: "Premium Travel & Lounge",
-// //         text: "Preferred rates on airport lounges, villas, resorts and travel experiences.",
-// //     },
-// // ];
-// const benefits = [
-//     {
-//         title1: "Travel better,",
-//         title2: "anywhere.",
-//         benefits: [
-//             {
-//                 title: "Loyalty Status",
-//                 text: "Complimentary Platinum, Gold, and Silver status with leading airline, hotel, and car rental brands.",
-//             },
-//             {
-//                 title: "Preferred Air & Car Savings",
-//                 text: "VIP pricing with 15+ global airlines, rental brands and transportation partners.",
-//             },
-//             {
-//                 title: "Hotel Rates & Privileges",
-//                 text: "Deep savings at luxury hotels worldwide plus preferred member pricing.",
-//             },
-//             {
-//                 title: "Premium Travel & Lounge",
-//                 text: "Preferred rates on airport lounges, villas, resorts and travel experiences.",
-//             },
-//         ],
-//         benefitCards: [
-//             {
-//                 title: "Global Airline Collection",
-//                 image:
-//                     "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200",
-//             },
-//             {
-//                 title: "Car Rental & Ground Transport",
-//                 image:
-//                     "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200",
-//             },
-//             {
-//                 title: "Founders Hotel Collection",
-//                 image:
-//                     "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
-//             },
-//             {
-//                 title: "Luxury Lounge Access",
-//                 image:
-//                     "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200",
-//             },
-//         ],
-//     }
-// ]
-// export default function TravelBenefitsSection() {
-//     return (
-//         <section className="bg-[#f4f4f2] py-6 lg:py-10 px-4 lg:px-0">
-//             <div className="mx-auto max-w-[1600px]">
-//                 <div className=" grid grid-cols-1 gap-8 lg:gap-0 lg:justify-between lg:grid-cols-[48%_48%]">
-
-//                     {/* LEFT SIDE */}
-// <div className="relative overflow-hidden rounded-[22px] w-full">
-//     <img
-//         src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2000"
-//         alt=""
-//         className="w-full object-cover h-[500px] lg:h-full"
-//     />
-
-//     <div className="absolute inset-0 bg-black/35" />
-
-//     {/* Categories */}
-//     <div className="absolute left-6 top-6 lg:left-8 lg:top-8">
-//         <ul className="font-serif leading-[0.88] text-white">
-//             <li className="italic text-5xl lg:text-[88px]">Travel</li>
-//             <li className="text-5xl lg:text-[88px] opacity-90">Hotels</li>
-//             <li className="text-5xl lg:text-[88px] opacity-80">
-//                 Lifestyle
-//             </li>
-//             <li className="text-5xl lg:text-[88px] opacity-75">
-//                 Business
-//             </li>
-//             <li className="text-5xl lg:text-[88px]">
-//                 Community
-//             </li>
-//         </ul>
-//     </div>
-
-//     {/* Brands */}
-//     <div className="absolute bottom-6 left-0 w-full px-6 lg:px-12 text-white">
-//         <p className="mb-6 text-center text-xs uppercase tracking-[0.2em]">
-//             Featured Travel Brands
-//         </p>
-
-//         <div className="flex flex-wrap items-center justify-center gap-6 text-xl font-medium">
-//             <span>Singapore</span>
-//             <span>Virgin Atlantic</span>
-//             <span>United</span>
-//             <span>AVIS</span>
-//             <span>SIXT</span>
-//             <span>Hertz</span>
-//         </div>
-//     </div>
-// </div>
-
-//                     {/* RIGHT SIDE */}
-// {
-//     benefits.map((item) => (
-//         <Benefit
-//             key={item.title1}
-//             benefits={item.benefits}
-//             benefitCards={item.benefitCards}
-//             title1={item.title1}
-//             title2={item.title2}
-//         />
-//     ))
-// }
-
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
-
-
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -172,7 +7,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Benefit from "./benefit";
 import ScrollMarquee from "@/components/shared/scroll-marque";
-import { LiaPlaneSolid } from "react-icons/lia";
+import { LiaConciergeBellSolid, LiaPlaneSolid } from "react-icons/lia";
+import { IoBagOutline, IoCarOutline, IoCarSportOutline, IoRefreshSharp, IoRestaurantOutline } from "react-icons/io5";
+import { PiArmchairLight, PiCalendarDotsLight, PiDevices, PiFlowerLotus, PiGlobeHemisphereEast, PiLaptop, PiTicketLight } from "react-icons/pi";
+import { MdOutlineLuggage } from "react-icons/md";
+import { LuSofa } from "react-icons/lu";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { CiStar } from "react-icons/ci";
+import { RiGroupLine } from "react-icons/ri";
+import { BiBarChartSquare } from "react-icons/bi";
+import { FiBox } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -181,9 +25,7 @@ export default function TravelBenefit() {
 
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const benefitRefs = useRef([]);
-
-    benefitRefs.current = [];
+    const benefitRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     const benefits = [
         {
@@ -221,36 +63,42 @@ export default function TravelBenefit() {
 
             benefitCards: [
                 {
-                    title: "Airline",
+                    title: "Global Airline Collection",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                     icon: <LiaPlaneSolid />
                 },
                 {
-                    title: "Airline",
+                    title: "Car Rental & Ground Transport",
 
                     image:
-                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
-                    icon: <LiaPlaneSolid />
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
+                    icon: <IoCarOutline />
                 },
                 {
-                    title: "Airline",
+                    title: "Founders Hotel Collection",
 
                     image:
-                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
-                    icon: <LiaPlaneSolid />
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
+                    icon: <LiaConciergeBellSolid />
                 },
-                // {
-                //     title: "Airline",
+                {
+                    title: "Premium Travel & Lounge",
 
-                //     image:
-                //         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
-                //     icon: <LiaPlaneSolid />
-                // },
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
+                    icon: <PiArmchairLight />
+                },
+                {
+                    title: "Curated Travel Experiences",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
+                    icon: <MdOutlineLuggage />
+                },
             ],
         },
-
         {
             title1: "Elevate,",
 
@@ -285,14 +133,35 @@ export default function TravelBenefit() {
 
             benefitCards: [
                 {
-                    title: "Airline",
+                    title: "Founders Hotel Collection",
 
                     image:
-                        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200",
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/1-founders-hotels-08544a0d55902071c30fa0ddec931434b0a79d4c763c16d1287dcb9b9e633673.jpg",
+                    icon: <LuSofa />
+                },
+                {
+                    title: "Global Hotel Brand Partners",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/2-brand-partners-cd3b490e515303f45595bf46b6ca5aa0ad20e596c48ec17b2f8e64ac5267689a.jpg",
+                    icon: <AiOutlineGlobal />
+                },
+                {
+                    title: "Loyalty Status Upgrades",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/3-loyalty-status-3f803a03b1302cb55fba3170d3564c15a3c53fd52a13af2ae94ab6b7de683236.jpg",
+                    icon: <CiStar />
+                },
+                {
+                    title: "Curated Travel Experiences",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/4-curated-travel-d957eba2906386dac0a9e7181d20688829e029a106774cc510fdb106cbdd1ca7.jpg",
+                    icon: <PiGlobeHemisphereEast />
                 },
             ],
         },
-
         {
             title1: "Upgrade your",
 
@@ -328,10 +197,154 @@ export default function TravelBenefit() {
 
             benefitCards: [
                 {
-                    title: "Airline",
+                    title: "Live Events & VIP Experiences",
 
                     image:
-                        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200",
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/1-live-events-646e9fb8f2dd36b6ecba0f9722af66705178e0ee13f8957c2adfc8bb81df432d.jpg",
+                    icon: <PiTicketLight />
+                },
+                {
+                    title: "Health & Wellness",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/2-brand-partners-cd3b490e515303f45595bf46b6ca5aa0ad20e596c48ec17b2f8e64ac5267689a.jpg",
+                    icon: <PiFlowerLotus />
+                },
+                {
+                    title: "Luxury Vehicles",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/4-luxury-vehicles-c6d75e2b5c15e579d33c92e781f6a5ce1dfd1e5e5dd4d9e1eb709443a4bb2f53.jpg",
+                    icon: <IoCarSportOutline />
+                },
+                {
+                    title: "Premium Retail & Gifting",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/3-retail-gifting-b077787a3da041254f26595cb1410d97a42049cfc8bffddee05b4c7a2c18ad67.jpg",
+                    icon: <IoBagOutline />
+                },
+            ],
+        },
+        {
+            title1: "Work smarter,",
+
+            title2: "grow faster.",
+
+            subTitle: "Reduce operating costs, streamline your workflows and scale with savings on essential software, growth tools, devices, shipping, workspace, and professional services.",
+
+            benefits: [
+                {
+                    title: "Scale efficiently",
+
+                    text: " Exclusive pricing and credits on core business software — HR, finance, marketing, productivity, CRM, design, analytics",
+                },
+
+                {
+                    title: "Spend less on the essentials",
+
+                    text: "Negotiated rates (up to 60% off) on laptops, devices, office furniture, shipping, supplies, and more.",
+                },
+
+                {
+                    title: "Work from anywhere",
+
+                    text: "Preferred access to premium co-working spaces (incl free passes), conferencing tools, and remote-work essentials.",
+                },
+
+                {
+                    title: "Accelerate growth",
+
+                    text: "Members-only offers on marketing platforms, e-commerce tools, website builders, recruiting, and customer support solutions.",
+                },
+            ],
+
+            benefitCards: [
+                {
+                    title: "Software & Growth Tools",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/1-software-growth-1f10043d5eb7cdfd2f5d90c2dce5eab96bf5b257c49f8bbdd0a9ca45f3f10327.jpg",
+                    icon: <PiLaptop />
+                },
+                {
+                    title: "Devices & Equipment",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/5-devices-equipment-f30a4e82ad03a762155af6a17f791077c8eaad71fbbb296ef6a7e1af3968ff9f.jpg",
+                    icon: <PiDevices />
+                },
+                {
+                    title: "Co-Working",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/3-co-working-1d1a548897e60ab876375d1222b8bbc74f0432c062ced5663d4950ecbed6e7e8.jpg",
+                    icon: <RiGroupLine />
+                },
+                {
+                    title: "Startup Stack",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/4-startup-stack-701f6cf48a9e3019bbed7254b83766d567a8419ce399ce541b78acd13e63fcbf.jpg",
+                    icon: <BiBarChartSquare />
+                },
+                {
+                    title: "Business Essentials",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/4-startup-stack-701f6cf48a9e3019bbed7254b83766d567a8419ce399ce541b78acd13e63fcbf.jpg",
+                    icon: <FiBox />
+                },
+            ],
+        },
+        {
+            title1: "Connect with",
+
+            title2: "ambition.",
+
+            subTitle: "Tap into a curated network of founders, leaders, and creators. Build relationships that sharpen your thinking and open new doors.",
+
+            benefits: [
+                {
+                    title: "Move faster with the right connections",
+
+                    text: "Meet founders, operators, investors, and creators who open doors and add insight you can't Google.",
+                },
+
+                {
+                    title: "Find your people, not just your peers",
+
+                    text: "Join ambitious builders, experienced leaders, and global explorers who understand your journey — and elevate it.",
+                },
+
+                {
+                    title: "Turn shared experiences into meaningful outcomes",
+
+                    text: " Every dinner, event, and introduction is designed to create momentum — for your business, your travel, and your personal growth.",
+                },
+            ],
+
+            benefitCards: [
+                {
+                    title: "Founders Table Dinners",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
+                    icon: <IoRestaurantOutline />
+                },
+                {
+                    title: "Signature Member Events",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
+                    icon: <PiCalendarDotsLight />
+                },
+                {
+                    title: "Member-Created Insider Benefits",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
+                    icon: <IoRefreshSharp />
                 },
             ],
         },
@@ -372,7 +385,6 @@ export default function TravelBenefit() {
                     onEnterBack: () => {
                         setActiveIndex(index);
                     },
-                    markers: true,
                 });
             });
 
@@ -381,6 +393,23 @@ export default function TravelBenefit() {
 
         return () => ctx.revert();
     }, []);
+
+    const handleCategoryClick = (index: number) => {
+        const element = benefitRefs.current[index];
+        console.log(benefitRefs.current, index)
+        if (!element) return;
+
+        setActiveIndex(index);
+
+        const y =
+            element.getBoundingClientRect().top +
+            window.pageYOffset;
+
+        window.scrollTo({
+            top: y,
+            behavior: "smooth",
+        });
+    };
 
 
     const categories = ["Travel", "Hotels", "Lifestyle", "Business", "Community"];
@@ -394,7 +423,7 @@ export default function TravelBenefit() {
             <div
                 className="
         grid
-        lg:grid-cols-[50%_48%]
+        lg:grid-cols-[50%_50%]
         lg:justify-between
         py-4
       "
@@ -417,16 +446,27 @@ export default function TravelBenefit() {
 
                     {/* Categories */}
                     <div className="absolute left-6 top-6 lg:left-8 lg:top-8 z-10 flex flex-col text-[75px] space-y-4">
-                        {
-                            categories.map((item, index) => (
-                                <span
-                                    key={index}
-                                    className={`feature-display leading-[0.88] text-white ${activeIndex === index ? "opacity-100 italic" : "opacity-50"}`}
-                                >
-                                    {item}
-                                </span>
-                            ))
-                        }
+                        {categories.map((item, index) => (
+                            <button
+                                key={index}
+                                onClick={() => handleCategoryClick(index)}
+                                className={`
+        feature-display
+        leading-[0.88]
+        text-white
+        text-left
+        cursor-pointer
+        duration-300
+
+        ${activeIndex === index
+                                        ? "opacity-100 italic"
+                                        : "opacity-50 hover:opacity-80"
+                                    }
+      `}
+                            >
+                                {item}
+                            </button>
+                        ))}
                     </div>
 
                     {/* Brands */}
@@ -452,42 +492,51 @@ export default function TravelBenefit() {
                 <div className="min-w-0">
                     {benefits.map(
                         (item, index) => (
-                            <div
-                                key={index}
-                                ref={(el) =>
-                                (benefitRefs.current[index] =
-                                    el)
-                                }
-                                className="
+                            <div key={index}>
+                                <div
+                                    ref={(el) =>
+                                    (benefitRefs.current[index] =
+                                        el)
+                                    }
+                                    className="
                 min-h-screen
-                border-b last:border-b-0
                 border-[#2d2d2d1a]
                 flex
                 items-center
-                py-16
+                xl:py-16
+                lg:py-12
+                w-full
+                overflow-hidden
               "
-                            >
-                                <Benefit
-                                    title1={
-                                        item.title1
-                                    }
+                                >
+                                    <Benefit
+                                        index={index}
+                                        title1={
+                                            item.title1
+                                        }
 
-                                    title2={
-                                        item.title2
-                                    }
+                                        title2={
+                                            item.title2
+                                        }
 
-                                    subTitle={
-                                        item.subTitle
-                                    }
+                                        subTitle={
+                                            item.subTitle
+                                        }
 
-                                    benefits={
-                                        item.benefits
-                                    }
+                                        benefits={
+                                            item.benefits
+                                        }
 
-                                    benefitCards={
-                                        item.benefitCards
-                                    }
-                                />
+                                        benefitCards={
+                                            item.benefitCards
+                                        }
+                                    />
+                                </div>
+                                {
+                                    index !== benefits.length - 1 && <div className="px-10">
+                                        <div className="border-b border-[#2d2d2d1a] w-full"></div>
+                                    </div>
+                                }
                             </div>
                         )
                     )}
