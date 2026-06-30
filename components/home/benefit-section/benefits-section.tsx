@@ -385,6 +385,7 @@ export default function TravelBenefit() {
                     onEnterBack: () => {
                         setActiveIndex(index);
                     },
+                    markers: true,
                 });
             });
 
@@ -403,7 +404,7 @@ export default function TravelBenefit() {
 
         const y =
             element.getBoundingClientRect().top +
-            window.pageYOffset;
+            window.pageYOffset + 10;
 
         window.scrollTo({
             top: y,

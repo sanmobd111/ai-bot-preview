@@ -10,14 +10,14 @@ const logos = [
 export default function BenefitCard({ card }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="group relative overflow-hidden rounded-xl aspect-[7/9]">
+    <div className="group relative overflow-hidden rounded-xl aspect-[9/10.8]">
       <img
         src={card.image}
         alt={card.title}
-        className="h-[320px] w-full object-cover transition duration-700 group-hover:scale-105"
+        className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+      <div className={`absolute inset-0 bg-black/50 to-transparent duration-300 ${open ? "opacity-100" : "opacity-20"}`} />
 
       <button className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md"
         onClick={() => setOpen(!open)}

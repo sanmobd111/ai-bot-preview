@@ -104,10 +104,10 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                         slidesPerView: 2,
                     },
                     1280: {
-                        slidesPerView: 2.00001,
+                        slidesPerView: 2.000000000001,
                     },
                     1440: {
-                        slidesPerView: 3.6,
+                        slidesPerView: 3.05,
                     },
                 }}
                 className="w-full"
@@ -131,26 +131,6 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             >
                 {benefitCards.map((card) => (
                     <SwiperSlide key={card.title}>
-                        {/* <div className="group relative overflow-hidden rounded-xl aspect-[7/9]">
-                            <img
-                                src={card.image}
-                                alt={card.title}
-                                className="h-[320px] w-full object-cover transition duration-700 group-hover:scale-105"
-                            />
-
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-
-                            <button className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md">
-                                <Plus size={20} />
-                            </button>
-
-                            <div className="absolute bottom-5 left-3 flex items-center gap-2 justify-center  backdrop-blur-md  bg-white/15 text-white py-1.5 px-3 rounded-full">
-                                {card.icon}
-                                <span className="rounded-full text-xs ">
-                                    {card.title}
-                                </span>
-                            </div>
-                        </div> */}
                         <BenefitCard card={card} />
                     </SwiperSlide>
                 ))}
