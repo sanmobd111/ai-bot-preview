@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 import Benefit from "./benefit";
 import ScrollMarquee from "@/components/shared/scroll-marque";
@@ -19,6 +20,7 @@ import { BiBarChartSquare } from "react-icons/bi";
 import { FiBox } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function TravelBenefit() {
     const sectionRef = useRef(null);
@@ -368,7 +370,6 @@ export default function TravelBenefit() {
 
 
     useEffect(() => {
-        console.log(benefitRefs.current)
         const ctx = gsap.context(() => {
             benefitRefs.current.forEach((item, index) => {
                 ScrollTrigger.create({
@@ -385,7 +386,6 @@ export default function TravelBenefit() {
                     onEnterBack: () => {
                         setActiveIndex(index);
                     },
-                    markers: true,
                 });
             });
 
@@ -397,18 +397,19 @@ export default function TravelBenefit() {
 
     const handleCategoryClick = (index: number) => {
         const element = benefitRefs.current[index];
-        console.log(benefitRefs.current, index)
         if (!element) return;
 
         setActiveIndex(index);
 
         const y =
             element.getBoundingClientRect().top +
-            window.pageYOffset + 10;
+            window.pageYOffset +
+            10;
 
-        window.scrollTo({
-            top: y,
-            behavior: "smooth",
+        gsap.to(window, {
+            duration: 0.8, // increase for slower scroll
+            scrollTo: y,
+            ease: "power2.inOut",
         });
     };
 
@@ -438,7 +439,7 @@ export default function TravelBenefit() {
                                 key={index}
                                 src={image}
                                 alt=""
-                                className={`top-1/2 -translate-y-1/2 left-1/2 duration-300 -translate-x-1/2 h-full w-full object-cover transition-all duration-700 z-[5] absolute ${activeIndex === index ? "w-full h-full" : " delay-500 w-0! h-0!"}`}
+                                className={`top-1/2 -translate-y-1/2 left-1/2 duration-300 -translate-x-1/2 h-full w-full object-cover transition-all duration-700 z-[5] absolute ${activeIndex >= index ? "w-full h-full" : "w-0! h-0!"}`}
                             />
                         ))
                     }

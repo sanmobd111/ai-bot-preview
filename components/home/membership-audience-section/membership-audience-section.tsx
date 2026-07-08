@@ -169,7 +169,7 @@ export default function MembershipAudienceSection() {
                             key={index}
                             src={item.image}
                             alt=""
-                            className={`top-1/2 -translate-y-1/2 left-1/2 rounded-4xl duration-300 -translate-x-1/2 h-full w-full object-cover transition-all duration-700 z-[5] absolute ${activeTab === index ? "w-full h-full" : " delay-700 w-0! h-0!"}`}
+                            className={`top-1/2 -translate-y-1/2 left-1/2 rounded-4xl duration-300 -translate-x-1/2 h-full w-full object-cover transition-all duration-700 z-[5] absolute ${activeTab >= index ? "w-full h-full" : " w-0! h-0!"}`}
                         />
                     ))
                 }
