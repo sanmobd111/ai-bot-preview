@@ -14,7 +14,7 @@ export default function MembershipSection() {
                     <TextReveal
                         className="mb-4 2xl:mb-8 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                     >
-                        Membership, Reimagined
+                        BIZNEST UNLIMITED
                     </TextReveal>
 
                     <div className="grid xl:grid-cols-[65%_30%] justify-between gap-6 xl:gap-16">
@@ -32,24 +32,23 @@ text-5xl
 wrap-break-word   
               "
                         >
-                            Membership for the {" "}
+                            The Next {" "}
                             <br className="hidden xl:block 2xl:hidden" />
-                            driven, {" "}
+                            Business {" "}
                             <br className="hidden 2xl:block" />
-                            the daring,{" "}
+                            Revolution{" "}
                             <span className="italic font-light text-zinc-500 inline-block">
-                                the
+                                Is Already.
                             </span>
                             <span className="italic font-light text-zinc-500 inline-block">
-                                doers.
+                                Underway.
                             </span>
                         </CharacterReveal>
 
                         <div className="flex items-end">
                             <TextReveal
                                 className="xl:max-w-md text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
-                                A network that rewards your ambition — created by
-                                those who know the journey.
+                                AI is changing how businesses operate, communicate, market, sell, and serve customers. Companies are actively searching for solutions, creating new opportunities for entrepreneurs and business builders.
                             </TextReveal>
                         </div>
                     </div>

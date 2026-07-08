@@ -4,24 +4,24 @@ import ZoomIn from "../shared/zoom-in";
 
 const stats = [
     {
-        value: 300000,
-        suffix: "+",
-        label: "Active members",
-    },
-    {
-        value: 130,
-        suffix: "+",
-        label: "Member countries",
-    },
-    {
         value: 80,
         suffix: "%",
-        label: "Founder, Entrepreneur, Owner, C-level title",
+        label: "Growing Investment",
     },
     {
-        value: 5000,
-        suffix: "$",
-        label: "Estimated annual member savings",
+        value: 90,
+        suffix: "%+",
+        label: "Growing Adoption",
+    },
+    {
+        value: "Trillions",
+        suffix: "",
+        label: "Growing Opportunity",
+    },
+    {
+        value: "24/7",
+        suffix: "",
+        label: "Growing Demand",
     },
 ];
 
@@ -42,13 +42,13 @@ export default function NetworkStatsSection() {
               text-[#2e2e2e]
             "
                     >
-                        A network like{" "}
+                        A Market with {" "}
                         <div className="italic inline-block font-light text-zinc-500 feature-display">
-                            no 
+                            Massive
                         </div>
                         {" "}
                         <div className="italic inline-block font-light text-zinc-500 feature-display">
-                            other. 
+                            Potential.
                         </div>
                     </CharacterReveal>
                 </div>

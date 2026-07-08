@@ -36,18 +36,17 @@ export default function HeroSection() {
 
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[4%]">
                     <h1
-                        className="max-w-5xl text-[45px] feature-display font-normal leading-[0.8]  md:text-7xl xl:text-8xl 2xl:text-[120px]"
+                        className="max-w-5xl text-[45px] feature-display font-normal leading-[1]  md:text-7xl xl:text-8xl 2xl:text-[120px]"
                     >
-                        Where ambition
+                        Own Your Lane
                         <br />
-                        <span className="italic">meets access</span>
+                        <span className="italic">In The AI Economy.</span>
                     </h1>
 
-                    <p className="mt-6 lg:mt-8 2xl:mt-10 max-w-2xl xl:max-w-3xl 2xl:max-w-lg text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
-                        Empowering entrepreneurs and leaders with premium benefits,
-                        insider experiences, and connections that open doors.
+                    <p className="mt-6 lg:mt-8 2xl:mt-10 max-w-2xl xl:max-w-3xl 2xl:max-w-2xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+                        Launch your own branded AI business, build recurring revenue, and establish your position in one of the fastest-growing sectors of the modern economy.
                     </p>
-                    <AnimatedPreviewButton />
+                    <AnimatedPreviewButton text="Become a White Label Partner" />
                 </div>
 
                 <div className="absolute bottom-8 z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-6">
