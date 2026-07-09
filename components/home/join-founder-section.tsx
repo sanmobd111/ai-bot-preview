@@ -19,17 +19,18 @@ export default function JoinFounderSection({ ref }: { ref: React.RefObject<HTMLE
       </video>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full  max-w-6xl items-center xl:justify-end px-5 md:px-6 -translate-y-5">
+      <div className="relative z-10 mx-auto flex h-full  max-w-8xl items-center xl:justify-end px-5 md:px-6 -translate-y-5">
         <div className="w-full xl:w-1/2  text-white">
           {/* Small Heading */}
           <p className="mb-9 text-sm uppercase tracking-wide">
-            JOIN FOUNDERSCARD
+            BIZNEST UNLIMITED
           </p>
 
           {/* Main Title */}
           <h2 className="leading-[1.15] tracking-tight text-[46px] md:text-5xl lg:text-[55px] xl:text-6xl">
-            For the driven, the daring, <span className=" italic  feature-display">
-              the doers.
+            THE OPPORTUNITY {" "}
+            <span className=" italic  feature-display">
+              AHEAD
             </span>
 
           </h2>

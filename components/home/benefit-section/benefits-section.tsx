@@ -563,7 +563,9 @@ export default function TravelBenefit() {
         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-hotels-9d9f2d9a5422d8f494f555132f902f7d18308ebe94a1d319232ceac25bd14858.jpg",
         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-lifestyle-a3ca1ded5c8ac10bb45c8f5fddf4d75752534848c7be59af76b06528907831db.jpg",
         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-business-d9e4df62efb2c5966a559a970c8b4e40d3867e1ef097918ec1d45ac18b871d8c.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-community-2e93334772c6b3017a2c208b36c0baa8b2a3ecda57e0bed91f6964c7dd8dccd0.jpg"
+        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-community-2e93334772c6b3017a2c208b36c0baa8b2a3ecda57e0bed91f6964c7dd8dccd0.jpg",
+        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-travel-edbf353d1a867718be0f537d771502131460c6c51b1bcb831bc807dbb0f3ffe9.jpg",
+        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-hotels-9d9f2d9a5422d8f494f555132f902f7d18308ebe94a1d319232ceac25bd14858.jpg",
     ];
 
     const logos = [

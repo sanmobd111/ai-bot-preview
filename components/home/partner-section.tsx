@@ -80,12 +80,13 @@ export default function PartnersSection() {
                 text-[#2e2e2e]
               "
             >
-              Exceptional benefits
+              Your AI Business.
+              Backed By
               <br />
-              from the world&apos;s
-              <br />
+              {/* from the world&apos;s
+              <br /> */}
               <span className="italic text-zinc-500 feature-display">
-                leading brands.
+                BizNest Unlimited
               </span>
             </h2>
 
