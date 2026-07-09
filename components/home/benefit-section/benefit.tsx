@@ -53,9 +53,9 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                         />
 
                         <p className=" leading-relaxed text-zinc-700">
-                            <span className="font-semibold text-zinc-900">
+                            {/* <span className="font-semibold text-zinc-900">
                                 {item.title}:
-                            </span>{" "}
+                            </span>{" "} */}
                             {item.text}
                         </p>
                     </div>
