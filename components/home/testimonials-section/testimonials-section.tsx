@@ -14,28 +14,33 @@ import { GrStar } from "react-icons/gr";
 const testimonials = [
   {
     id: 1,
-    title: "Worth every penny",
-    text: "Awesome organization with lots of good perks. I love that they're constantly updating with more benefits.",
+    designation: "Entrepreneur",
+    title: "BizNest Unlimited",
+    text: "I knew AI was creating opportunities, but I wasn't sure where I fit. BizNest Unlimited gave me a practical way to build something of my own without becoming a technology expert.",
   },
   {
     id: 2,
-    title: "The best!",
-    text: "Just want say thank you so much for curating such incredible experiences.",
+    designation: "Business Owner",
+    title: "BizNest Unlimited",
+    text: "What attracted me most was the ability to build under my own brand. I wanted to create a business I could grow, scale, and truly call my own.",
   },
   {
     id: 3,
-    title: "FoundersCard is an absolute no-brainer.",
-    text: "If you travel often or run a company, the member savings add up fast.",
+    title: "BizNest Unlimited",
+    designation: "Growth Consultant.",
+    text: "I saw where the market was heading and wanted a way to participate. BizNest Unlimited provided a clear path to enter the AI space with confidence.",
   },
   {
     id: 4,
-    title: "I LOVE FoundersCard",
-    text: "I've saved hundreds of dollars at select hotels.",
+    title: "BizNest Unlimited",
+    designation: "Sales Professional",
+    text: "Most opportunities require learning an entirely new skill set. BizNest Unlimited allowed me to focus on business development, client acquisition, and creating momentum.",
   },
   {
     id: 5,
-    title: "Awesome Preferred Partners",
-    text: "One of the best preferred partner networks available.",
+    title: "BizNest Unlimited",
+    designation: "Business Builder",
+    text: "The opportunity isn't just about AI. It's about ownership, building a brand, serving clients, and creating long-term business value.",
   },
 ];
 
@@ -97,9 +102,9 @@ export default function TestimonialSlider() {
             pb-1
           "
         >
-          <span className="font-normal">Empowering</span> {" "}
+          <span className="font-normal">BUILDING BUSINESSES,</span> {" "}
           <span className="italic feature-display">
-            Our Members
+            CREATING OPPORTUNITY.
           </span>
         </CharacterReveal>
       </div>
@@ -180,16 +185,16 @@ export default function TestimonialSlider() {
 
                   <div className="flex items-center justify-center gap-4">
                     <img
-                    src={"https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/bio-brian-j-63282fd8235b598acd4e9e0bda8a78142f76784088f75a83f63c78dda864dfd4.png"}
-                    className="w-12 h-12 rounded-sm"
-                      />
+                      src={"https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/bio-brian-j-63282fd8235b598acd4e9e0bda8a78142f76784088f75a83f63c78dda864dfd4.png"}
+                      className="w-12 h-12 rounded-sm"
+                    />
                     <div className="text-center">
                       <div className="font-semibold">
                         JOHN DOE
                       </div>
 
                       <div className="text-sm text-white/40">
-                        CEO
+                        {item.designation}
                       </div>
                     </div>
                   </div>

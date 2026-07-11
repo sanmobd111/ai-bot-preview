@@ -31,70 +31,73 @@ export default function TravelBenefit() {
 
     const benefits = [
         {
-            title1: "Travel better,",
+            title1: "The Opportunity Is ",
 
-            title2: "anywhere.",
+            title2: "Already Here.",
 
-            subTitle: "Unlock insider rates, instant recognition, and elevated experiences across airlines, hotels, car rentals, lounges, and essential travel services - value you feel on every trip",
+            subTitle: "Artificial intelligence is creating one of the largest wealth-building opportunities of our generation. BizNest Unlimited empowers entrepreneurs to launch their own white-label AI business, build recurring revenue, and establish a position in a rapidly expanding market while leveraging infrastructure, systems, and technology already built for scale.",
 
             benefits: [
                 {
                     title: "Loyalty Status",
 
-                    text: "Steep savings and privileges at 500+ luxury hotels worldwide, in many cases 30–50% below published prices.",
+                    text: "Launch your own AI business",
                 },
 
                 {
                     title: "Preferred Air Savings",
 
-                    text: " Preferred pricing and privileges with leading hotel groups across thousands of properties, giving you flexibility almost anywhere.",
+                    text: "Build recurring revenue",
                 },
 
                 {
                     title: "Hotel Rates",
 
-                    text: "Loyalty status upgrades with top brands like Hilton, IHG, Sonesta, and Wynn - unlocking upgrades, bonus earnings, and premium check-in perks.",
+                    text: "Operate under your own brand",
                 },
 
                 {
                     title: "Premium Lounge",
 
-                    text: "Upgrades, late checkout, welcome amenities, and other VIP touches at many collection hotels, where available.",
+                    text: "Leverage technology built for scale",
                 },
             ],
 
             benefitCards: [
                 {
-                    title: "Global Airline Collection",
+                    title: "Business Ownership",
+                    subtitle: "Build a business you control under your own brand and vision.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                     icon: <LiaPlaneSolid />
                 },
                 {
-                    title: "Car Rental & Ground Transport",
-
+                    title: "Recurring Revenue",
+                    subtitle: "Create ongoing income through long-term client relationships.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                     icon: <IoCarOutline />
                 },
                 {
-                    title: "Founders Hotel Collection",
+                    title: "White Label Platform",
+                    subtitle: "Launch with infrastructure, systems, and technology already in place.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                     icon: <LiaConciergeBellSolid />
                 },
                 {
-                    title: "Premium Travel & Lounge",
+                    title: "Market Position",
+                    subtitle: "Establish yourself within one of the fastest-growing sectors of modern business.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                     icon: <PiArmchairLight />
                 },
                 {
-                    title: "Curated Travel Experiences",
-
+                    title: "Long-Term Opportunity",
+                    subtitle: "Build a business positioned for growth as AI adoption continues to expand.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                     icon: <MdOutlineLuggage />
@@ -102,61 +105,73 @@ export default function TravelBenefit() {
             ],
         },
         {
-            title1: "Elevate,",
+            title1: "Build A Brand.",
 
-            title2: "Elevate,",
-            subTitle: "Unlock member-only rates and perks at 500+ luxury hotels through the Founders Hotel Collection, plus preferred pricing at thousands more through our global partners",
+            title2: "Own Your Future.",
+            subTitle: "Most business opportunities ask you to promote someone else's company, products, and identity. BizNest Unlimited takes a different approach.You build under your own brand, your own name, and your own  vision. Your clients know your company. Your reputation drives the relationship. Your brand becomes the asset. Instead of spending years building equity for someone else, you're creating market presence, customer loyalty, and long-term business value that belongs to you.",
 
             benefits: [
                 {
                     title: "Luxury Member Rates",
 
-                    text: "Steep savings and privileges at 500+ luxury hotels worldwide, in many cases 30–50% below published prices.",
+                    text: "Build under your own brand",
                 },
 
                 {
                     title: "Global Brand Partnerships",
 
-                    text: "Preferred pricing and privileges with leading hotel groups across thousands of properties, giving you flexibility almost anywhere.",
+                    text: "Own your client relationships",
                 },
 
                 {
                     title: "Complimentary loyalty status",
 
-                    text: "Loyalty status upgrades with top brands like Hilton, IHG, Sonesta, and Wynn - unlocking upgrades, bonus earnings, and premium check-in perks.",
+                    text: "Create long-term business equity",
                 },
 
                 {
                     title: "On-Property Privileges",
 
-                    text: "Upgrades, late checkout, welcome amenities, and other VIP touches at many collection hotels, where available.",
+                    text: "Establish a recognizable market presence",
                 },
             ],
 
             benefitCards: [
                 {
-                    title: "Founders Hotel Collection",
+                    title: "Your Brand",
+                    subtitle: "Operate under your own company name, identity, and market presence.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/1-founders-hotels-08544a0d55902071c30fa0ddec931434b0a79d4c763c16d1287dcb9b9e633673.jpg",
                     icon: <LuSofa />
                 },
                 {
-                    title: "Global Hotel Brand Partners",
+                    title: "Your Reputation",
+                    subtitle: "Build trust, recognition, and credibility around a brand you control.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/2-brand-partners-cd3b490e515303f45595bf46b6ca5aa0ad20e596c48ec17b2f8e64ac5267689a.jpg",
                     icon: <AiOutlineGlobal />
                 },
                 {
-                    title: "Loyalty Status Upgrades",
+                    title: "Your Clients",
+                    subtitle: "Develop direct relationships that strengthen your business over time.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/3-loyalty-status-3f803a03b1302cb55fba3170d3564c15a3c53fd52a13af2ae94ab6b7de683236.jpg",
                     icon: <CiStar />
                 },
                 {
-                    title: "Curated Travel Experiences",
+                    title: "Your Equity",
+                    subtitle: "Create value that remains attached to your company, not someone else's.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/4-curated-travel-d957eba2906386dac0a9e7181d20688829e029a106774cc510fdb106cbdd1ca7.jpg",
+                    icon: <PiGlobeHemisphereEast />
+                },
+                {
+                    title: "Your Legacy",
+                    subtitle: "Build an asset designed to grow beyond individual transactions and opportunities.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/4-curated-travel-d957eba2906386dac0a9e7181d20688829e029a106774cc510fdb106cbdd1ca7.jpg",
@@ -165,62 +180,74 @@ export default function TravelBenefit() {
             ],
         },
         {
-            title1: "Upgrade your",
+            title1: "Turn Demand",
 
-            title2: "everyday.",
+            title2: "Into Clientele.",
 
-            subTitle: "Unlock member-only rates and perks at 500+ luxury hotels through the Founders Hotel Collection, plus preferred pricing at thousands more through our global partners",
+            subTitle: "Every business needs customers. The most successful businesses build systems for attracting, serving, and retaining them. BizNest Unlimited gives entrepreneurs the opportunity to serve businesses actively seeking AI-powered solutions while building a growing client base, recurring revenue, and long-term business value. Every new client becomes more than a transaction—it becomes an asset that contributes to the growth of your company.",
 
             benefits: [
                 {
                     title: "Look good, feel good",
 
-                    text: "Member-only savings across premium fashion, wellness, skincare, and performance gear — refresh your wardrobe and elevate your routine.",
+                    text: "Build a growing client portfolio",
                 },
 
                 {
                     title: "Enhance your living and gifting",
 
-                    text: "Preferential pricing on design, audio, work-from-home setups, and lifestyle brands for inspired spaces and smoother days.",
+                    text: "Create recurring revenue opportunities",
                 },
 
                 {
                     title: "Drive with distinction",
 
-                    text: "Preferred pricing to elevated ownership perks on luxury autos - helping you move through life with more comfort, confidence, and convenience.",
+                    text: "Generate referrals through client success",
                 },
 
                 {
                     title: "Access the exceptional",
 
-                    text: "Curated access to VIP events, global live experiences (like F1, Olympics), concerts, sporting events and attractions (like Disney).",
+                    text: "Establish long-term business value",
                 },
             ],
 
             benefitCards: [
                 {
-                    title: "Live Events & VIP Experiences",
+                    title: "Client Acquisition",
+                    subtitle: "Turn growing demand into real business opportunities and new client relationships.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/1-live-events-646e9fb8f2dd36b6ecba0f9722af66705178e0ee13f8957c2adfc8bb81df432d.jpg",
                     icon: <PiTicketLight />
                 },
                 {
-                    title: "Health & Wellness",
+                    title: "Client Portfolio",
+                    subtitle: "Build a base of businesses that contribute to your long-term growth.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/2-brand-partners-cd3b490e515303f45595bf46b6ca5aa0ad20e596c48ec17b2f8e64ac5267689a.jpg",
                     icon: <PiFlowerLotus />
                 },
                 {
-                    title: "Luxury Vehicles",
+                    title: "Recurring Revenue",
+                    subtitle: "Create ongoing revenue through retained clients and continued service relationships.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/4-luxury-vehicles-c6d75e2b5c15e579d33c92e781f6a5ce1dfd1e5e5dd4d9e1eb709443a4bb2f53.jpg",
                     icon: <IoCarSportOutline />
                 },
                 {
-                    title: "Premium Retail & Gifting",
+                    title: "Referral Expansion",
+                    subtitle: "Satisfied clients can become one of your strongest sources of future growth.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/3-retail-gifting-b077787a3da041254f26595cb1410d97a42049cfc8bffddee05b4c7a2c18ad67.jpg",
+                    icon: <IoBagOutline />
+                },
+                {
+                    title: "Business Value",
+                    subtitle: "A growing client base becomes one of the most valuable assets your company owns.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/3-retail-gifting-b077787a3da041254f26595cb1410d97a42049cfc8bffddee05b4c7a2c18ad67.jpg",
@@ -229,69 +256,74 @@ export default function TravelBenefit() {
             ],
         },
         {
-            title1: "Work smarter,",
+            title1: "Built For Scale.",
 
-            title2: "grow faster.",
+            title2: "Designed For Leverage.",
 
-            subTitle: "Reduce operating costs, streamline your workflows and scale with savings on essential software, growth tools, devices, shipping, workspace, and professional services.",
+            subTitle: "Most entrepreneurs spend years building infrastructure, assembling tools, managing technology, and solving operational challenges before they ever gain traction. BizNest Unlimited changes that equation. Instead of building the systems, you leverage them. Instead of developing the technology, you deploy it. Instead of managing complexity, you focus on clients, growth, and opportunity while utilizing infrastructure already designed to support scale.",
 
             benefits: [
                 {
                     title: "Scale efficiently",
 
-                    text: " Exclusive pricing and credits on core business software — HR, finance, marketing, productivity, CRM, design, analytics",
+                    text: "Infrastructure already in place",
                 },
 
                 {
                     title: "Spend less on the essentials",
 
-                    text: "Negotiated rates (up to 60% off) on laptops, devices, office furniture, shipping, supplies, and more.",
+                    text: "Technology built for deployment",
                 },
 
                 {
                     title: "Work from anywhere",
 
-                    text: "Preferred access to premium co-working spaces (incl free passes), conferencing tools, and remote-work essentials.",
+                    text: "Reduced operational complexity",
                 },
 
                 {
                     title: "Accelerate growth",
 
-                    text: "Members-only offers on marketing platforms, e-commerce tools, website builders, recruiting, and customer support solutions.",
+                    text: "Focus on growth instead of development",
                 },
             ],
 
             benefitCards: [
                 {
-                    title: "Software & Growth Tools",
+                    title: "Infrastructure",
+                    subtitle: "Leverage enterprise-grade systems already built and ready for use.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/1-software-growth-1f10043d5eb7cdfd2f5d90c2dce5eab96bf5b257c49f8bbdd0a9ca45f3f10327.jpg",
                     icon: <PiLaptop />
                 },
                 {
-                    title: "Devices & Equipment",
+                    title: "Automation",
+                    subtitle: "Utilize intelligent automation designed to improve efficiency and scalability.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/5-devices-equipment-f30a4e82ad03a762155af6a17f791077c8eaad71fbbb296ef6a7e1af3968ff9f.jpg",
                     icon: <PiDevices />
                 },
                 {
-                    title: "Co-Working",
+                    title: "Operational Support",
+                    subtitle: "Access tools, resources, and systems that simplify business operations.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/3-co-working-1d1a548897e60ab876375d1222b8bbc74f0432c062ced5663d4950ecbed6e7e8.jpg",
                     icon: <RiGroupLine />
                 },
                 {
-                    title: "Startup Stack",
+                    title: "Speed To Market",
+                    subtitle: "Move faster by leveraging technology that would otherwise take years to build.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/4-startup-stack-701f6cf48a9e3019bbed7254b83766d567a8419ce399ce541b78acd13e63fcbf.jpg",
                     icon: <BiBarChartSquare />
                 },
                 {
-                    title: "Business Essentials",
+                    title: "Scalable Foundation",
+                    subtitle: "Build upon infrastructure designed to support long-term growth and expansion.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/4-startup-stack-701f6cf48a9e3019bbed7254b83766d567a8419ce399ce541b78acd13e63fcbf.jpg",
@@ -300,49 +332,223 @@ export default function TravelBenefit() {
             ],
         },
         {
-            title1: "Connect with",
+            title1: "Turn Effort",
 
-            title2: "ambition.",
+            title2: "Into Expansion.",
 
-            subTitle: "Tap into a curated network of founders, leaders, and creators. Build relationships that sharpen your thinking and open new doors.",
+            subTitle: "The most valuable businesses aren't built through single transactions. They're built through momentum, recurring revenue, client retention, and consistent expansion over time. BizNest Unlimited provides entrepreneurs with the opportunity to build a business designed for growth, where every client relationship, every referral, and every success can contribute to larger opportunities in the future.",
 
             benefits: [
                 {
                     title: "Move faster with the right connections",
 
-                    text: "Meet founders, operators, investors, and creators who open doors and add insight you can't Google.",
+                    text: "Build recurring revenue streams",
                 },
 
                 {
                     title: "Find your people, not just your peers",
 
-                    text: "Join ambitious builders, experienced leaders, and global explorers who understand your journey — and elevate it.",
+                    text: "Create momentum through client growth",
                 },
 
                 {
                     title: "Turn shared experiences into meaningful outcomes",
 
-                    text: " Every dinner, event, and introduction is designed to create momentum — for your business, your travel, and your personal growth.",
+                    text: "Expand through referrals and retention",
+                },
+                {
+                    title: "Turn shared experiences into meaningful outcomes",
+
+                    text: "Scale beyond individual transactions",
                 },
             ],
 
             benefitCards: [
                 {
-                    title: "Founders Table Dinners",
+                    title: "Recurring Revenue",
+                    subtitle: "Create predictable income through ongoing client relationships and service delivery.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
                     icon: <IoRestaurantOutline />
                 },
                 {
-                    title: "Signature Member Events",
+                    title: "Business Momentum",
+                    subtitle: "Turn each new client, referral, and success into future growth opportunities.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
                     icon: <PiCalendarDotsLight />
                 },
                 {
-                    title: "Member-Created Insider Benefits",
+                    title: "Client Retention",
+                    subtitle: "Build long-term relationships that continue creating value over time.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
+                    icon: <IoRefreshSharp />
+                },
+                {
+                    title: "Expansion Potential",
+                    subtitle: "Open new pathways for growth as your business and reputation expand.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
+                    icon: <PiCalendarDotsLight />
+                },
+                {
+                    title: "Long-Term Wealth",
+                    subtitle: "Create a business designed to generate value, income, and opportunity for years to come",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
+                    icon: <IoRefreshSharp />
+                },
+            ],
+        },
+        {
+            title1: "Built To Help",
+
+            title2: "Entrepreneurs Win.",
+
+            subTitle: "BizNest Unlimited was created around a simple belief: entrepreneurs should have access to the opportunities being created by artificial intelligence without needing to become software developers, technology companies, or infrastructure providers. By combining proven systems, scalable infrastructure, operational support, and business opportunity into a single ecosystem, BizNest Unlimited helps entrepreneurs focus on what matters most—building relationships, serving clients, generating revenue, and creating long-term business value.",
+
+            benefits: [
+                {
+                    title: "Move faster with the right connections",
+
+                    text: "Entrepreneur-focused business model",
+                },
+
+                {
+                    title: "Find your people, not just your peers",
+
+                    text: "Infrastructure built for scale",
+                },
+
+                {
+                    title: "Turn shared experiences into meaningful outcomes",
+
+                    text: "Support designed for growth",
+                },
+                {
+                    title: "Turn shared experiences into meaningful outcomes",
+
+                    text: "Opportunity backed by proven systems",
+                },
+            ],
+
+            benefitCards: [
+                {
+                    title: "Entrepreneur First",
+                    subtitle: "Built for business builders, operators, consultants, and growth-minded entrepreneurs.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
+                    icon: <IoRestaurantOutline />
+                },
+                {
+                    title: "Proven Foundation",
+                    subtitle: "Leverage systems, infrastructure, and resources already designed for deployment.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
+                    icon: <PiCalendarDotsLight />
+                },
+                {
+                    title: "Business Support",
+                    subtitle: "Access tools, guidance, and resources that help simplify the path to growth.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
+                    icon: <IoRefreshSharp />
+                },
+                {
+                    title: "Shared Success",
+                    subtitle: "Our success is directly connected to the success of the partners we support.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
+                    icon: <PiCalendarDotsLight />
+                },
+                {
+                    title: "Long-Term Vision",
+                    subtitle: "Built to create lasting opportunities as the AI economy continues to evolve.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
+                    icon: <IoRefreshSharp />
+                },
+            ],
+        },
+        {
+            title1: "From Opportunity",
+
+            title2: "To Action.",
+
+            subTitle: "Every successful business starts with a decision to move forward. BizNest Unlimited provides a clear pathway for entrepreneurs looking to establish their own position in the AI economy. Instead of spending months researching technology, building systems, and trying to figure everything out alone, partners gain access to a framework designed to help them launch, grow, and scale with greater confidence. The journey begins with a single step and evolves into building a business designed for long-term opportunity.",
+
+            benefits: [
+                {
+                    title: "Move faster with the right connections",
+
+                    text: "Simple onboarding process",
+                },
+
+                {
+                    title: "Find your people, not just your peers",
+
+                    text: "Launch under your own brand",
+                },
+
+                {
+                    title: "Turn shared experiences into meaningful outcomes",
+
+                    text: "Access systems and resources quickly",
+                },
+                {
+                    title: "Turn shared experiences into meaningful outcomes",
+
+                    text: "Focus on building your business",
+                },
+            ],
+
+            benefitCards: [
+                {
+                    title: "Join The Partnership",
+                    subtitle: "Become part of a growing ecosystem built around opportunity, ownership, and growth.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
+                    icon: <IoRestaurantOutline />
+                },
+                {
+                    title: "Launch Your Brand",
+                    subtitle: "Establish your business identity and begin building your market presence.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
+                    icon: <PiCalendarDotsLight />
+                },
+                {
+                    title: "Position Your Business",
+                    subtitle: "Leverage available resources to identify opportunities and attract clients.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
+                    icon: <IoRefreshSharp />
+                },
+                {
+                    title: "Serve & Grow",
+                    subtitle: "Build relationships, deliver value, and create momentum through client success.",
+
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
+                    icon: <PiCalendarDotsLight />
+                },
+                {
+                    title: "Scale Your Opportunity",
+                    subtitle: "Expand your reach, increase your impact, and continue building long-term business value.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -357,7 +563,9 @@ export default function TravelBenefit() {
         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-hotels-9d9f2d9a5422d8f494f555132f902f7d18308ebe94a1d319232ceac25bd14858.jpg",
         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-lifestyle-a3ca1ded5c8ac10bb45c8f5fddf4d75752534848c7be59af76b06528907831db.jpg",
         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-business-d9e4df62efb2c5966a559a970c8b4e40d3867e1ef097918ec1d45ac18b871d8c.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-community-2e93334772c6b3017a2c208b36c0baa8b2a3ecda57e0bed91f6964c7dd8dccd0.jpg"
+        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-community-2e93334772c6b3017a2c208b36c0baa8b2a3ecda57e0bed91f6964c7dd8dccd0.jpg",
+        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-travel-edbf353d1a867718be0f537d771502131460c6c51b1bcb831bc807dbb0f3ffe9.jpg",
+        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-hotels-9d9f2d9a5422d8f494f555132f902f7d18308ebe94a1d319232ceac25bd14858.jpg",
     ];
 
     const logos = [
@@ -414,7 +622,7 @@ export default function TravelBenefit() {
     };
 
 
-    const categories = ["Travel", "Hotels", "Lifestyle", "Business", "Community"];
+    const categories = ["Opportunity", "Brand", "Clients", "Systems", "Growth", "BizNest", "Getting Started"];
     return (
         <section
             ref={sectionRef}

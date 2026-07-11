@@ -19,6 +19,8 @@ export default function Counter({
 }: CounterProps) {
     const ref = useRef<HTMLSpanElement>(null);
 
+
+
     useEffect(() => {
         if (!ref.current) return;
 
@@ -48,6 +50,7 @@ export default function Counter({
         };
     }, [value, suffix]);
 
+    if (typeof value !== "number") return <span className={className}>{value}</span>;
     return (
         <span ref={ref} className={className}>
             0{suffix}

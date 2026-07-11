@@ -10,30 +10,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const cards = [
     {
-        title: "Upgrade your upgrades",
+        title: "Own The Brand",
         description:
-            "Preferred rates, upgrades, and elite status across air, hotel, and car.",
+            "Build under your own company name while maintaining control of your market presence and customer relationships.",
         image:
             "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-travel-b2ad9d86d872895799a9ae654f43b07857774e0cbfe8548cf424095546ff068f.jpg",
     },
     {
-        title: "Expand your network",
+        title: "Serve Your Clients",
         description:
-            "A powerful network of founders, operators, and leaders who open doors.",
+            "Deliver AI-powered solutions businesses already need without developing the technology yourself.",
         image:
             "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-connect-e80f688b9ae68390b8f4f0ece251678ddaacf1f9cb807bddbde8c7a02ab6558e.jpg",
     },
     {
-        title: "Your Founders Advisor",
+        title: "Enterprise AI Infrastructure",
         description:
-            "Explore and instantly redeem valuable member benefits in seconds.",
+            "Access powerful AI systems, automation tools, and operational support designed for growth.",
         image:
             "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-benefits-00267a432b889babc23bad083be97a708800e592f55ae2e0a916d9680b9811c1.jpg",
     },
     {
-        title: "Run your business smarter",
+        title: "Scale With Confidence",
         description:
-            "Preferred access to tools, services and savings that unlock growth.",
+            "Focus on acquiring clients and growing revenue while the technology foundation is already in place.",
         image:
             "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-business-06c64a737a85944dc7759e471ae570bb27bb13faa0ae3d71bcbf40fc7b57e7cf.jpg",
     },

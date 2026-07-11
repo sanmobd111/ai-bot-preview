@@ -11,34 +11,54 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "Is FoundersCard a credit card?",
+    question: "Do I need AI or technical experience?",
     answer:
-      "FoundersCard isn't a credit card itself; rather, it's a membership program that unlocks VIP benefits and provides exceptional access, designed to complement and enhance your existing credit card strategy.",
+      "No. BizNest Unlimited  is designed for entrepreneurs, consultants, agency owners, coaches, advisors, and business builders. The focus is on building relationships, serving clients, and growing your business rather than developing technology.",
   },
   {
-    question: "Why can't I see the full list of benefits before joining?",
+    question: "Can I operate under my own brand?",
     answer:
-      "We keep some benefits exclusive to members to ensure value. Once you join, you'll get immediate access to our complete benefits directory.",
+      "Yes. The White Label Partnership is designed to allow you to build and grow under your own business identity while maintaining ownership of your brand and client relationships.",
   },
   {
-    question: "Is membership available internationally?",
+    question: "Do I need an existing business to join?",
     answer:
-      "Yes, FoundersCard has a global community of over 300,000 members. Benefits vary by region, but we offer valuable perks worldwide.",
+      "No. Some partners use BizNest Unlimited to expand an existing business, while others use it as the foundation for a completely new venture.",
   },
   {
-    question: "If I join today, when can I begin using my membership?",
+    question: "What types of businesses can benefit from AI solutions?",
     answer:
-      "You can start using your membership immediately after joining. You'll receive instant digital access to all benefits.",
+      "AI solutions are being adopted across nearly every industry, including professional services, real estate, healthcare, home services, consulting, coaching, retail, and many others.",
   },
   {
-    question: "Are all FoundersCard benefits available to all members?",
+    question: "How does BizNest Unlimited support its partners?",
     answer:
-      "Most benefits are available to all members, though some may have geographic or partner-specific restrictions.",
+      "Partners receive access to infrastructure, systems, resources, and business development support designed to help them launch, serve clients, and grow with confidence.",
   },
   {
-    question: "How does redeeming benefits work?",
+    question: "How quickly can I get started?",
     answer:
-      "Benefits are redeemed through our online portal or by following specific instructions for each partner offer.",
+      "Once onboarded, partners can begin exploring the platform, learning the opportunity, and positioning their business immediately.",
+  },
+  {
+    question: "Is this a franchise?",
+    answer:
+      "No. BizNest Unlimited is a White Label Partnership that allows entrepreneurs to build under their own brand while leveraging shared infrastructure, systems, and resources.",
+  },
+  {
+    question: "Who is this opportunity best suited for?",
+    answer:
+      "Entrepreneurs, consultants, agency owners, coaches, advisors, operators, sales professionals, and growth-minded individuals seeking to build within the rapidly expanding AI economy.",
+  },
+  {
+    question: "Do I need to create the technology myself?",
+    answer:
+      "No. BizNest Unlimited  provides the infrastructure, systems, automation, and support that power service delivery behind the scenes, allowing partners to focus on clients, growth, and business development.",
+  },
+  {
+    question: "Can this be operated alongside my existing business?",
+    answer:
+      "Yes. Many partners integrate BizNest Unlimited  into an existing business, while others choose to build a dedicated AI-focused brand from the ground up.",
   },
 ];
 
@@ -68,7 +88,7 @@ const FaqSection: React.FC = () => {
             </p>
             {/* Button */}
             <button className="cursor-pointer inline-flex items-center gap-3 rounded-xl bg-black px-4 py-3 text-white font-medium shadow-md">
-              Get in touch
+              Become A White Label Partner
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
                 <ArrowRight size={16} />
               </span>

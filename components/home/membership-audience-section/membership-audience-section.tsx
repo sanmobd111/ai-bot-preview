@@ -16,69 +16,85 @@ export default function MembershipAudienceSection() {
     const audiences = [
         {
             id: 1,
-            tab: "Leaders & Executives",
+            tab: "The BizNest Advantage",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-leaders-a3c6646619763dc4fecde22d8b76826e9517608bb092b59ffe4608044cbfe1f0.jpg",
 
-            heroTitle: "Leaders &",
-            heroItalic: "executives",
+            heroTitle: "THE BIZNEST ",
+            heroItalic: "ADVANTAGE",
 
             title:
-                "Move through the world with priority, comfort.",
+                "You Focus On Building. We Handle The Technology.",
 
             description:
-                "For senior leaders and executives, FoundersCard delivers elevated travel, seamless access, and the kind of recognition that makes everything feel easier.",
+                "Building a technology company from scratch can require years of development, infrastructure, support systems, and operational complexity. BizNest Unlimited removes those barriers by providing the technology, systems, automation, and infrastructure that power service delivery behind the scenes. Instead of managing software development, entrepreneurs can focus on building their brand, serving clients, generating revenue, and growing their business.",
 
             features: [
                 {
                     title: "Exceptional travel",
-                    text: "Loyalty status across airlines and hotels, luxury hotel preferred rates, elite upgrades, airport concierge.",
+                    text: "✓ No Coding Required",
                 },
                 {
                     title: "Lifestyle advantages",
-                    text: "VIP access to global events, wellness benefits, dining perks and experiences.",
+                    text: "✓ No Software Development",
                 },
                 {
                     title: "Trusted circle",
-                    text: "A curated network of experienced leaders and decision-makers.",
+                    text: "✓ No Infrastructure Management",
                 },
                 {
                     title: "Always-on support",
-                    text: "AI and human concierge support.",
+                    text: "✓ No Technical Complexity",
+                },
+                {
+                    title: "Always-on support",
+                    text: "✓ Focus On Clients & Revenue",
+                },
+                {
+                    title: "Always-on support",
+                    text: "✓ Built For Entrepreneurs",
                 },
             ],
         },
         {
             id: 2,
-            tab: "Entrepreneurs & Business Owners",
+            tab: "Recurring Revenue Potential",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-entrepreneurs-3e4f19ae20054f93ba5fb6547f21c64c01ef12fd452fd4b0f9bd9300b3b22c44.jpg",
 
-            heroTitle: "Entrepreneurs",
-            heroItalic: "& business owners",
+            heroTitle: "RECURRING ",
+            heroItalic: "REVENUE POTENTIAL",
 
             title:
-                "Get the tools, savings, and network that help turn ideas into traction.",
+                "Build Once. Grow Month After Month.",
 
             description:
-                "From discounted software and shipping to travel perks that stretch your runway, FoundersCard helps founders and entrepreneurs operate like seasoned pros.",
+                "Many traditional businesses start each month at zero. Every sale must be replaced, every customer must be reacquired, and growth often depends on constant effort. BizNest Unlimited is designed around building long-term client relationships and recurring service opportunities that can continue generating value over time. As your client base grows, so does the potential for predictable revenue, retention, referrals, and sustainable business growth.",
 
             features: [
                 {
                     title: "Better travel",
-                    text: "Preferred airfare and hotel rates, upgrades, and elite status.",
+                    text: "✓ Monthly Recurring Revenue Potential",
                 },
                 {
                     title: "Smarter spend",
-                    text: "Access to hundreds of software, services, and business essentials.",
+                    text: "✓ Long-Term Client Relationships",
                 },
                 {
                     title: "Real network",
-                    text: "A global community of founders and operators.",
+                    text: "✓ Repeatable Business Model",
                 },
                 {
                     title: "Always-on support",
-                    text: "AI and human concierge helping you get more done.",
+                    text: "✓ Scalable Growth Opportunities",
+                },
+                {
+                    title: "Always-on support",
+                    text: "✓ Client Retention Focus",
+                },
+                {
+                    title: "Always-on support",
+                    text: "✓ Sustainable Revenue Development",
                 },
             ],
         },
@@ -88,31 +104,35 @@ export default function MembershipAudienceSection() {
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-professionals-900229f36358a5a61451dba3902d569cc80ede236cf686bec0303977e275a724.jpg",
 
-            heroTitle: "Entrepreneurial",
-            heroItalic: "professionals",
+            heroTitle: "FAST ",
+            heroItalic: "LAUNCH PATH",
 
             title:
-                "Unlock status, access and flexibility without friction.",
+                "A Clear Path From Idea To Opportunity.",
 
             description:
-                "For consultants, investors, creators and independent professionals, FoundersCard delivers elite access and advantages that keep you moving effortlessly.",
+                "BizNest Unlimited provides a structured pathway designed to help entrepreneurs move from interest to execution without unnecessary complexity. Rather than spending months planning software, hiring developers, or building infrastructure, partners can focus on launching their brand, positioning their business, attracting clients, and creating momentum within their market. Process",
 
             features: [
                 {
                     title: "Loyalty status unlocked",
-                    text: "Airline, hotel and rental car status that upgrades how you move.",
+                    text: "01. Join BizNest Unlimited ",
                 },
                 {
                     title: "Preferred travel",
-                    text: "Private hotel and airfare rates designed for constant mobility.",
+                    text: "02. Launch Under Your Brand",
                 },
                 {
                     title: "Trusted circle",
-                    text: "Global network of founders, operators and decision-makers.",
+                    text: "03. Position Your Business",
                 },
                 {
                     title: "Always-on support",
-                    text: "AI and human concierge handling planning and logistics.",
+                    text: "04. Serve Clients",
+                },
+                {
+                    title: "Always-on support",
+                    text: "05. Grow & Expand",
                 },
             ],
         },
@@ -160,7 +180,7 @@ export default function MembershipAudienceSection() {
                     </TextReveal>
                 </div>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[130vh] 2xl:h-[90vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh] 2xl:h-[105vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -252,9 +272,9 @@ export default function MembershipAudienceSection() {
                                         key={index}
                                         className="reveal-item border-t border-white/20 py-5"
                                     >
-                                        <h4 className="font-semibold text-white">
+                                        {/* <h4 className="font-semibold text-white">
                                             {item.title}
-                                        </h4>
+                                        </h4> */}
 
                                         <p className="mt-1 text-white/80">
                                             {item.text}

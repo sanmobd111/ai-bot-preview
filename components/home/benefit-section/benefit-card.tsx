@@ -35,7 +35,7 @@ export default function BenefitCard({ card }) {
 
         <div className={`mr-3 mt-2 overflow-hidden duration-300 ${open ? "max-h-96" : "max-h-0"
           }`}>
-          <div className='text-sm leading-[1.4]'>Member-only negotiated rates and privileges at 500+ luxury hotels worldwide, many 30–50% off </div>
+          <div className='text-sm leading-[1.4]'>{card?.subtitle} </div>
           <div className="grid grid-cols-2 gap-2 mt-4">
             <div className='w-full aspect-[8/3] bg-white/15 rounded-sm backdrop-blur-md flex justify-around items-center'>
               <img src={logos[0]} alt="" className=" flex items-center justify-center opacity-70 w-20" />
