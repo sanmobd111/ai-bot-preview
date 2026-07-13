@@ -14,7 +14,7 @@ const logos = [
     "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/united-e9f3084a208f24775c2cf990337699872983d7bc690d3424bc6052ab0cc0580b.svg"
 ]
 
-export default function HeroSection() {
+export default function HeroSection({ data }) {
     return (
 
         <section className="p-2 h-screen lg:h-[120vh] xl:h-screen box-border">
@@ -37,16 +37,13 @@ export default function HeroSection() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center -translate-y-[4%]">
                     <h1
                         className="max-w-5xl text-[45px] feature-display font-normal leading-[1]  md:text-7xl xl:text-8xl 2xl:text-[120px]"
-                    >
-                        Own Your Lane
-                        <br />
-                        <span className="italic">In The AI Economy.</span>
-                    </h1>
+                        dangerouslySetInnerHTML={{ __html: data?.title }}
+                    />
 
                     <p className="mt-6 lg:mt-8 2xl:mt-10 max-w-2xl xl:max-w-3xl 2xl:max-w-2xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
-                        Launch your own branded AI business, build recurring revenue, and establish your position in one of the fastest-growing sectors of the modern economy.
+                        {data?.subtitle}
                     </p>
-                    <AnimatedPreviewButton text="Become a White Label Partner" />
+                    <AnimatedPreviewButton text={data?.btnText} />
                 </div>
 
                 <div className="absolute bottom-8 z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-6">

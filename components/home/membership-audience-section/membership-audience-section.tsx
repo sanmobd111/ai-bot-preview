@@ -9,136 +9,11 @@ import { useRef, useState } from "react";
 import "./membership-audience-section.css";
 import SecondaryPreviewButton from "@/components/shared/preview-button/secondary-preview-button";
 
-export default function MembershipAudienceSection() {
+export default function MembershipAudienceSection({data}) {
     const [activeTab, setActiveTab] = useState(0);
     const parentContainerRef = useRef<HTMLDivElement>(null);
 
-    const audiences = [
-        {
-            id: 1,
-            tab: "The BizNest Advantage",
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-leaders-a3c6646619763dc4fecde22d8b76826e9517608bb092b59ffe4608044cbfe1f0.jpg",
-
-            heroTitle: "THE BIZNEST ",
-            heroItalic: "ADVANTAGE",
-
-            title:
-                "You Focus On Building. We Handle The Technology.",
-
-            description:
-                "Building a technology company from scratch can require years of development, infrastructure, support systems, and operational complexity. BizNest Unlimited removes those barriers by providing the technology, systems, automation, and infrastructure that power service delivery behind the scenes. Instead of managing software development, entrepreneurs can focus on building their brand, serving clients, generating revenue, and growing their business.",
-
-            features: [
-                {
-                    title: "Exceptional travel",
-                    text: "✓ No Coding Required",
-                },
-                {
-                    title: "Lifestyle advantages",
-                    text: "✓ No Software Development",
-                },
-                {
-                    title: "Trusted circle",
-                    text: "✓ No Infrastructure Management",
-                },
-                {
-                    title: "Always-on support",
-                    text: "✓ No Technical Complexity",
-                },
-                {
-                    title: "Always-on support",
-                    text: "✓ Focus On Clients & Revenue",
-                },
-                {
-                    title: "Always-on support",
-                    text: "✓ Built For Entrepreneurs",
-                },
-            ],
-        },
-        {
-            id: 2,
-            tab: "Recurring Revenue Potential",
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-entrepreneurs-3e4f19ae20054f93ba5fb6547f21c64c01ef12fd452fd4b0f9bd9300b3b22c44.jpg",
-
-            heroTitle: "RECURRING ",
-            heroItalic: "REVENUE POTENTIAL",
-
-            title:
-                "Build Once. Grow Month After Month.",
-
-            description:
-                "Many traditional businesses start each month at zero. Every sale must be replaced, every customer must be reacquired, and growth often depends on constant effort. BizNest Unlimited is designed around building long-term client relationships and recurring service opportunities that can continue generating value over time. As your client base grows, so does the potential for predictable revenue, retention, referrals, and sustainable business growth.",
-
-            features: [
-                {
-                    title: "Better travel",
-                    text: "✓ Monthly Recurring Revenue Potential",
-                },
-                {
-                    title: "Smarter spend",
-                    text: "✓ Long-Term Client Relationships",
-                },
-                {
-                    title: "Real network",
-                    text: "✓ Repeatable Business Model",
-                },
-                {
-                    title: "Always-on support",
-                    text: "✓ Scalable Growth Opportunities",
-                },
-                {
-                    title: "Always-on support",
-                    text: "✓ Client Retention Focus",
-                },
-                {
-                    title: "Always-on support",
-                    text: "✓ Sustainable Revenue Development",
-                },
-            ],
-        },
-        {
-            id: 3,
-            tab: "Entrepreneurial Professionals",
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-professionals-900229f36358a5a61451dba3902d569cc80ede236cf686bec0303977e275a724.jpg",
-
-            heroTitle: "FAST ",
-            heroItalic: "LAUNCH PATH",
-
-            title:
-                "A Clear Path From Idea To Opportunity.",
-
-            description:
-                "BizNest Unlimited provides a structured pathway designed to help entrepreneurs move from interest to execution without unnecessary complexity. Rather than spending months planning software, hiring developers, or building infrastructure, partners can focus on launching their brand, positioning their business, attracting clients, and creating momentum within their market. Process",
-
-            features: [
-                {
-                    title: "Loyalty status unlocked",
-                    text: "01. Join BizNest Unlimited ",
-                },
-                {
-                    title: "Preferred travel",
-                    text: "02. Launch Under Your Brand",
-                },
-                {
-                    title: "Trusted circle",
-                    text: "03. Position Your Business",
-                },
-                {
-                    title: "Always-on support",
-                    text: "04. Serve Clients",
-                },
-                {
-                    title: "Always-on support",
-                    text: "05. Grow & Expand",
-                },
-            ],
-        },
-    ];
-
-    const current = audiences[activeTab];
+    const current = data?.audiences[activeTab];
 
 
     return (
@@ -163,13 +38,16 @@ export default function MembershipAudienceSection() {
                                 my-6
                                 lg:my-0
                             "
+                        data={<>
+                            Designed for every
+                            <br />
+                            stage{" "}
+                            <span className="italic font-light text-zinc-500">
+                                of ambition.
+                            </span>
+                        </>}
                     >
-                        Designed for every
-                        <br />
-                        stage{" "}
-                        <span className="italic font-light text-zinc-500">
-                            of ambition.
-                        </span>
+
                     </CharacterReveal>
 
                 </div>
@@ -184,7 +62,7 @@ export default function MembershipAudienceSection() {
                 ref={parentContainerRef}
             >
                 {
-                    audiences.map((item, index) => (
+                    data?.audiences.map((item, index) => (
                         <img
                             key={index}
                             src={item.image}
@@ -201,7 +79,7 @@ export default function MembershipAudienceSection() {
                 <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
                     <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
                     <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
-                        {audiences.map((item, index) => (
+                        {data?.audiences.map((item, index) => (
                             <button
                                 key={item.id}
                                 onClick={() => setActiveTab(index)}
@@ -292,7 +170,7 @@ export default function MembershipAudienceSection() {
             </div>
             <div className="lg:hidden">
                 {
-                    audiences.map((item, index) => (
+                    data?.audiences.map((item, index) => (
                         <MembershipCard
                             key={index}
                             current={item}

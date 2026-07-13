@@ -18,7 +18,7 @@ const partners = [
   "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/partners/avis-row2-121ea3e41ae2ee78c693dae6fad0ecc83257cae038bbdfbb714323fd3e00d04c.svg",
 ];
 
-export default function PartnersSection() {
+export default function PartnersSection({ data }) {
   return (
     <section className="overflow-hidden bg-[#ebebe6] py-0 lg:py-24">
       {/* Background Marquees */}
@@ -69,7 +69,7 @@ export default function PartnersSection() {
             className="mx-auto max-w-2xl max-h-2xl p-12  text-center rounded-full relative z-10 "
           >
             <p className="mb-4 lg:mb-10 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
-              Our Partners
+              {data?.title}
             </p>
 
             <h2
@@ -80,20 +80,11 @@ export default function PartnersSection() {
                 text-[#2e2e2e]
               "
             >
-              Your AI Business.
-              Backed By
-              <br />
-              {/* from the world&apos;s
-              <br /> */}
-              <span className="italic text-zinc-500 feature-display">
-                BizNest Unlimited
-              </span>
+              {data?.heading}
             </h2>
 
             <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-600">
-              Unlock negotiated pricing, priority treatment, and the experiences
-              our members can&apos;t access anywhere else.This isn’t a list of
-              discounts — it&apos;s fast-track access to what you deserve.
+              {data?.subtitle}
             </p>
             <div className="flex justify-center">
               <AnimatedPreviewButton />

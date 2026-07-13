@@ -6,11 +6,10 @@ import { IoMdClose } from "react-icons/io";
 
 export default function MobileMenu({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
     const menuItems = [
-        "Home",
-        "About Us",
-        "Benefits",
-        "Community",
-        "Partnerships",
+        {
+            name: "Site 2",
+            link: "/site-2",
+        }
     ];
 
     const footerLinks = [
@@ -35,16 +34,16 @@ export default function MobileMenu({ isOpen, setIsOpen }: { isOpen: boolean, set
             <nav className="mt-14">
                 <ul className="space-y-1">
                     {menuItems.map((item, index) => (
-                        <li key={item}>
+                        <li key={item?.name}>
                             <a
-                                href="#"
+                                href={item?.link}
                                 className={`
                   block font-serif text-[64px] leading-none tracking-tight
                   transition-opacity duration-300 hover:opacity-70
                   ${index === 0 ? "italic text-gray-500" : "text-[#232323]"}
                 `}
                             >
-                                {item}
+                                {item?.name}
                             </a>
                         </li>
                     ))}

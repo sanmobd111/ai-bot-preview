@@ -8,7 +8,7 @@ import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
 import TestimonialSection from "@/components/home/testimonials-section/testimonials-section";
 import Container from "@/components/shared/container";
-import { banner, benefits, faq, footerReveal, membership, membershipAudience, network, partners, testimonials } from "@/data/site1";
+import { banner, benefits, faq, footerReveal, membership, membershipAudience, network, partners, testimonials } from "@/data/site2";
 
 
 export default function Home() {
