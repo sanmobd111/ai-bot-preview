@@ -9,60 +9,7 @@ interface FAQItem {
   answer: string;
 }
 
-const faqData: FAQItem[] = [
-  {
-    question: "Do I need AI or technical experience?",
-    answer:
-      "No. BizNest Unlimited  is designed for entrepreneurs, consultants, agency owners, coaches, advisors, and business builders. The focus is on building relationships, serving clients, and growing your business rather than developing technology.",
-  },
-  {
-    question: "Can I operate under my own brand?",
-    answer:
-      "Yes. The White Label Partnership is designed to allow you to build and grow under your own business identity while maintaining ownership of your brand and client relationships.",
-  },
-  {
-    question: "Do I need an existing business to join?",
-    answer:
-      "No. Some partners use BizNest Unlimited to expand an existing business, while others use it as the foundation for a completely new venture.",
-  },
-  {
-    question: "What types of businesses can benefit from AI solutions?",
-    answer:
-      "AI solutions are being adopted across nearly every industry, including professional services, real estate, healthcare, home services, consulting, coaching, retail, and many others.",
-  },
-  {
-    question: "How does BizNest Unlimited support its partners?",
-    answer:
-      "Partners receive access to infrastructure, systems, resources, and business development support designed to help them launch, serve clients, and grow with confidence.",
-  },
-  {
-    question: "How quickly can I get started?",
-    answer:
-      "Once onboarded, partners can begin exploring the platform, learning the opportunity, and positioning their business immediately.",
-  },
-  {
-    question: "Is this a franchise?",
-    answer:
-      "No. BizNest Unlimited is a White Label Partnership that allows entrepreneurs to build under their own brand while leveraging shared infrastructure, systems, and resources.",
-  },
-  {
-    question: "Who is this opportunity best suited for?",
-    answer:
-      "Entrepreneurs, consultants, agency owners, coaches, advisors, operators, sales professionals, and growth-minded individuals seeking to build within the rapidly expanding AI economy.",
-  },
-  {
-    question: "Do I need to create the technology myself?",
-    answer:
-      "No. BizNest Unlimited  provides the infrastructure, systems, automation, and support that power service delivery behind the scenes, allowing partners to focus on clients, growth, and business development.",
-  },
-  {
-    question: "Can this be operated alongside my existing business?",
-    answer:
-      "Yes. Many partners integrate BizNest Unlimited  into an existing business, while others choose to build a dedicated AI-focused brand from the ground up.",
-  },
-];
-
-const FaqSection: React.FC = () => {
+const FaqSection: React.FC = ({ data }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -88,7 +35,7 @@ const FaqSection: React.FC = () => {
             </p>
             {/* Button */}
             <button className="cursor-pointer inline-flex items-center gap-3 rounded-xl bg-black px-4 py-3 text-white font-medium shadow-md">
-              Become A White Label Partner
+              {data?.btnText}
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
                 <ArrowRight size={16} />
               </span>
@@ -97,7 +44,7 @@ const FaqSection: React.FC = () => {
 
           {/*  faqs */}
           <div className="grid w-full grid-cols-1 gap-4">
-            {faqData.map((item, index) => (
+            {data?.faqs.map((item, index) => (
               <div
                 key={index}
                 className="overflow-hidden rounded-xl bg-white p-5 transition-all duration-300"
@@ -119,8 +66,8 @@ const FaqSection: React.FC = () => {
 
                 <div
                   className={`grid transition-all duration-500 ease-in-out ${openIndex === index
-                      ? "grid-rows-[1fr] opacity-100 mt-4"
-                      : "grid-rows-[0fr] opacity-0"
+                    ? "grid-rows-[1fr] opacity-100 mt-4"
+                    : "grid-rows-[0fr] opacity-0"
                     }`}
                 >
                   <div className="overflow-hidden">

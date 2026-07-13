@@ -59,7 +59,7 @@ function useViewport() {
   return width;
 }
 
-export default function TestimonialSlider() {
+export default function TestimonialSlider({data}) {
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -138,7 +138,7 @@ export default function TestimonialSlider() {
           }
           className="founders-swiper"
         >
-          {testimonials.map((item) => (
+          {data?.testimonials.map((item) => (
             <SwiperSlide
               key={item.id}
             >

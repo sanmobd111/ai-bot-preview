@@ -8,7 +8,7 @@ import JoinFounderSection from "./join-founder-section";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function FooterRevealPage() {
+export default function FooterRevealPage({data}) {
     const footerRef = useRef<HTMLElement>(null);
     const footerContentRef = useRef<HTMLDivElement>(null);
     const topSectionRef = useRef<HTMLElement>(null);
@@ -103,7 +103,7 @@ export default function FooterRevealPage() {
 
     return (
         <main className="relative bg-[#f5f5f0]  pb-4 md:pb-8">
-            <JoinFounderSection ref={topSectionRef} />
+            <JoinFounderSection ref={topSectionRef} data={data?.joinFounder} />
             <Footer ref={footerRef} contentRef={footerContentRef} />
         </main>
     );

@@ -14,10 +14,10 @@ export default function Navbar() {
     const previousScrollRef = useRef(0);
 
     const links = [
-        "About Us",
-        "Benefits",
-        "Community",
-        "Partnerships",
+        {
+            name: "Site 2",
+            link: "/site-2",
+        },
     ];
 
     useEffect(() => {
@@ -39,13 +39,13 @@ export default function Navbar() {
                     <div className="flex items-center justify-between px-4 py-2 md:px-4 lg:pl-8 relative">
                         {/* Desktop Links */}
                         <div className="hidden items-center lg:gap-4  lg:flex">
-                            {links.map((link) => (
+                            {links.map((item) => (
                                 <a
-                                    href="#"
+                                    href={item?.link}
                                     className="group relative inline-block"
-                                    key={link}
+                                    key={item?.name}
                                 >
-                                    {link}
+                                    {item?.name}
 
                                     <span
                                         className="

@@ -2,30 +2,7 @@ import CharacterReveal from "../shared/character-reveal";
 import Counter from "../shared/counter";
 import ZoomIn from "../shared/zoom-in";
 
-const stats = [
-    {
-        value: 80,
-        suffix: "%",
-        label: "Growing Investment",
-    },
-    {
-        value: 90,
-        suffix: "%+",
-        label: "Growing Adoption",
-    },
-    {
-        value: "Trillions",
-        suffix: "",
-        label: "Growing Opportunity",
-    },
-    {
-        value: "24/7",
-        suffix: "",
-        label: "Growing Demand",
-    },
-];
-
-export default function NetworkStatsSection() {
+export default function NetworkStatsSection({ data }) {
     return (
         <section className="py-10 xl:py-16 2xl:py-24 mt-6 lg:mt-0">
             <div className="mx-auto max-w-400">
@@ -41,21 +18,14 @@ export default function NetworkStatsSection() {
               tracking-[-0.04em]
               text-[#2e2e2e]
             "
-                    >
-                        A Market with {" "}
-                        <div className="italic inline-block font-light text-zinc-500 feature-display">
-                            Massive
-                        </div>
-                        {" "}
-                        <div className="italic inline-block font-light text-zinc-500 feature-display">
-                            Potential.
-                        </div>
-                    </CharacterReveal>
+                        data={data?.title}
+                    />
+
                 </div>
 
                 {/* Stats Grid */}
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                    {stats.map((item) => (
+                    {data?.stats?.map((item) => (
                         <ZoomIn
                             key={item.label}
                             className="

@@ -8,7 +8,7 @@ import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function CharacterReveal({
-    children,
+    data,
     className,
 }: {
     children: React.ReactNode;
@@ -48,8 +48,9 @@ export default function CharacterReveal({
 
     return (
         <div className="overflow-hidden">
-            <h1 ref={textRef} className={className}>
-                {children}
+            <h1 ref={textRef} className={className}
+            >
+                {data}
             </h1>
         </div>
     );
