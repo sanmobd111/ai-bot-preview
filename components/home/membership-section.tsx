@@ -17,7 +17,7 @@ export default function MembershipSection({ data }) {
                         {data?.smallTitle}
                     </TextReveal>
 
-                    <div className="grid xl:grid-cols-[65%_30%] justify-between gap-6 xl:gap-16">
+                    <div className="justify-between gap-6 xl:gap-16">
                         <CharacterReveal
                             className="
                             feature-display
@@ -31,15 +31,15 @@ md:text-6xl
 text-5xl
 wrap-break-word   
               "
-              data={data?.title}
+                            data={data?.title}
                         />
 
-                        <div className="flex items-end">
-                            <TextReveal
-                                className="xl:max-w-md text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
-                                {data?.subtitle}
-                            </TextReveal>
-                        </div>
+                    </div>
+                    <div className="flex items-end mt-6">
+                        <TextReveal
+                            className="text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                            {data?.subtitle}
+                        </TextReveal>
                     </div>
                 </div>
                 <MembershipSlider data={data?.cards} />

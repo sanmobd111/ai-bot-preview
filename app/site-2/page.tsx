@@ -1,13 +1,13 @@
-import BenefitsSection from "@/components/home/benefit-section/benefits-section";
 import FaqSection from "@/components/home/faq-section";
 import FooterReveal from "@/components/home/footer-reveal";
-import HeroSection from "@/components/home/hero-section";
-import MembershipAudienceSection from "@/components/home/membership-audience-section/membership-audience-section";
 import MembershipSection from "@/components/home/membership-section";
 import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
 import TestimonialSection from "@/components/home/testimonials-section/testimonials-section";
 import Container from "@/components/shared/container";
+import TravelBenefit from "@/components/site-2/benefit-section/benefits-section";
+import HeroSection from "@/components/site-2/hero-section";
+import MembershipAudienceSection from "@/components/site-2/membership-audience-section/membership-audience-section";
 import { banner, benefits, faq, footerReveal, membership, membershipAudience, network, partners, testimonials } from "@/data/site2";
 
 
@@ -20,7 +20,7 @@ export default function Home() {
         <MembershipSection data={membership} />
         <NetworkStatsSection data={network} />
       </Container>
-      <BenefitsSection data={benefits} />
+      <TravelBenefit data={benefits} />
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />
