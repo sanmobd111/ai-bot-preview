@@ -1,7 +1,6 @@
 export const banner = {
-    title: `Every Missed Call
-            <br />
-            <span className="italic">Is Missed Opportunity</span>`,
+    title: `Every Missed Call Is 
+            <span className="italic">Missed Opportunity</span>`,
     subtitle: `Every day, customers call ready to do business. If no one answers, many simply call your competitor.
 
 Your AI Receptionist answers every call, captures every lead, books appointments, and keeps your business available 24/7—so you never lose another customer or miss another opportunity.`,
@@ -13,7 +12,6 @@ export const membership = {
     title: (
         <>
             Every Missed Call
-            <br className="hidden xl:block 2xl:hidden" />
             Has A Cost.
         </>
     ),
@@ -118,21 +116,29 @@ export const benefits = {
                     title: "Answer Every Call",
                     subtitle:
                         "Every caller receives a professional greeting, ensuring your business is always available when customers need assistance.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
                     title: "Capture Every Opportunity",
                     subtitle:
                         "Collect caller information, service requests, and customer inquiries so every opportunity is ready for follow-up.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
                     title: "Book More Appointments",
                     subtitle:
                         "Automatically schedule consultations, estimates, and appointments without creating additional work for your team.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Guide Every Caller",
                     subtitle:
                         "Answer common questions and direct callers to the right next step with fast, consistent service.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
             ],
         },
@@ -156,21 +162,29 @@ export const benefits = {
                     title: "More Productive Staff",
                     subtitle:
                         "Reduce repetitive phone interruptions so employees can focus on higher-value work.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                 },
                 {
                     title: "Better Customer Service",
                     subtitle:
                         "Provide immediate, professional responses that leave every caller with a positive impression.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
                 {
                     title: "Greater Efficiency",
                     subtitle:
                         "Automate routine conversations while maintaining consistent communication.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "More Time To Grow",
                     subtitle:
                         "Spend less time answering phones and more time building your business.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
             ],
         },
@@ -194,21 +208,29 @@ export const benefits = {
                     title: "Business Knowledge",
                     subtitle:
                         "Answer questions using your services, policies, pricing, and FAQs.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
                     title: "Smart Routing",
                     subtitle:
                         "Direct callers to the right department or team member.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
                     title: "Custom Workflows",
                     subtitle:
                         "Match the way your business already operates.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Personalized Experience",
                     subtitle:
                         "Deliver conversations that sound like an extension of your business.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
             ],
         },
@@ -232,21 +254,29 @@ export const benefits = {
                     title: "Contractors",
                     subtitle:
                         "Capture estimate requests and service calls before competitors do.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                 },
                 {
                     title: "Medical Practices",
                     subtitle:
                         "Schedule appointments while providing patients with immediate assistance.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
                 {
                     title: "Professional Offices",
                     subtitle:
                         "Support legal, accounting, insurance, and consulting firms with intelligent call handling.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Retail & Hospitality",
                     subtitle:
                         "Answer questions quickly while improving every customer's experience.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
             ],
         },
@@ -270,21 +300,29 @@ export const benefits = {
                     title: "Setup",
                     subtitle:
                         "We configure your AI Receptionist around your business.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
                     title: "Training",
                     subtitle:
                         "Your AI learns your services, policies, and customer interactions.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
                     title: "Testing",
                     subtitle:
                         "Review conversations and fine-tune your experience before going live.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Launch",
                     subtitle:
                         "Start serving customers with confidence from day one.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
             ],
         },
@@ -308,21 +346,29 @@ export const benefits = {
                     title: "Reliable Performance",
                     subtitle:
                         "Dependable technology that answers every call professionally.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                 },
                 {
                     title: "Ongoing Support",
                     subtitle:
                         "Expert assistance whenever you need help.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
                 {
                     title: "Continuous Innovation",
                     subtitle:
                         "Benefit from ongoing improvements as AI technology evolves.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Built For Growth",
                     subtitle:
                         "Designed to support your business today and as it continues growing.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
             ],
         },
@@ -346,21 +392,29 @@ export const benefits = {
                     title: "Live Demonstration",
                     subtitle:
                         "See real conversations and experience how your AI Receptionist works.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
                     title: "Business Consultation",
                     subtitle:
                         "Receive recommendations based on your business and goals.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
                     title: "Simple Onboarding",
                     subtitle:
                         "Start with a guided implementation process built around your needs.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Long-Term Success",
                     subtitle:
                         "Partner with a team committed to helping your business continue growing.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
             ],
         },

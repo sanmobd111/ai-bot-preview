@@ -23,16 +23,14 @@ export default function MembershipAudienceSection({ data }) {
 
     return (
         <section className="px-4 py-6 md:py-8 lg:py-10 bg-[#f5f5f0]">
-            <div className="mb-10 md:mb-14 lg:mb-20 mt-12 lg:w-[90%] mx-auto">
+            <div className=" mt-12 mb-10 md:mb-14 lg:mb-20 w-[95%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                 >
                     OUR MEMBERS
                 </TextReveal>
-
-                <div className="max-w-2xl mb-4">
-                    <CharacterReveal
-                        className="
+                <CharacterReveal
+                    className="
                             feature-display
                             font-light
                             leading-[1.2]
@@ -43,27 +41,26 @@ export default function MembershipAudienceSection({ data }) {
                                 my-6
                                 lg:my-0
                             "
-                        data={<>
-                            Designed for every
-                            <br />
-                            stage{" "}
-                            <span className="italic font-light text-zinc-500">
-                                of ambition.
-                            </span>
-                        </>}
-                    >
+                    data={<>
+                        Designed for every
+                        stage {" "}
+                        <span className="italic font-light text-zinc-500">
+                            of
+                        </span>
+                        {" "}
+                        <span className="italic font-light text-zinc-500">
+                            ambition.
+                        </span>
+                    </>}
+                >
 
-                    </CharacterReveal>
-
-                </div>
-                <div className="flex justify-end">
-                    <TextReveal
-                        className="lg:max-w-xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
-                        FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
-                    </TextReveal>
-                </div>
+                </CharacterReveal>
+                <TextReveal
+                    className="text-base mt-6 leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text ">
+                    FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
+                </TextReveal>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh]  2xl:h-[113vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[150vh]  2xl:h-[123vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -82,32 +79,29 @@ export default function MembershipAudienceSection({ data }) {
 
                 <div className="content-container">
                     {/* Tabs */}
-                    <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
-                        <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
-                        <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
+                    <div className="absolute top-4 left-10 right-10 z-20 rounded-xl">
+                        <div className="relative z-[22] flex flex-wrap justify-center gap-4 p-1 py-2 xl:p-2">
                             {data?.audiences.map((item, index) => (
                                 <button
                                     key={item.id}
                                     onClick={() => setActiveTab(index)}
                                     className={`
-                  flex-1
-                  rounded-xl
-                  py-1
-                  px-4
-                  text-xs
-                  md:text-sm
-                  lg:text-base
-                  transition-all
-                  duration-300
-                  ${activeTab === index
-                                            ? "text-black"
-                                            : "text-white"
+                rounded-xl
+                py-2.5
+                px-6
+                text-xs
+                md:text-sm
+                lg:text-base
+                transition-all
+                duration-300
+                whitespace-nowrap
+                ${activeTab === index
+                                            ? "bg-white text-black"
+                                            : "bg-white/10 text-white backdrop-blur-xl"
                                         }
-                `}
+            `}
                                 >
-                                    <span className="mr-2">
-                                        0{index + 1}.
-                                    </span>
+                                    <span className="mr-2">0{index + 1}.</span>
 
                                     <span className="hidden md:inline">
                                         {item.tab}
@@ -118,7 +112,7 @@ export default function MembershipAudienceSection({ data }) {
                     </div>
 
                     {/* Content */}
-                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_32%] 2xl:grid-cols-[50%_35%] justify-between pt-20">
+                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_50%] 2xl:grid-cols-[50%_35%] justify-between pt-40">
                         {/* Left Side */}
                         <div className="flex items-end p-4 md:p-6 lg:p-10">
                             <div>
