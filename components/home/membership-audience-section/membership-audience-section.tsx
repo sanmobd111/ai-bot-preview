@@ -5,16 +5,21 @@ import AnimatedPreviewButton from "@/components/shared/preview-button/animated-p
 import StaggerReveal from "@/components/shared/stagger-reveal";
 import TextReveal from "@/components/shared/text-reveal";
 import { Plus, X } from "lucide-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./membership-audience-section.css";
 import SecondaryPreviewButton from "@/components/shared/preview-button/secondary-preview-button";
 
-export default function MembershipAudienceSection({data}) {
+export default function MembershipAudienceSection({ data }) {
     const [activeTab, setActiveTab] = useState(0);
     const parentContainerRef = useRef<HTMLDivElement>(null);
 
     const current = data?.audiences[activeTab];
 
+
+    useEffect(() => {
+        const contentContainers = document.getElementsByClassName("content-container")
+        console.log(contentContainers)
+    }, []);
 
     return (
         <section className="px-4 py-6 md:py-8 lg:py-10 bg-[#f5f5f0]">
@@ -58,7 +63,7 @@ export default function MembershipAudienceSection({data}) {
                     </TextReveal>
                 </div>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh] 2xl:h-[105vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh]  2xl:h-[113vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -75,15 +80,16 @@ export default function MembershipAudienceSection({data}) {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/45 z-[6] " />
 
-                {/* Tabs */}
-                <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
-                    <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
-                    <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
-                        {data?.audiences.map((item, index) => (
-                            <button
-                                key={item.id}
-                                onClick={() => setActiveTab(index)}
-                                className={`
+                <div className="content-container">
+                    {/* Tabs */}
+                    <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
+                        <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
+                        <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
+                            {data?.audiences.map((item, index) => (
+                                <button
+                                    key={item.id}
+                                    onClick={() => setActiveTab(index)}
+                                    className={`
                   flex-1
                   rounded-xl
                   py-1
@@ -93,78 +99,78 @@ export default function MembershipAudienceSection({data}) {
                   lg:text-base
                   transition-all
                   duration-300
-
                   ${activeTab === index
-                                        ? "text-black"
-                                        : "text-white"
-                                    }
+                                            ? "text-black"
+                                            : "text-white"
+                                        }
                 `}
-                            >
-                                <span className="mr-2">
-                                    0{index + 1}.
-                                </span>
+                                >
+                                    <span className="mr-2">
+                                        0{index + 1}.
+                                    </span>
 
-                                <span className="hidden md:inline">
-                                    {item.tab}
-                                </span>
-                            </button>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Content */}
-                <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_32%] 2xl:grid-cols-[50%_35%] justify-between pt-20">
-                    {/* Left Side */}
-                    <div className="flex items-end p-4 md:p-6 lg:p-10">
-                        <div>
-                            <StaggerReveal className="text-white leading-none" animationKey={activeTab} parentContainerRef={parentContainerRef} delay={1}>
-                                <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light reveal-item">
-                                    {current.heroTitle}
-                                </span>
-
-                                <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl  italic font-light reveal-item feature-display">
-                                    {current.heroItalic}
-                                </span>
-                            </StaggerReveal>
+                                    <span className="hidden md:inline">
+                                        {item.tab}
+                                    </span>
+                                </button>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Right Side */}
-                    <div className="flex items-center p-4 md:p-6 lg:p-10">
-                        <StaggerReveal
-                            parentContainerRef={parentContainerRef}
-                            animationKey={activeTab}
-                            delay={1}
-                        >
-                            <h3 className="reveal-item text-white text-[45px] leading-[1]">
-                                {current.title}
-                            </h3>
+                    {/* Content */}
+                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_32%] 2xl:grid-cols-[50%_35%] justify-between pt-20">
+                        {/* Left Side */}
+                        <div className="flex items-end p-4 md:p-6 lg:p-10">
+                            <div>
+                                <StaggerReveal className="text-white leading-none" animationKey={activeTab} parentContainerRef={parentContainerRef} delay={1}>
+                                    <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light reveal-item">
+                                        {current.heroTitle}
+                                    </span>
 
-                            <p className="reveal-item mt-8 text-white text-lg">
-                                {current.description}
-                            </p>
+                                    <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl  italic font-light reveal-item feature-display">
+                                        {current.heroItalic}
+                                    </span>
+                                </StaggerReveal>
+                            </div>
+                        </div>
 
-                            <div className="mt-6">
-                                {current.features.map((item, index) => (
-                                    <div
-                                        key={index}
-                                        className="reveal-item border-t border-white/20 py-5"
-                                    >
-                                        {/* <h4 className="font-semibold text-white">
+                        {/* Right Side */}
+                        <div className="flex items-center p-4 md:p-6 lg:p-10">
+                            <StaggerReveal
+                                parentContainerRef={parentContainerRef}
+                                animationKey={activeTab}
+                                delay={1}
+                            >
+                                <h3 className="reveal-item text-white text-[45px] leading-[1]">
+                                    {current.title}
+                                </h3>
+
+                                <p className="reveal-item mt-8 text-white text-lg">
+                                    {current.description}
+                                </p>
+
+                                <div className="mt-6">
+                                    {current.features.map((item, index) => (
+                                        <div
+                                            key={index}
+                                            className="reveal-item border-t border-white/20 py-5"
+                                        >
+                                            {/* <h4 className="font-semibold text-white">
                                             {item.title}
                                         </h4> */}
 
-                                        <p className="mt-1 text-white/80">
-                                            {item.text}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
+                                            <p className="mt-1 text-white/80">
+                                                {item.text}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
 
-                            <div className="reveal-item">
-                                <AnimatedPreviewButton className="mt-6! lg:mt-8!" />
-                            </div>
-                        </StaggerReveal>
+                                <div className="reveal-item">
+                                    <AnimatedPreviewButton className="mt-6! lg:mt-8!" />
+                                </div>
+                            </StaggerReveal>
+                        </div>
                     </div>
                 </div>
             </div>
