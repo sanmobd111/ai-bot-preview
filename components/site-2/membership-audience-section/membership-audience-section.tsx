@@ -23,16 +23,14 @@ export default function MembershipAudienceSection({ data }) {
 
     return (
         <section className="px-4 py-6 md:py-8 lg:py-10 bg-[#f5f5f0]">
-            <div className="mb-10 md:mb-14 lg:mb-20 mt-12 lg:w-[90%] mx-auto">
+            <div className=" mt-12 mb-10 md:mb-14 lg:mb-20 w-[95%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                 >
                     OUR MEMBERS
                 </TextReveal>
-
-                <div className="max-w-2xl mb-4">
-                    <CharacterReveal
-                        className="
+                <CharacterReveal
+                    className="
                             feature-display
                             font-light
                             leading-[1.2]
@@ -43,27 +41,26 @@ export default function MembershipAudienceSection({ data }) {
                                 my-6
                                 lg:my-0
                             "
-                        data={<>
-                            Designed for every
-                            <br />
-                            stage{" "}
-                            <span className="italic font-light text-zinc-500">
-                                of ambition.
-                            </span>
-                        </>}
-                    >
+                    data={<>
+                        Designed for every
+                        stage {" "}
+                        <span className="italic font-light text-zinc-500">
+                            of
+                        </span>
+                        {" "}
+                        <span className="italic font-light text-zinc-500">
+                            ambition.
+                        </span>
+                    </>}
+                >
 
-                    </CharacterReveal>
-
-                </div>
-                <div className="flex justify-end">
-                    <TextReveal
-                        className="lg:max-w-xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
-                        FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
-                    </TextReveal>
-                </div>
+                </CharacterReveal>
+                <TextReveal
+                    className="text-base mt-6 leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text ">
+                    FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
+                </TextReveal>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh]  2xl:h-[123vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[150vh]  2xl:h-[123vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -115,7 +112,7 @@ export default function MembershipAudienceSection({ data }) {
                     </div>
 
                     {/* Content */}
-                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_32%] 2xl:grid-cols-[50%_35%] justify-between pt-40">
+                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_50%] 2xl:grid-cols-[50%_35%] justify-between pt-40">
                         {/* Left Side */}
                         <div className="flex items-end p-4 md:p-6 lg:p-10">
                             <div>

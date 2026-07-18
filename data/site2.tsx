@@ -12,7 +12,6 @@ export const membership = {
     title: (
         <>
             Every Missed Call
-            <br className="hidden xl:block 2xl:hidden" />
             Has A Cost.
         </>
     ),

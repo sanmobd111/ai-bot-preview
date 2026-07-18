@@ -654,7 +654,7 @@ export default function TravelBenefit({ data }) {
                     <div className="absolute inset-0 bg-black/35" />
 
                     {/* Categories */}
-                    <div className="absolute left-6 top-6 lg:left-8 lg:top-8 z-10 flex flex-col text-[50px] 2xl:text-[60px] space-y-10">
+                    <div className="absolute left-6 top-6 lg:left-8 lg:top-8 z-10 flex flex-col text-[50px] 2xl:text-[70px] space-y-10 2xl:space-y-8">
                         {data?.categories.map((item, index) => (
                             <button
                                 key={index}
