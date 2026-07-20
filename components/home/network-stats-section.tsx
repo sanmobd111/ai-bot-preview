@@ -1,5 +1,6 @@
 import CharacterReveal from "../shared/character-reveal";
 import Counter from "../shared/counter";
+import TextReveal from "../shared/text-reveal";
 import ZoomIn from "../shared/zoom-in";
 
 export default function NetworkStatsSection({ data }) {
@@ -7,10 +8,11 @@ export default function NetworkStatsSection({ data }) {
         <section className="py-10 xl:py-16 2xl:py-24 mt-6 lg:mt-0">
             <div className="mx-auto max-w-400">
 
-                {/* Heading */}
-                <div className="mb-12 text-center md:mb-14">
-                    <CharacterReveal
-                        className="
+                <div className="mb-6 lg:mb-10 xl:mb-12">
+                    {/* Heading */}
+                    <div className="text-center">
+                        <CharacterReveal
+                            className="
             text-[45px]
             md:text-[55px]
             xl:text-[60px]
@@ -18,9 +20,19 @@ export default function NetworkStatsSection({ data }) {
               tracking-[-0.04em]
               text-[#2e2e2e]
             "
-                        data={data?.title}
-                    />
-
+                            data={data?.title}
+                        />
+                    </div>
+                    {
+                        data?.subtitle && (
+                            <div className="flex justify-center mt-6">
+                                <TextReveal
+                                    className="text-base text-center leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                                    {data?.subtitle}
+                                </TextReveal>
+                            </div>
+                        )
+                    }
                 </div>
 
                 {/* Stats Grid */}

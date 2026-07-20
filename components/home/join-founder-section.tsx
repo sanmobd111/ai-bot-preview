@@ -2,7 +2,7 @@
 
 import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 
-export default function JoinFounderSection({ ref, data }: { ref: React.RefObject<HTMLElement | null> }) {
+export default function  JoinFounderSection({ ref, data }: { ref: React.RefObject<HTMLElement | null> }) {
   return (
     <section
       className="relative h-[540px] lg:h-[640px] z-[9] w-full overflow-hidden bg-cover bg-center translate-y-10"
@@ -30,7 +30,7 @@ export default function JoinFounderSection({ ref, data }: { ref: React.RefObject
           <h2 className="leading-[1.15] tracking-tight text-[46px] md:text-5xl lg:text-[55px] xl:text-6xl">
             {data?.heading}
           </h2>
-          <AnimatedPreviewButton className="lg:mt-9!" />
+          <AnimatedPreviewButton className="lg:mt-9!" text={data?.btnText} />
         </div>
       </div>
     </section>

@@ -21,11 +21,8 @@ export const membership = {
     smallTitle: "BIZNEST UNLIMITED",
     title: (
         <>
-            The Next
-            <br className="hidden xl:block 2xl:hidden" />
-            Business
+            The Next Business Revolution{" "}
             <br className="hidden 2xl:block" />
-            Revolution{" "}
             <span className="italic font-light text-zinc-500 inline-block">
                 Is Already.
             </span>{" "}
@@ -878,10 +875,10 @@ export const footerReveal = {
         smallTitle: "BIZNEST UNLIMITED",
         heading: (
             <>
-            THE OPPORTUNITY {" "}
-            <span className=" italic  feature-display">
-              AHEAD
-            </span>
+                THE OPPORTUNITY {" "}
+                <span className=" italic  feature-display">
+                    AHEAD
+                </span>
             </>
         )
     }

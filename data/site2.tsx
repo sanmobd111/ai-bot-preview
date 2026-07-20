@@ -1,9 +1,8 @@
 export const banner = {
-    title: `Every Missed Call Is 
-            <span className="italic">Missed Opportunity</span>`,
-    subtitle: `Every day, customers call ready to do business. If no one answers, many simply call your competitor.
-
-Your AI Receptionist answers every call, captures every lead, books appointments, and keeps your business available 24/7—so you never lose another customer or miss another opportunity.`,
+    title: `Every Missed Call
+    <br/>
+            <span className="italic">Is A Missed Opportunity</span>`,
+    subtitle: `Every unanswered call can cost your business a customer. Your AI Receptionist answers every call, captures leads, books appointments, and keeps your business available 24/7.`,
     btnText: "Book A Live Demo"
 }
 
@@ -11,89 +10,90 @@ export const membership = {
     smallTitle: "YOUR BUSINESS DESERVES BETTER",
     title: (
         <>
-            Every Missed Call
-            Has A Cost.
+            Missed calls cost money. {" "}
+            <span className="italic font-light text-zinc-500 inline-block">
+                AI resolves that.
+            </span>
         </>
     ),
     subtitle:
-        "Customers expect immediate answers. When calls go unanswered, businesses don't just miss conversations—they lose customers, appointments, referrals, and revenue. Your AI Receptionist responds instantly, greets every caller professionally, captures important information, and guides each conversation to the next step—even after hours and during your busiest days.",
+        "Customers expect immediate answers. Your AI Receptionist ensures every caller receives a professional response, helping you deliver exceptional service around the clock.",
     cards: [
         {
             title: "Never Miss A Customer",
             description:
-                "Every caller receives an immediate, professional response so your business never loses opportunities because no one answered.",
+                "Every call answered. Every opportunity captured.",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-travel-b2ad9d86d872895799a9ae654f43b07857774e0cbfe8548cf424095546ff068f.jpg",
         },
         {
             title: "Turn Calls Into Customers",
             description:
-                "Capture contact information, qualify leads, and organize every opportunity so your team can follow up with confidence.",
+                "Convert more conversations into qualified leads.",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-connect-e80f688b9ae68390b8f4f0ece251678ddaacf1f9cb807bddbde8c7a02ab6558e.jpg",
         },
         {
             title: "Fill Your Calendar",
             description:
-                "Automatically schedule appointments, consultations, estimates, and service requests without adding work to your staff.",
+                "Book appointments automatically—even after hours.",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-benefits-00267a432b889babc23bad083be97a708800e592f55ae2e0a916d9680b9811c1.jpg",
         },
         {
             title: "Reduce Staff Workload",
             description:
-                "Free your team from repetitive phone calls so they can focus on serving customers and growing your business.",
+                "Let your team focus on people, not the phone.",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-business-06c64a737a85944dc7759e471ae570bb27bb13faa0ae3d71bcbf40fc7b57e7cf.jpg",
         },
-    ],
+    ]
 };
 
 export const network = {
     title: (
         <>
-            A Competitive Advantage{" "}
-            <div className="italic inline-block font-light text-zinc-500 feature-display">
-                Businesses
-            </div>{" "}
-            <div className="italic inline-block font-light text-zinc-500 feature-display">
-                Can't Ignore.
-            </div>
+            A Competitive Advantage
         </>
     ),
+    subtitle: "Businesses Can't Ignore.",
     stats: [
         {
             value: "24/7",
             suffix: "",
             label: "Always Available",
+            sublabel: "",
         },
         {
             value: "Instant",
             suffix: "",
-            label: "Immediate Response",
+            label: "Response",
+            sublabel: "Organizations are actively exploring AI.",
         },
         {
-            value: "Every Call",
+            value: "More Leads",
             suffix: "",
-            label: "Every Opportunity",
+            label: "More Opportunities",
+            sublabel: "The economic potential continues to expand.",
         },
         {
-            value: "One Solution",
+            value: "Built For",
             suffix: "",
-            label: "Built For Growth",
+            label: "Business Growth",
+            sublabel: "Businesses want around-the-clock solutions.",
         },
     ],
 };
 
 export const benefits = {
     categories: [
-        "Why AI Receptionists",
-        "How It Helps Your Business",
-        "Built Around Your Business",
-        "Works Across Industries",
-        "Easy To Launch",
-        "Why Choose Us",
-        "Ready To Grow?",
+        "Receptionists",
+        "Productivity",
+        "Customization",
+        "Industries",
+        "Deployment",
+        "Support",
+        "Demo",
     ],
 
     benefits: [
@@ -102,20 +102,20 @@ export const benefits = {
             title2: "Another Opportunity.",
 
             subTitle:
-                "Every unanswered call represents a customer who needed your business. An AI Receptionist ensures every caller receives an immediate, professional response, helping you capture more opportunities, improve customer service, and stay available whenever your customers need you.",
+                "Every unanswered call is a missed opportunity. Your AI Receptionist answers every call professionally, helping your business stay available 24/7.",
 
             benefits: [
-                { text: "Never miss another opportunity" },
-                { text: "Answer every call instantly" },
-                { text: "Create better customer experiences" },
-                { text: "Capture more business" },
+                { text: "Answer Every Call" },
+                { text: "Capture More Leads" },
+                { text: "Book Appointments" },
+                { text: "Stay Available 24/7" },
             ],
 
             benefitCards: [
                 {
-                    title: "Answer Every Call",
+                    title: "Call Answering",
                     subtitle:
-                        "Every caller receives a professional greeting, ensuring your business is always available when customers need assistance.",
+                        "Professional responses for every caller.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
@@ -127,18 +127,25 @@ export const benefits = {
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
-                    title: "Book More Appointments",
+                    title: "Lead Capture",
                     subtitle:
-                        "Automatically schedule consultations, estimates, and appointments without creating additional work for your team.",
+                        "Collect customer information automatically.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
-                    title: "Guide Every Caller",
+                    title: "Scheduling",
                     subtitle:
-                        "Answer common questions and direct callers to the right next step with fast, consistent service.",
+                        "Book appointments with ease.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
+                },
+                {
+                    title: "Call Routing",
+                    subtitle:
+                        "Guide callers to the right destination.",
+                    image:
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
             ],
         },
@@ -148,41 +155,41 @@ export const benefits = {
             title2: "Grow Faster.",
 
             subTitle:
-                "Your team has more important work than answering repetitive phone calls. Your AI Receptionist handles routine conversations, allowing your staff to focus on customers, productivity, and growing the business.",
+                "Reduce interruptions and give your team more time to focus on customers and business growth.",
 
             benefits: [
-                { text: "Reduce daily interruptions" },
-                { text: "Save valuable time" },
-                { text: "Improve team productivity" },
-                { text: "Deliver consistent service" },
+                { text: "Save Time" },
+                { text: "Reduce Interruptions" },
+                { text: "Improve Productivity" },
+                { text: "Increase Efficiency" },
             ],
 
             benefitCards: [
                 {
-                    title: "More Productive Staff",
+                    title: "Efficiency",
                     subtitle:
-                        "Reduce repetitive phone interruptions so employees can focus on higher-value work.",
+                        "Reduce repetitive phone tasks.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                 },
                 {
-                    title: "Better Customer Service",
+                    title: "Customer Care",
                     subtitle:
-                        "Provide immediate, professional responses that leave every caller with a positive impression.",
+                        "Deliver faster, better service.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
                 {
-                    title: "Greater Efficiency",
+                    title: "Automation",
                     subtitle:
-                        "Automate routine conversations while maintaining consistent communication.",
+                        "Handle routine conversations automatically.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
-                    title: "More Time To Grow",
+                    title: "Growth",
                     subtitle:
-                        "Spend less time answering phones and more time building your business.",
+                        "Spend more time building your business.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
@@ -194,41 +201,41 @@ export const benefits = {
             title2: "Your Business.",
 
             subTitle:
-                "Every business operates differently. Your AI Receptionist is customized around your services, business hours, customer questions, appointment process, and communication style.",
+                "Your AI Receptionist is customized around your services, business hours, customer questions, and communication style.",
 
             benefits: [
-                { text: "Personalized conversations" },
-                { text: "Business-specific knowledge" },
-                { text: "Intelligent call routing" },
-                { text: "Flexible configuration" },
+                { text: "Personalized Conversations" },
+                { text: "Business Knowledge" },
+                { text: "Smart Routing" },
+                { text: "Flexible Setup" },
             ],
 
             benefitCards: [
                 {
-                    title: "Business Knowledge",
+                    title: "Knowledge",
                     subtitle:
-                        "Answer questions using your services, policies, pricing, and FAQs.",
+                        "Answer questions accurately.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
-                    title: "Smart Routing",
+                    title: "Routing",
                     subtitle:
-                        "Direct callers to the right department or team member.",
+                        "Direct callers intelligently.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
-                    title: "Custom Workflows",
+                    title: "Workflows",
                     subtitle:
-                        "Match the way your business already operates.",
+                        "Match your business process.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
-                    title: "Personalized Experience",
+                    title: "Brand Voice",
                     subtitle:
-                        "Deliver conversations that sound like an extension of your business.",
+                        "Reflect your communication style.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
@@ -240,43 +247,43 @@ export const benefits = {
             title2: "Like Yours.",
 
             subTitle:
-                "Whether you serve homeowners, patients, clients, or customers, your AI Receptionist adapts to the unique needs of your business while delivering professional service every time.",
+                "Your AI Receptionist is customized around your services, business hours, customer questions, and communication style.",
 
             benefits: [
-                { text: "Home Services" },
-                { text: "Healthcare" },
-                { text: "Professional Services" },
-                { text: "Local Businesses" },
+                { text: "Personalized Conversations" },
+                { text: "Business Knowledge" },
+                { text: "Smart Routing" },
+                { text: "Flexible Setup" },
             ],
 
             benefitCards: [
                 {
-                    title: "Contractors",
+                    title: "Knowledge",
                     subtitle:
-                        "Capture estimate requests and service calls before competitors do.",
+                        "Answer questions accurately.",
                     image:
-                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
-                    title: "Medical Practices",
+                    title: "Routing",
                     subtitle:
-                        "Schedule appointments while providing patients with immediate assistance.",
+                        "Direct callers intelligently.",
                     image:
-                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
-                    title: "Professional Offices",
+                    title: "Workflows",
                     subtitle:
-                        "Support legal, accounting, insurance, and consulting firms with intelligent call handling.",
+                        "Match your business process.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
-                    title: "Retail & Hospitality",
+                    title: "Brand Voice",
                     subtitle:
-                        "Answer questions quickly while improving every customer's experience.",
+                        "Reflect your communication style.",
                     image:
-                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
+                        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
             ],
         },
@@ -286,12 +293,12 @@ export const benefits = {
             title2: "Is Easy.",
 
             subTitle:
-                "We handle the setup so you can start benefiting from your AI Receptionist without complicated technology, long implementation timelines, or unnecessary frustration.",
+                "We handle the setup so your AI Receptionist is ready without complicated technology or long implementation timelines.",
 
             benefits: [
-                { text: "Fast implementation" },
-                { text: "Guided onboarding" },
-                { text: "Professional setup" },
+                { text: "Fast Setup" },
+                { text: "Guided Onboarding" },
+                { text: "Professional Configuration" },
                 { text: "Ready to launch" },
             ],
 
@@ -299,28 +306,28 @@ export const benefits = {
                 {
                     title: "Setup",
                     subtitle:
-                        "We configure your AI Receptionist around your business.",
+                        "We configure your AI.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
                     title: "Training",
                     subtitle:
-                        "Your AI learns your services, policies, and customer interactions.",
+                        "Teach your AI your business.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
                     title: "Testing",
                     subtitle:
-                        "Review conversations and fine-tune your experience before going live.",
+                        "Review before launch.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
                     title: "Launch",
                     subtitle:
-                        "Start serving customers with confidence from day one.",
+                        "Go live with confidence.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
@@ -329,13 +336,13 @@ export const benefits = {
 
         {
             title1: "Technology Built",
-            title2: "For Real Businesses.",
+            title2: "For Businesses.",
 
             subTitle:
-                "Your AI Receptionist combines intelligent technology with dependable support, helping your business deliver better customer experiences while creating more opportunities every day.",
+                "Dependable AI backed by ongoing support to help your business continue growing.",
 
             benefits: [
-                { text: "Reliable technology" },
+                { text: "Reliable Technology" },
                 { text: "Professional support" },
                 { text: "Continuous improvements" },
                 { text: "Built for business" },
@@ -343,30 +350,30 @@ export const benefits = {
 
             benefitCards: [
                 {
-                    title: "Reliable Performance",
+                    title: "Performance",
                     subtitle:
-                        "Dependable technology that answers every call professionally.",
+                        "Reliable every day.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                 },
                 {
-                    title: "Ongoing Support",
+                    title: "Support",
                     subtitle:
-                        "Expert assistance whenever you need help.",
+                        "Help when you need it.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
                 {
-                    title: "Continuous Innovation",
+                    title: "Innovation",
                     subtitle:
-                        "Benefit from ongoing improvements as AI technology evolves.",
+                        "Continuous platform improvements.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
-                    title: "Built For Growth",
+                    title: "Growth",
                     subtitle:
-                        "Designed to support your business today and as it continues growing.",
+                        "Built to scale with you.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
@@ -378,41 +385,41 @@ export const benefits = {
             title2: "Starts With One Better Decision.",
 
             subTitle:
-                "Imagine every caller receiving immediate attention, every opportunity being captured, and your team spending less time on the phone. Discover how your AI Receptionist can help your business serve more customers while creating more opportunities to grow.",
+                "Experience your AI Receptionist in action and discover how it can help your business answer more calls and capture more opportunities.",
 
             benefits: [
-                { text: "Schedule a live demo" },
-                { text: "Experience AI in action" },
-                { text: "Find the right solution" },
-                { text: "Get started today" },
+                { text: "Live Demonstration" },
+                { text: "AI In Action" },
+                { text: "Business Consultation" },
+                { text: "Get Started" },
             ],
 
             benefitCards: [
                 {
-                    title: "Live Demonstration",
+                    title: "Demo",
                     subtitle:
-                        "See real conversations and experience how your AI Receptionist works.",
+                        "Experience real conversations.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
                 },
                 {
-                    title: "Business Consultation",
+                    title: "Consultation",
                     subtitle:
-                        "Receive recommendations based on your business and goals.",
+                        "Discuss your business needs.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                 },
                 {
-                    title: "Simple Onboarding",
+                    title: "Onboarding",
                     subtitle:
-                        "Start with a guided implementation process built around your needs.",
+                        "Simple guided setup.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
                 },
                 {
-                    title: "Long-Term Success",
+                    title: "Partnership",
                     subtitle:
-                        "Partner with a team committed to helping your business continue growing.",
+                        "Support beyond launch.",
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
                 },
@@ -422,7 +429,7 @@ export const benefits = {
 };
 
 export const partners = {
-    title: "Built For Businesses Like Yours",
+    title: "Biznest Unlimited",
 
     heading: (
         <>
@@ -436,8 +443,7 @@ export const partners = {
 
     subtitle: (
         <>
-            Designed to support businesses of every size that depend on fast,
-            professional customer communication.
+            Professional AI Receptionist solutions designed to help businesses answer every call, serve every customer, and capture every opportunity.
         </>
     ),
 
@@ -445,6 +451,12 @@ export const partners = {
 };
 
 export const membershipAudience = {
+    title: "LIVE DEMONSTRATION",
+    heading: <>
+        Experience Your AI Receptionist
+        <span className="italic font-light text-zinc-500 inline-block">Before You Decide.</span>
+    </>,
+    subtitle: "Discover how your AI Receptionist answers calls, captures leads, books appointments, and supports your business—all in a live demonstration tailored to you.",
     audiences: [
         {
             id: 1,
@@ -637,32 +649,32 @@ export const membershipAudience = {
     ],
 };
 
-export const faq = {
-    faqs: [
-        {
-            question: "How long does setup take?",
-            answer:
-                "Most businesses can be configured and ready quickly after onboarding.",
-        },
-        {
-            question: "Can the AI answer questions about my business?",
-            answer:
-                "Yes. Your AI is trained using your business information, services, and FAQs.",
-        },
-        {
-            question: "Can customers schedule appointments?",
-            answer:
-                "Yes. Your AI can book appointments and qualify leads based on your business process.",
-        },
-        {
-            question: "Can my AI Receptionist grow with my business?",
-            answer:
-                "Absolutely. Your AI evolves as your business grows.",
-        },
-    ],
+// export const faq = {
+//     faqs: [
+//         {
+//             question: "How long does setup take?",
+//             answer:
+//                 "Most businesses can be configured and ready quickly after onboarding.",
+//         },
+//         {
+//             question: "Can the AI answer questions about my business?",
+//             answer:
+//                 "Yes. Your AI is trained using your business information, services, and FAQs.",
+//         },
+//         {
+//             question: "Can customers schedule appointments?",
+//             answer:
+//                 "Yes. Your AI can book appointments and qualify leads based on your business process.",
+//         },
+//         {
+//             question: "Can my AI Receptionist grow with my business?",
+//             answer:
+//                 "Absolutely. Your AI evolves as your business grows.",
+//         },
+//     ],
 
-    btnText: "Book Your Live Demo",
-};
+//     btnText: "Book Your Live Demo",
+// };
 
 export const testimonials = {
     testimonials: [
@@ -701,31 +713,16 @@ export const testimonials = {
 
 export const footerReveal = {
     joinFounder: {
-        smallTitle: "ONE PARTNERSHIP",
+        smallTitle: "READY TO GROW",
 
         heading: (
             <>
-                Endless{" "}
+                The Future Of Customer{" "}
                 <span className="italic feature-display">
-                    Possibilities.
+                    Communication Starts Here.
                 </span>
             </>
         ),
-
-        description:
-            "Everything needed to build, launch, and grow your own AI business—under your own brand and backed by infrastructure designed for scale.",
-
-        features: [
-            "White Label Brand Ownership",
-            "Your Own AI Business Platform",
-            "Proven Infrastructure & Systems",
-            "Enterprise AI Technology",
-            "Multi-Industry Market Opportunities",
-            "Ongoing Platform Support",
-            "Recurring Revenue Potential",
-            "Long-Term Growth & Expansion",
-        ],
-
-        btnText: "Become A White Label Partner",
+        btnText: "Book A Live Demo",
     }
 }
