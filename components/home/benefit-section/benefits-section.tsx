@@ -3,21 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Benefit from "./benefit";
 import ScrollMarquee from "@/components/shared/scroll-marque";
-import { LiaConciergeBellSolid, LiaPlaneSolid } from "react-icons/lia";
-import { IoBagOutline, IoCarOutline, IoCarSportOutline, IoRefreshSharp, IoRestaurantOutline } from "react-icons/io5";
-import { PiArmchairLight, PiCalendarDotsLight, PiDevices, PiFlowerLotus, PiGlobeHemisphereEast, PiLaptop, PiTicketLight } from "react-icons/pi";
-import { MdOutlineLuggage } from "react-icons/md";
-import { LuSofa } from "react-icons/lu";
-import { AiOutlineGlobal } from "react-icons/ai";
-import { CiStar } from "react-icons/ci";
-import { RiGroupLine } from "react-icons/ri";
-import { BiBarChartSquare } from "react-icons/bi";
-import { FiBox } from "react-icons/fi";
+import Benefit from "./benefit";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);

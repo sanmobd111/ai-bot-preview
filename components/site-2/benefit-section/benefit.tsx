@@ -143,7 +143,6 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                 className="mx-10 md:mt-0! xl:mt-0!"
                 arrowBgColor="#ffffff"
                 arrowColor="#155dfc"
-
             />
         </div>
     )

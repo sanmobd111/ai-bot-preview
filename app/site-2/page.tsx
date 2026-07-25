@@ -24,15 +24,36 @@ export default function Home() {
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />
-      {/* <FaqSection data={faq} /> */}
       <div className="bg-[#f4f3f1] py-24">
-        <div className="w-full xl:w-1/3  text-black mx-auto flex flex-col items-center">
+        <div className="w-full xl:w-1/2  text-black mx-auto flex flex-col items-center">
           {/* Small Heading */}
+          <p className="mb-4 text-sm uppercase tracking-wide">
+            READY TO GROW
+          </p>
+
+          {/* Main Title */}
+          <h2 className="leading-[1.15] mb-14 tracking-tight text-[46px] md:text-5xl lg:text-[55px] xl:text-6xl text-center">
+            The Future Of Customer {" "}
+            <br />
+            <span className="italic font-light text-zinc-500 feature-display">
+              Communication Starts Here.
+            </span>
+          </h2>
+          <button className="cursor-pointer inline-flex items-center gap-3 rounded-xl bg-black px-4 py-3 text-white font-medium shadow-md">
+            Book A Live Demo
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
+              <ArrowRight size={16} />
+            </span>
+          </button>
+        </div>
+      </div>
+      {/* <FaqSection data={faq} /> */}
+      {/* <div className="bg-[#f4f3f1] py-24">
+        <div className="w-full xl:w-1/3  text-black mx-auto flex flex-col items-center">
           <p className="mb-4 text-sm uppercase tracking-wide">
             THE BIZNEST DIFFERENCE
           </p>
 
-          {/* Main Title */}
           <h2 className="leading-[1.15] tracking-tight text-[46px] md:text-5xl lg:text-[55px] xl:text-6xl text-center">
             Technology That Works. {" "}
             <br />
@@ -48,7 +69,7 @@ export default function Home() {
             </span>
           </button>
         </div>
-      </div>
+      </div> */}
       <FooterReveal data={footerReveal} />
     </>
   );

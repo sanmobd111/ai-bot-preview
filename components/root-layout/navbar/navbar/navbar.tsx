@@ -5,6 +5,7 @@ import { Menu, X, UserCircle2 } from "lucide-react";
 import MobileMenu from "../mobile-menu";
 import Link from "next/link";
 import "./navbar.css"
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const [isTop, setIsTop] = useState(false);
@@ -12,11 +13,16 @@ export default function Navbar() {
     const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null);
     // const [previousScrollY, setPreviousScrollY] = useState(0);
     const previousScrollRef = useRef(0);
+    const pathname = usePathname();
 
     const links = [
         {
             name: "Site 2",
             link: "/site-2",
+        },
+        {
+            name: "Become a representative",
+            link: "/become-a-rep",
         },
     ];
 
@@ -35,7 +41,7 @@ export default function Navbar() {
     return (
         <>
             <nav className={`z-30 fixed top-6 max-w-[1460] w-full left-1/2 -translate-x-1/2 text-white px-6 2xl:px-0 ${scrollDirection === "down" ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"} duration-500 ease-in-out`}>
-                <div className={`rounded-xl backdrop-blur-md ${!isTop ? "bg-[#0000001a]" : "bg-[#191919cc]"} transition-all duration-300 ease-in-out`}>
+                <div className={`rounded-xl backdrop-blur-md ${!isTop && pathname !== "/become-a-rep" ? "bg-[#0000001a]" : "bg-[#191919cc]"} transition-all duration-300 ease-in-out`}>
                     <div className="flex items-center justify-between px-4 py-2 md:px-4 lg:pl-8 relative">
                         {/* Desktop Links */}
                         <div className="hidden items-center lg:gap-4  lg:flex">

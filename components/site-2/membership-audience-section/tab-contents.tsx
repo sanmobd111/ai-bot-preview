@@ -12,9 +12,8 @@ export default function TabContents({ parentContainerRef, activeTab, current: cu
                 animationKey={activeTab}
                 delay={1}
             >
-                <div className="bg-white/10 backdrop-blur-xl rounded-xl  mb-8">
-                    <div className={`absolute bg-white w-1/2 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${currentTab === 0 ? "left-1" : "right-1"}`} />
-                    {console.log(currentTab, "currentTab")}
+                <div className="bg-white/10 backdrop-blur-xl rounded-full  mb-8">
+                    <div className={`absolute bg-white w-1/2 h-[80%] z-[21] rounded-full  duration-300 top-1/2 -translate-y-1/2 ${currentTab === 0 ? "left-1" : "right-1"}`} />
                     <div className="flex py-2 p-1 xl:p-2 z-[22] relative">
                         {currentFromParent?.tabs?.map((item, index) => (
                             <button

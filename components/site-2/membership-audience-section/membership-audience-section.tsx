@@ -24,7 +24,7 @@ export default function MembershipAudienceSection({ data }) {
     }, []);
 
     return (
-        <section className="px-4 py-6 md:py-8 lg:py-10 bg-[#f5f5f0]">
+        <section className="px-4 pt-6 md:pt-8 lg:pt-10 bg-[#f5f5f0]">
             <div className=" mt-12 mb-10 md:mb-14 lg:mb-20 w-[95%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
@@ -62,7 +62,7 @@ export default function MembershipAudienceSection({ data }) {
                     FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
                 </TextReveal>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[105vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[105vh] 2xl:h-[95vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {

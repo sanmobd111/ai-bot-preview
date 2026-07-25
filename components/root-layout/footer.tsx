@@ -5,6 +5,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
+import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 
 
 export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLElement | null>, contentRef?: React.RefObject<HTMLDivElement | null> }) {
@@ -50,12 +51,11 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
       >
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Left Content */}
-          <div className="w-full lg:w-[42%] ">
+          {/* <div className="w-full lg:w-[42%] ">
             <h2 className="text-3xl font-normal leading-tight text-[#2d2d2d] feature-display">
               Stay updated on the latest from FoundersCard
             </h2>
 
-            {/* Newsletter */}
             <form className="mt-8 flex w-full overflow-hidden rounded-lg bg-[#eceae7] p-2">
               <input
                 type="email"
@@ -71,13 +71,11 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
               </button>
             </form>
 
-            {/* Store Buttons */}
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 href="#"
                 className="flex items-center gap-3 rounded-xl bg-[#2d2d2d] px-6 py-3 text-white transition hover:bg-black"
               >
-                {/* <Apple size={22} /> */}
                 <Image
                   src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/app-store-logo-4694bda7b7a7268e94186c362565cf85f56e15a4845cfc835f57571e6f718449.svg"
                   width={16}
@@ -92,7 +90,6 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
                 href="#"
                 className="flex items-center gap-3 rounded-xl bg-[#2d2d2d] px-6 py-3 text-white transition hover:bg-black"
               >
-                {/* <Apple size={22} /> */}
                 <Image
                   src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/app-store-logo-4694bda7b7a7268e94186c362565cf85f56e15a4845cfc835f57571e6f718449.svg"
                   width={16}
@@ -104,7 +101,16 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
                 </div>
               </Link>
             </div>
-          </div>
+          </div> */}
+          <AnimatedPreviewButton
+            bgColor="#155dfc"
+            hoverBgColor="#51a2ff"
+            textColor="#ffffff"
+            className="h-fit"
+            arrowBgColor="#ffffff"
+            arrowColor="#155dfc"
+            text="Explore the Opportunity"
+          />
 
           <div className="w-full lg:w-[47%] xl:w-[42%]  grid grid-cols-2 lg:grid-cols-3 justify-between lg:gap-[60px] overflow-visible">
             {/* Navigation */}
@@ -127,7 +133,6 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
               </ul>
             </div>
 
-            {/* Contact */}
             <div className="mt-10 lg:mt-0">
               <div className="w-max lg:hidden mb-10">
                 <h3 className="mb-5 text-xs uppercase tracking-widest text-gray-500">
@@ -161,11 +166,11 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
                 </h3>
 
                 <div className="space-y-3 text-[16px] text-[#333]">
-                  <p>
+                  {/* <p>
                     590 Madison Ave, New York,
                     <br />
                     NY 10022
-                  </p>
+                  </p> */}
 
                   <div>
                     <Link
@@ -216,18 +221,19 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
             </div>
           </div>
         </div>
-        <Image
+        {/* <Image
           src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/fc-logo-footer-2026-7e5c2efdeb2b81e77b4766539aa4bd69f27f068d1e7814e544d2c30bdf0db099.svg"
           alt="FoundersCard Logo"
           width={2000}
           height={40}
           className="mx-auto mt-12 lg:mt-16 xl:mt-30 aspect-10/1"
-        />
+        /> */}
+        <p className="text-[9.2vw] text-gray-300/50 font-bold">BIZNEST UNLIMITED</p>
         <div className="flex mt-8 justify-between items-center gap-12 lg:gap-24">
           <p className="text-[11px] md:w-1/2 font-semibold uppercase tracking-widest text-gray-500">
-            © 2026 FOUNDERSCARD
+            © 2026 BIZNEST UNLIMITED
           </p>
-          <div className="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-4">
+          <div className="lg:w-[47%] xl:w-[42%] grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-4">
             <div>
               <Link
                 href="#"
