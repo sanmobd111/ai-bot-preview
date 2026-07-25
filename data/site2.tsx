@@ -451,7 +451,7 @@ export const partners = {
 };
 
 export const membershipAudience = {
-    title: "LIVE DEMONSTRATION",
+    title: "Why Businesses Choose Us",
     heading: <>
         Experience Your AI Receptionist
         <span className="italic font-light text-zinc-500 inline-block">Before You Decide.</span>
@@ -460,191 +460,102 @@ export const membershipAudience = {
     audiences: [
         {
             id: 1,
-            tab: "Your AI Receptionist",
+            tab: "Why Businesses Choose Us",
 
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-leaders-a3c6646619763dc4fecde22d8b76826e9517608bb092b59ffe4608044cbfe1f0.jpg",
 
-            heroTitle: "YOUR AI ",
-            heroItalic: "RECEPTIONIST",
+            heroTitle: "Built for Business.",
+            heroItalic: "Designed for Growth.",
 
-            title: "Your Newest Team Member. Ready From Day One.",
+            title: "More Than AI. A Better Business Experience.",
 
             description:
-                "Your AI Receptionist becomes an extension of your business, professionally answering calls, assisting customers, capturing opportunities, and representing your company around the clock. It's designed to help your business stay responsive, organized, and always available.",
+                "From implementation to ongoing support, we help your business answer every call, serve every customer, and capture every opportunity.",
 
             features: [
-                { text: "✓ Professional call answering" },
-                { text: "✓ Lead capture & qualification" },
-                { text: "✓ Appointment scheduling" },
-                { text: "✓ Intelligent call routing" },
-                { text: "Professional Conversations" },
-                { text: "Lead Capture" },
-                { text: "Appointment Scheduling" },
-                { text: "Smart Call Routing" },
+                { text: "✓ Personalized AI Receptionists" },
+                { text: "✓ Fast & Simple Setup" },
+                { text: "✓ Customized For Your Business" },
+                { text: "✓ Reliable Ongoing Support" },
+                { text: "Scalable As You Grow" },
+                { text: "Built For Business" },
             ],
         },
-
         {
             id: 2,
-            tab: "Personalized For Your Business",
-
+            tab: "Pricing",
+            type: "tab",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-entrepreneurs-3e4f19ae20054f93ba5fb6547f21c64c01ef12fd452fd4b0f9bd9300b3b22c44.jpg",
-
-            heroTitle: "PERSONALIZED FOR ",
-            heroItalic: "YOUR BUSINESS",
-
-            title: "Built Around The Way You Work.",
-
-            description:
-                "No templates. No generic scripts. Your AI Receptionist is configured around your business, learning your services, business hours, frequently asked questions, customer workflows, and communication style.",
-
-            features: [
-                { text: "✓ Business-specific knowledge" },
-                { text: "✓ Customized conversations" },
-                { text: "✓ Flexible workflows" },
-                { text: "✓ Personalized customer experience" },
-                { text: "Your Services" },
-                { text: "Your Policies" },
-                { text: "Your Workflow" },
-                { text: "Your Brand Voice" },
+            heroTitle: "Powerful AI.",
+            heroItalic: "Simple Pricing.",
+            tabs: [
+                {
+                    tab: "Essential",
+                    title: "$49 / Month",
+                    description:
+                        "Everything a growing business needs to answer every call professionally and never miss another opportunity.",
+                    features: [
+                        { text: "✓ AI Call Answering" },
+                        { text: "✓  Lead Capture" },
+                        { text: "✓ Business FAQs" },
+                        { text: "✓ Call Routing" },
+                        { text: "✓ Email Notifications" },
+                    ],
+                    btnText: "Choose Essential",
+                },
+                {
+                    tab: "Professional",
+                    title: "$99 / Month",
+                    description:
+                        "Built for businesses that want appointment scheduling, advanced automation, and a more personalized customer experience.",
+                    features: [
+                        { text: "✓ Appointment Scheduling" },
+                        { text: "✓  CRM Integration" },
+                        { text: "✓ Advanced Call Flows" },
+                        { text: "✓ Lead Qualification" },
+                        { text: "✓ Expanded AI Knowledge" },
+                    ],
+                    badge: "Most Popular",
+                    btnText: "Choose Professional",
+                },
             ],
         },
-
         {
             id: 3,
-            tab: "Designed Around Your Customers",
-
+            tab: "Frequently Asked Questions",
+            type: "faq",
             image:
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-professionals-900229f36358a5a61451dba3902d569cc80ede236cf686bec0303977e275a724.jpg",
 
-            heroTitle: "DESIGNED AROUND ",
-            heroItalic: "YOUR CUSTOMERS",
+            heroTitle: "Common Questions,",
+            heroItalic: "Clear Answers.",
 
-            title: "Every Conversation. Every Customer.",
-
-            description:
-                "Customers want fast, helpful, and professional service. Your AI Receptionist creates a smooth experience from the very first conversation by answering questions, providing information, and helping callers move confidently to the next step.",
-
-            features: [
-                { text: "✓ Immediate responses" },
-                { text: "✓ Professional customer experience" },
-                { text: "✓ Helpful conversations" },
-                { text: "✓ Consistent communication" },
-                { text: "Answer Questions" },
-                { text: "Guide Callers" },
-                { text: "Reduce Wait Times" },
-                { text: "Better First Impressions" },
-            ],
-        },
-
-        {
-            id: 4,
-            tab: "Built For Your Industry",
-
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-leaders-a3c6646619763dc4fecde22d8b76826e9517608bb092b59ffe4608044cbfe1f0.jpg",
-
-            heroTitle: "BUILT FOR ",
-            heroItalic: "YOUR INDUSTRY",
-
-            title: "One Platform. Unlimited Possibilities.",
+            title: "Have Questions? We're Here To Help.",
 
             description:
-                "Every industry communicates differently. Your AI Receptionist adapts to the needs of contractors, medical practices, law firms, professional offices, restaurants, real estate teams, insurance agencies, and many other businesses.",
+                "Here are answers to some of the most common questions businesses ask before getting started.",
 
             features: [
-                { text: "✓ Home Services" },
-                { text: "✓ Healthcare" },
-                { text: "✓ Professional Services" },
-                { text: "✓ Local Businesses" },
-                { text: "Contractors" },
-                { text: "Medical Practices" },
-                { text: "Professional Offices" },
-                { text: "Retail & Hospitality" },
+                {
+                    question: "How long does setup take?",
+                    answer: "Most businesses are configured and ready shortly after onboarding."
+                },
+                {
+                    question: "Can the AI answer questions about my business?",
+                    answer: "Yes. Your AI is trained using your services, business information, policies, and frequently asked questions."
+                },
+                {
+                    question: "Can customers schedule appointments?",
+                    answer: "Yes. Your AI can schedule appointments, qualify leads, and guide customers through your preferred process."
+                },
+                {
+                    question: "Can my AI Receptionist grow with my business?",
+                    answer: "Absolutely. Your AI scales alongside your business and can be expanded as your needs evolve."
+                },
             ],
-        },
-
-        {
-            id: 5,
-            tab: "Simple Deployment",
-
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-entrepreneurs-3e4f19ae20054f93ba5fb6547f21c64c01ef12fd452fd4b0f9bd9300b3b22c44.jpg",
-
-            heroTitle: "SIMPLE ",
-            heroItalic: "DEPLOYMENT",
-
-            title: "From Setup To Success.",
-
-            description:
-                "Getting started is straightforward. We handle the technical setup, configure your AI Receptionist around your business, and guide you through testing before you begin serving customers with confidence.",
-
-            features: [
-                { text: "✓ Professional setup" },
-                { text: "✓ Guided onboarding" },
-                { text: "✓ Business configuration" },
-                { text: "✓ Ready to launch" },
-                { text: "Discovery" },
-                { text: "Configuration" },
-                { text: "Testing" },
-                { text: "Go Live" },
-            ],
-        },
-
-        {
-            id: 6,
-            tab: "Support That Grows With You",
-
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-professionals-900229f36358a5a61451dba3902d569cc80ede236cf686bec0303977e275a724.jpg",
-
-            heroTitle: "SUPPORT THAT ",
-            heroItalic: "GROWS WITH YOU",
-
-            title: "A Partnership Beyond Launch.",
-
-            description:
-                "Launching your AI Receptionist is only the beginning. As your business grows, we're here with ongoing support, platform improvements, and guidance to help you continue delivering exceptional customer experiences.",
-
-            features: [
-                { text: "✓ Ongoing support" },
-                { text: "✓ Continuous improvements" },
-                { text: "✓ Business guidance" },
-                { text: "✓ Built for growth" },
-                { text: "Platform Updates" },
-                { text: "Expert Support" },
-                { text: "Business Growth" },
-                { text: "Long-Term Partnership" },
-            ],
-        },
-
-        {
-            id: 7,
-            tab: "Experience It Yourself",
-
-            image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-leaders-a3c6646619763dc4fecde22d8b76826e9517608bb092b59ffe4608044cbfe1f0.jpg",
-
-            heroTitle: "EXPERIENCE IT ",
-            heroItalic: "YOURSELF",
-
-            title: "See What's Possible For Your Business.",
-
-            description:
-                "Every business is different, which is why the best way to understand your AI Receptionist is to experience it firsthand. See how it answers calls, assists customers, schedules appointments, and supports your business in real time.",
-
-            features: [
-                { text: "✓ Live demonstration" },
-                { text: "✓ Real business scenarios" },
-                { text: "✓ Personalized consultation" },
-                { text: "✓ Guided next steps" },
-                { text: "Live Conversations" },
-                { text: "Business Review" },
-                { text: "Personalized Recommendations" },
-                { text: "Next Steps" },
-            ],
+            btnText: "Book A Live Demo"
         },
     ],
 };

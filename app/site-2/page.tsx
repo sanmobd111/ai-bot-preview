@@ -1,14 +1,13 @@
+import TravelBenefit from "@/components/home/benefit-section/benefits-section";
 import FooterReveal from "@/components/home/footer-reveal";
 import MembershipSection from "@/components/home/membership-section";
 import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
 import TestimonialSection from "@/components/home/testimonials-section/testimonials-section";
 import Container from "@/components/shared/container";
-import TravelBenefit from "@/components/home/benefit-section/benefits-section";
 import HeroSection from "@/components/site-2/hero-section";
 import MembershipAudienceSection from "@/components/site-2/membership-audience-section/membership-audience-section";
 import { banner, benefits, footerReveal, membership, membershipAudience, network, partners, testimonials } from "@/data/site2";
-import AnimatedPreviewButton from "@/components/shared/preview-button/animated-preview-button/animated-preview-button";
 import { ArrowRight } from "lucide-react";
 
 

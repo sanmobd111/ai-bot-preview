@@ -1,13 +1,15 @@
 "use client";
 
 import CharacterReveal from "@/components/shared/character-reveal";
-import AnimatedPreviewButton from "@/components/shared/preview-button/animated-preview-button/animated-preview-button";
+import SecondaryPreviewButton from "@/components/shared/preview-button/secondary-preview-button";
 import StaggerReveal from "@/components/shared/stagger-reveal";
 import TextReveal from "@/components/shared/text-reveal";
 import { Plus, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import DefaultContents from "./default-content";
 import "./membership-audience-section.css";
-import SecondaryPreviewButton from "@/components/shared/preview-button/secondary-preview-button";
+import TabContents from "./tab-contents";
+import FaqContents from "./faq-contents";
 
 export default function MembershipAudienceSection({ data }) {
     const [activeTab, setActiveTab] = useState(0);
@@ -60,7 +62,7 @@ export default function MembershipAudienceSection({ data }) {
                     FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
                 </TextReveal>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[150vh]  2xl:h-[123vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[105vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -79,7 +81,7 @@ export default function MembershipAudienceSection({ data }) {
 
                 <div className="content-container">
                     {/* Tabs */}
-                    <div className="absolute top-4 left-10 right-10 z-20 rounded-xl">
+                    {/* <div className="absolute top-4 left-10 right-10 z-20 rounded-xl">
                         <div className="relative z-[22] flex flex-wrap justify-center gap-4 p-1 py-2 xl:p-2">
                             {data?.audiences.map((item, index) => (
                                 <button
@@ -109,10 +111,44 @@ export default function MembershipAudienceSection({ data }) {
                                 </button>
                             ))}
                         </div>
+                    </div> */}
+                    <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
+                        <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
+                        <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
+                            {data?.audiences.map((item, index) => (
+                                <button
+                                    key={item.id}
+                                    onClick={() => setActiveTab(index)}
+                                    className={`
+                  flex-1
+                  rounded-xl
+                  py-1
+                  px-4
+                  text-xs
+                  md:text-sm
+                  lg:text-base
+                  transition-all
+                  duration-300
+                  ${activeTab === index
+                                            ? "text-black"
+                                            : "text-white"
+                                        }
+                `}
+                                >
+                                    <span className="mr-2">
+                                        0{index + 1}.
+                                    </span>
+
+                                    <span className="hidden md:inline">
+                                        {item.tab}
+                                    </span>
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Content */}
-                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_50%] 2xl:grid-cols-[50%_35%] justify-between pt-40">
+                    <div className="relative z-[15] grid min-h-[450px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_50%] 2xl:grid-cols-[50%_35%] justify-between pt-28">
                         {/* Left Side */}
                         <div className="flex items-end p-4 md:p-6 lg:p-10">
                             <div>
@@ -127,48 +163,16 @@ export default function MembershipAudienceSection({ data }) {
                                 </StaggerReveal>
                             </div>
                         </div>
-
-                        {/* Right Side */}
-                        <div className="flex items-center p-4 md:p-6 lg:p-10">
-                            <StaggerReveal
-                                parentContainerRef={parentContainerRef}
-                                animationKey={activeTab}
-                                delay={1}
-                            >
-                                <h3 className="reveal-item text-white text-[45px] leading-[1]">
-                                    {current.title}
-                                </h3>
-
-                                <p className="reveal-item mt-8 text-white text-lg">
-                                    {current.description}
-                                </p>
-
-                                <div className="mt-6">
-                                    {current.features.map((item, index) => (
-                                        <div
-                                            key={index}
-                                            className="reveal-item border-t border-white/20 py-5"
-                                        >
-                                            {/* <h4 className="font-semibold text-white">
-                                            {item.title}
-                                        </h4> */}
-
-                                            <p className="mt-1 text-white/80">
-                                                {item.text}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                <div className="reveal-item">
-                                    <AnimatedPreviewButton className="mt-6! lg:mt-8!" />
-                                </div>
-                            </StaggerReveal>
-                        </div>
+                        {
+                            current.type === "tab"
+                                ? <TabContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} />
+                                : current.type === "faq"
+                                    ? <FaqContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} /> : <DefaultContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} />
+                        }
                     </div>
                 </div>
             </div>
-            <div className="lg:hidden">
+            {/* <div className="lg:hidden">
                 {
                     data?.audiences.map((item, index) => (
                         <MembershipCard
@@ -179,7 +183,7 @@ export default function MembershipAudienceSection({ data }) {
                         />
                     ))
                 }
-            </div>
+            </div> */}
         </section>
     );
 }
