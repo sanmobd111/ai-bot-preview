@@ -103,12 +103,12 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
             </div>
           </div> */}
           <AnimatedPreviewButton
-            bgColor="#155dfc"
-            hoverBgColor="#51a2ff"
+            bgColor="black"
+            hoverBgColor="black/30"
             textColor="#ffffff"
             className="h-fit"
             arrowBgColor="#ffffff"
-            arrowColor="#155dfc"
+            arrowColor="black"
             text="Explore the Opportunity"
           />
 
