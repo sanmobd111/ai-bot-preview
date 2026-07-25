@@ -5,17 +5,22 @@ import React, { useState } from 'react'
 export default function TabContents({ parentContainerRef, activeTab, current: currentFromParent }) {
     const [currentTab, setCurrentTab] = useState(0)
     const current = currentFromParent?.tabs[currentTab]
-    console.log(current)
     return (
         <div className="flex items-center p-4 md:p-6 lg:p-10">
-            <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
-                <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
-                <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
-                    {currentFromParent?.tabs.map((item, index) => (
-                        <button
-                            key={item.id}
-                            onClick={() => setCurrentTab(index)}
-                            className={`
+            <StaggerReveal
+                parentContainerRef={parentContainerRef}
+                animationKey={activeTab}
+                delay={1}
+            >
+                <div className="bg-white/10 backdrop-blur-xl rounded-xl  mb-8">
+                    <div className={`absolute bg-white w-1/2 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${currentTab === 0 ? "left-1" : "right-1"}`} />
+                    {console.log(currentTab, "currentTab")}
+                    <div className="flex py-2 p-1 xl:p-2 z-[22] relative">
+                        {currentFromParent?.tabs?.map((item, index) => (
+                            <button
+                                key={item.id}
+                                onClick={() => setCurrentTab(index)}
+                                className={`
                   flex-1
                   rounded-xl
                   py-1
@@ -25,28 +30,23 @@ export default function TabContents({ parentContainerRef, activeTab, current: cu
                   lg:text-base
                   transition-all
                   duration-300
-                  ${activeTab === index
-                                    ? "text-black"
-                                    : "text-white"
-                                }
+                  ${currentTab === index
+                                        ? "text-black"
+                                        : "text-white"
+                                    }
                 `}
-                        >
-                            <span className="mr-2">
-                                0{index + 1}.
-                            </span>
+                            >
+                                <span className="mr-2">
+                                    0{index + 1}.
+                                </span>
 
-                            <span className="hidden md:inline">
-                                {item.tab}
-                            </span>
-                        </button>
-                    ))}
+                                <span className="hidden md:inline">
+                                    {item.tab}
+                                </span>
+                            </button>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <StaggerReveal
-                parentContainerRef={parentContainerRef}
-                animationKey={activeTab}
-                delay={1}
-            >
                 <h3 className="reveal-item text-white text-[45px] leading-[1]">
                     {current.title}
                 </h3>
