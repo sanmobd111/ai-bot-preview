@@ -228,7 +228,7 @@ export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLE
           height={40}
           className="mx-auto mt-12 lg:mt-16 xl:mt-30 aspect-10/1"
         /> */}
-        <p className="text-[9.2vw] text-gray-300/50 font-bold">BIZNEST UNLIMITED</p>
+        <p className="text-[9vw] 2xl:text-[9.2vw] text-gray-300/50 font-bold">BIZNEST UNLIMITED</p>
         <div className="flex mt-8 justify-between items-center gap-12 lg:gap-24">
           <p className="text-[11px] md:w-1/2 font-semibold uppercase tracking-widest text-gray-500">
             © 2026 BIZNEST UNLIMITED

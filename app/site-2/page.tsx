@@ -24,14 +24,12 @@ export default function Home() {
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />
-      <div className="bg-[#f4f3f1] py-24">
+      {/* <div className="bg-[#f4f3f1] py-24">
         <div className="w-full xl:w-1/2  text-black mx-auto flex flex-col items-center">
-          {/* Small Heading */}
           <p className="mb-4 text-sm uppercase tracking-wide">
             READY TO GROW
           </p>
 
-          {/* Main Title */}
           <h2 className="leading-[1.15] mb-14 tracking-tight text-[46px] md:text-5xl lg:text-[55px] xl:text-6xl text-center">
             The Future Of Customer {" "}
             <br />
@@ -46,7 +44,7 @@ export default function Home() {
             </span>
           </button>
         </div>
-      </div>
+      </div> */}
       {/* <FaqSection data={faq} /> */}
       {/* <div className="bg-[#f4f3f1] py-24">
         <div className="w-full xl:w-1/3  text-black mx-auto flex flex-col items-center">

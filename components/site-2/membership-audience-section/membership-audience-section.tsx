@@ -62,7 +62,7 @@ export default function MembershipAudienceSection({ data }) {
                     FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
                 </TextReveal>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[105vh] 2xl:h-[95vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[110vh] 2xl:h-[95vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
