@@ -6,6 +6,7 @@ import MobileMenu from "../mobile-menu";
 import Link from "next/link";
 import "./navbar.css"
 import { usePathname } from "next/navigation";
+import AnimatedPreviewButton from "@/components/shared/preview-button/animated-preview-button/animated-preview-button";
 
 export default function Navbar() {
     const [isTop, setIsTop] = useState(false);
@@ -73,10 +74,15 @@ export default function Navbar() {
                         >
                             {isOpen ? <X size={24} /> : <Menu size={36} />}
                         </button>
-                        <img
+                        {/* <img
                             src={"https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/fc-logo-navbar-2026-8b305b7c8d9108552e22b11eb0ba0c20ee37107cf1ffcfe0ba3d62054c0dc379.svg"}
                             className="w-[12%] min-w-[160px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
-                        />
+                        /> */}
+                        <h1 className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-[1vw] 2xl:text-[1.2vw] text-gray-300/50 font-bold">
+                            <Link href="/">
+                                BIZNEST UNLIMITED
+                            </Link>
+                        </h1>
 
                         {/* Actions */}
                         <div className="items-center gap-2 hidden lg:flex">
@@ -84,21 +90,20 @@ export default function Navbar() {
                                 <UserCircle2 size={18} className="absolute top-1/2 -translate-y-1/2" />
                                 <UserCircle2 size={18} className="opacity-0" />
                                 <div className="overflow-hidden">
-                                    <div className="original-text duration-300">Login</div>
+                                    <div className="original-text duration-300">Partner Login</div>
                                 </div>
                             </button>
-                            <button className="hidden items-center gap-2 rounded-xl  px-5 py-3 sm:flex cursor-pointer relative overflow-hidden bg-white text-black apply-now">
-                                <div className="overflow-hidden">
-                                    <div className="original-text duration-300">Apply Now</div>
-                                </div>
-                            </button>
+                            <AnimatedPreviewButton
+                                text="Apply Now"
+                                className="mt-0!"
+                            />
                         </div>
                         <Link href="#" className="lg:hidden">
                             <UserCircle2 size={30} />
                         </Link>
                     </div>
                 </div>
-            </nav>
+            </nav >
             <MobileMenu
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}

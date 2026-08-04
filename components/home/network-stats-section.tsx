@@ -60,6 +60,7 @@ export default function NetworkStatsSection({ data }) {
                   leading-none
                   tracking-[0.02em]
                   text-[#2e2e2e]
+                  text-center
                 "
                             >
                                 {/* {item.value} */}
@@ -76,6 +77,7 @@ export default function NetworkStatsSection({ data }) {
                   md:text-base
                   leading-relaxed
                   text-[#2e2e2e]
+                  text-center
                 "
                             >
                                 {item.label}

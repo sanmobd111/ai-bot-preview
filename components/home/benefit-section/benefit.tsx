@@ -35,8 +35,8 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
                     </span>
                 </h2>
 
-                <p className="mt-5 max-w-4xl text-lg leading-relaxed text-zinc-600">
-                    {subTitle}
+                <p className="mt-5 max-w-4xl text-lg leading-relaxed text-zinc-600" dangerouslySetInnerHTML={{ __html: subTitle }}>
+
                 </p>
             </div>
 
@@ -65,7 +65,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             {/* Slider Header */}
             <div className="mb-4 flex items-center justify-between px-10">
                 <h3 className="text-4xl lg:text-[28px] text-zinc-900 feature-display">
-                    Discover Benefits
+                    Enterprise Benefits
                 </h3>
 
                 <div className="flex gap-3">
@@ -137,12 +137,12 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             </Swiper>
             <span className="px-10 my-6">Some benefits require an upgraded membership plan.</span>
             <AnimatedPreviewButton
-                bgColor="#155dfc"
-                hoverBgColor="#51a2ff"
+                bgColor="#28282B"
+                hoverBgColor="#53575C"
                 textColor="#ffffff"
                 className="mx-10 md:mt-0! xl:mt-0!"
                 arrowBgColor="#ffffff"
-                arrowColor="#155dfc"
+                arrowColor="black"
 
             />
         </div>

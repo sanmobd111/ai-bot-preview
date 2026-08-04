@@ -84,8 +84,9 @@ export default function MembershipSlider({data}) {
                                        mb-3
                                        feature-display
                                        font-light
-                                       text-[27px]
+                                       text-[20px]
                                        leading-tight
+                                       text-center
                                      "
                                     >
                                         {card.title}
@@ -94,12 +95,13 @@ export default function MembershipSlider({data}) {
                                     <p
                                         className="
                                        max-w-xs
-                                       text-sm
+                                       text-xs
                                        md:text-base
                                        leading-snug
                                        text-white/90
                                        line-clamp-2
                                        font-normal
+                                       text-center
                                      "
                                     >
                                         {card.description}

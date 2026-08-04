@@ -1,5 +1,5 @@
 .login-button::after {
-    content: "Login";
+    content: "Partner Login";
     position: absolute;
     top: 100%;
     left: 0;

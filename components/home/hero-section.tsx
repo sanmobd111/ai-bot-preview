@@ -43,10 +43,10 @@ export default function HeroSection({ data }) {
                     <p className="mt-6 lg:mt-8 2xl:mt-10 max-w-2xl xl:max-w-3xl 2xl:max-w-2xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
                         {data?.subtitle}
                     </p>
-                    <AnimatedPreviewButton text={data?.btnText} />
+                    <AnimatedPreviewButton text={data?.btnText} className="lg:mt-8!" />
                 </div>
 
-                <div className="absolute bottom-8 z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-6">
+                <div className="absolute lg:bottom-2  z-10 w-[90%] left-1/2 -translate-x-1/2 flex flex-col items-center justify-between gap-4 lg:gap-4">
                     <ScrollMarquee
                         containerClasseName="py-6 2xl:max-w-6xl"
                         gradientColor="black"

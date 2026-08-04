@@ -27,8 +27,9 @@ export default function TextReveal({
             ease: "power4.out",
             scrollTrigger: {
                 trigger: ref.current,
-                start: "top bottom",
+                start: "top 50%",
                 once: true,
+                // markers: true,
             },
         });
 

@@ -80,38 +80,6 @@ export default function MembershipAudienceSection({ data }) {
                 <div className="absolute inset-0 bg-black/45 z-[6] " />
 
                 <div className="content-container">
-                    {/* Tabs */}
-                    {/* <div className="absolute top-4 left-10 right-10 z-20 rounded-xl">
-                        <div className="relative z-[22] flex flex-wrap justify-center gap-4 p-1 py-2 xl:p-2">
-                            {data?.audiences.map((item, index) => (
-                                <button
-                                    key={item.id}
-                                    onClick={() => setActiveTab(index)}
-                                    className={`
-                rounded-xl
-                py-2.5
-                px-6
-                text-xs
-                md:text-sm
-                lg:text-base
-                transition-all
-                duration-300
-                whitespace-nowrap
-                ${activeTab === index
-                                            ? "bg-white text-black"
-                                            : "bg-white/10 text-white backdrop-blur-xl"
-                                        }
-            `}
-                                >
-                                    <span className="mr-2">0{index + 1}.</span>
-
-                                    <span className="hidden md:inline">
-                                        {item.tab}
-                                    </span>
-                                </button>
-                            ))}
-                        </div>
-                    </div> */}
                     <div className="absolute top-4 left-10 right-10 z-20 bg-white/10 backdrop-blur-xl rounded-xl">
                         <div className={`absolute bg-white w-1/3 h-[80%] z-[21] rounded-lg  duration-300 top-1/2 -translate-y-1/2 ${activeTab === 0 ? "left-1" : activeTab === 2 ? "right-1" : "left-1/2 -translate-x-1/2"}`} />
                         <div className="flex py-2 p-1 xl:p-2 relative z-[22]">
@@ -172,18 +140,6 @@ export default function MembershipAudienceSection({ data }) {
                     </div>
                 </div>
             </div>
-            {/* <div className="lg:hidden">
-                {
-                    data?.audiences.map((item, index) => (
-                        <MembershipCard
-                            key={index}
-                            current={item}
-                            index={index}
-                            label={item.tab}
-                        />
-                    ))
-                }
-            </div> */}
         </section>
     );
 }

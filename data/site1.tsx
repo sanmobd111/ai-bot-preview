@@ -79,22 +79,22 @@ export const network = {
         {
             value: 80,
             suffix: "%",
-            label: "Growing Investment",
+            label: "Growing Market Investment",
         },
         {
             value: 90,
             suffix: "%+",
-            label: "Growing Adoption",
+            label: "Growing Business Adoption",
         },
         {
             value: "Trillions",
             suffix: "",
-            label: "Growing Opportunity",
+            label: "Global Revenue Opportunity",
         },
         {
             value: "24/7",
             suffix: "",
-            label: "Growing Demand",
+            label: "Continuous Customer Demand",
         },
     ]
 }
@@ -107,7 +107,7 @@ export const benefits = {
 
             title2: "Already Here.",
 
-            subTitle: "Artificial intelligence is creating one of the largest wealth-building opportunities of our generation. BizNest Unlimited empowers entrepreneurs to launch their own white-label AI business, build recurring revenue, and establish a position in a rapidly expanding market while leveraging infrastructure, systems, and technology already built for scale.",
+            subTitle: "Artificial intelligence is creating one of the largest <b>wealth-building opportunities</b> of our generation. BizNest Unlimited empowers entrepreneurs to launch their own <b>white-label AI business</b>, build <b>recurring revenue</b>, and establish a position in a rapidly expanding market while leveraging <b>infrastructure</b>, systems, and <b>technology</b> already built for <b>scale</b>.",
 
             benefits: [
                 {
@@ -138,7 +138,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Business Ownership",
-                    subtitle: "Build a business you control under your own brand and vision.",
+                    subtitle: "Build a comprehensive business you fully control and operate entirely under <b>your own brand</b> identity, unique vision, and long-term strategic direction without corporate interference.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/1-airlines-49654483f229f92a4dae2cd72d7f09cdcd709615e3d559eb5d3806b597e88ebe.jpg",
@@ -146,14 +146,15 @@ export const benefits = {
                 },
                 {
                     title: "Recurring Revenue",
-                    subtitle: "Create ongoing income through long-term client relationships.",
+                    subtitle: "Create a predictable, highly resilient stream of ongoing monthly income through <b>recurring revenue</b> models and deeply integrated, long-term client relationships.",
+
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/2-car-rentals-c0bd9cd1a8b421600b6a1688624662198b0618c0d1fb215c006e7dcf54abcb89.jpg",
                     icon: <IoCarOutline />
                 },
                 {
                     title: "White Label Platform",
-                    subtitle: "Launch with infrastructure, systems, and technology already in place.",
+                    subtitle: "Launch instantly with enterprise-grade <b>infrastructure</b>, robust operational systems, and cutting-edge <b>technology</b> already built, tested, and positioned for immediate deployment.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-hotels-9bbb20ee66645d09f8d71ed780449df0a56d4ffbdd87be3719db045f28a42675.jpg",
@@ -161,7 +162,7 @@ export const benefits = {
                 },
                 {
                     title: "Market Position",
-                    subtitle: "Establish yourself within one of the fastest-growing sectors of modern business.",
+                    subtitle: "Establish yourself as a trusted authority within one of the fastest-growing and most lucrative <b>AI business</b> sectors currently transforming the modern commercial landscape.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/3-travel-lounge-6c5673d93e123d8b0b570e52474831e0d772f78a0768402b00e0c0b6369b5c74.jpg",
@@ -169,7 +170,8 @@ export const benefits = {
                 },
                 {
                     title: "Long-Term Opportunity",
-                    subtitle: "Build a business positioned for growth as AI adoption continues to expand.",
+                    subtitle: "Build a future-proof business model specifically positioned for rapid <b>scale</b> as enterprise and consumer AI adoption continues its massive global expansion.",
+
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/1-travel/4-curated-travel-1b33bc02f56b5a5511f7536b1f5d44a6391c194bf14336b012752a58a3a7b9d9.jpg",
                     icon: <MdOutlineLuggage />
@@ -180,7 +182,7 @@ export const benefits = {
             title1: "Build A Brand.",
 
             title2: "Own Your Future.",
-            subTitle: "Most business opportunities ask you to promote someone else's company, products, and identity. BizNest Unlimited takes a different approach.You build under your own brand, your own name, and your own  vision. Your clients know your company. Your reputation drives the relationship. Your brand becomes the asset. Instead of spending years building equity for someone else, you're creating market presence, customer loyalty, and long-term business value that belongs to you.",
+            subTitle: "Most business opportunities ask you to promote someone else's company, products, and identity. BizNest Unlimited takes a different approach. You build under <b>your own brand</b>, your own name, and your own vision. Your clients know your company. Your reputation drives the relationship. Your brand becomes the asset. Instead of spending years building equity for someone else, you're creating market presence, customer loyalty, and <b>business ownership</b> value that belongs to you.",
 
             benefits: [
                 {
@@ -211,7 +213,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Your Brand",
-                    subtitle: "Operate under your own company name, identity, and market presence.",
+                    subtitle: "Operate entirely under <b>your own brand</b>, distinct corporate identity, custom styling, and powerful market presence that resonates with your target audience.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/1-founders-hotels-08544a0d55902071c30fa0ddec931434b0a79d4c763c16d1287dcb9b9e633673.jpg",
@@ -219,7 +221,7 @@ export const benefits = {
                 },
                 {
                     title: "Your Reputation",
-                    subtitle: "Build trust, recognition, and credibility around a brand you control.",
+                    subtitle: "Build profound customer trust, industry recognition, and long-lasting commercial credibility centered around true <b>business ownership</b> that you direct and manage.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/2-brand-partners-cd3b490e515303f45595bf46b6ca5aa0ad20e596c48ec17b2f8e64ac5267689a.jpg",
@@ -227,7 +229,7 @@ export const benefits = {
                 },
                 {
                     title: "Your Clients",
-                    subtitle: "Develop direct relationships that strengthen your business over time.",
+                    subtitle: "Develop direct, unmediated relationships with your customers that compound in value and significantly strengthen your independent <b>AI business</b> over time.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/3-loyalty-status-3f803a03b1302cb55fba3170d3564c15a3c53fd52a13af2ae94ab6b7de683236.jpg",
@@ -235,7 +237,7 @@ export const benefits = {
                 },
                 {
                     title: "Your Equity",
-                    subtitle: "Create value that remains attached to your company, not someone else's.",
+                    subtitle: "Create substantial corporate value and financial equity that remains permanently attached to your unique <b>white-label</b> company rather than inflating a third party's enterprise.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/4-curated-travel-d957eba2906386dac0a9e7181d20688829e029a106774cc510fdb106cbdd1ca7.jpg",
@@ -243,7 +245,7 @@ export const benefits = {
                 },
                 {
                     title: "Your Legacy",
-                    subtitle: "Build an asset designed to grow beyond individual transactions and opportunities.",
+                    subtitle: "Construct a valuable, self-sustaining corporate asset designed to effectively <b>scale</b>, generate generational wealth, and expand far beyond individual transactions.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/4-curated-travel-d957eba2906386dac0a9e7181d20688829e029a106774cc510fdb106cbdd1ca7.jpg",
@@ -256,7 +258,7 @@ export const benefits = {
 
             title2: "Into Clientele.",
 
-            subTitle: "Every business needs customers. The most successful businesses build systems for attracting, serving, and retaining them. BizNest Unlimited gives entrepreneurs the opportunity to serve businesses actively seeking AI-powered solutions while building a growing client base, recurring revenue, and long-term business value. Every new client becomes more than a transaction—it becomes an asset that contributes to the growth of your company.",
+            subTitle: "Every business needs customers. The most successful businesses build systems for attracting, serving, and retaining them. BizNest Unlimited gives entrepreneurs the opportunity to serve businesses actively seeking <b>AI business</b> solutions while building a growing client base, <b>recurring revenue</b>, and long-term value. Every new client becomes more than a transaction—it becomes an asset backed by solid <b>infrastructure</b> that contributes to your company's <b>scale</b>.",
 
             benefits: [
                 {
@@ -287,7 +289,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Client Acquisition",
-                    subtitle: "Turn growing demand into real business opportunities and new client relationships.",
+                    subtitle: "Seamlessly convert rising market demand into tangible, high-value <b>AI business</b> opportunities and lasting commercial client relationships that drive profitability.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/1-live-events-646e9fb8f2dd36b6ecba0f9722af66705178e0ee13f8957c2adfc8bb81df432d.jpg",
@@ -295,7 +297,7 @@ export const benefits = {
                 },
                 {
                     title: "Client Portfolio",
-                    subtitle: "Build a base of businesses that contribute to your long-term growth.",
+                    subtitle: "Establish and expand a diversified base of commercial clients actively utilizing advanced <b>technology</b> solutions to directly fuel your long-term organizational growth.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/2-hotels/2-brand-partners-cd3b490e515303f45595bf46b6ca5aa0ad20e596c48ec17b2f8e64ac5267689a.jpg",
@@ -303,7 +305,7 @@ export const benefits = {
                 },
                 {
                     title: "Recurring Revenue",
-                    subtitle: "Create ongoing revenue through retained clients and continued service relationships.",
+                    subtitle: "Generate consistent, reliable cash flow through ongoing <b>recurring revenue</b> models and exceptionally high client retention and satisfaction rates.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/4-luxury-vehicles-c6d75e2b5c15e579d33c92e781f6a5ce1dfd1e5e5dd4d9e1eb709443a4bb2f53.jpg",
@@ -311,7 +313,7 @@ export const benefits = {
                 },
                 {
                     title: "Referral Expansion",
-                    subtitle: "Satisfied clients can become one of your strongest sources of future growth.",
+                    subtitle: "Leverage highly satisfied customers operating under <b>your own brand</b> to create an organic, self-sustaining engine of powerful word-of-mouth growth.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/3-retail-gifting-b077787a3da041254f26595cb1410d97a42049cfc8bffddee05b4c7a2c18ad67.jpg",
@@ -319,7 +321,7 @@ export const benefits = {
                 },
                 {
                     title: "Business Value",
-                    subtitle: "A growing client base becomes one of the most valuable assets your company owns.",
+                    subtitle: "Secure genuine corporate stability and complete <b>business ownership</b> as your expanding portfolio of retained clients transforms into a highly lucrative enterprise asset.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/3-lifestyle/3-retail-gifting-b077787a3da041254f26595cb1410d97a42049cfc8bffddee05b4c7a2c18ad67.jpg",
@@ -332,7 +334,7 @@ export const benefits = {
 
             title2: "Designed For Leverage.",
 
-            subTitle: "Most entrepreneurs spend years building infrastructure, assembling tools, managing technology, and solving operational challenges before they ever gain traction. BizNest Unlimited changes that equation. Instead of building the systems, you leverage them. Instead of developing the technology, you deploy it. Instead of managing complexity, you focus on clients, growth, and opportunity while utilizing infrastructure already designed to support scale.",
+            subTitle: "Most entrepreneurs spend years building <b>infrastructure</b>, assembling tools, managing <b>technology</b>, and solving operational challenges before they ever gain traction. BizNest Unlimited changes that equation. Instead of building the systems, you leverage them. Instead of developing the <b>white-label</b> platform, you deploy it. Instead of managing complexity, you focus on clients and <b>scale</b> while utilizing robust <b>infrastructure</b> already designed to support growth.",
 
             benefits: [
                 {
@@ -363,7 +365,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Infrastructure",
-                    subtitle: "Leverage enterprise-grade systems already built and ready for use.",
+                    subtitle: "Instantly leverage enterprise-grade technical <b>infrastructure</b>, secure cloud frameworks, and operational systems that are fully engineered and ready for immediate business use.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/1-software-growth-1f10043d5eb7cdfd2f5d90c2dce5eab96bf5b257c49f8bbdd0a9ca45f3f10327.jpg",
@@ -371,7 +373,7 @@ export const benefits = {
                 },
                 {
                     title: "Automation",
-                    subtitle: "Utilize intelligent automation designed to improve efficiency and scalability.",
+                    subtitle: "Utilize state-of-the-art artificial intelligence <b>technology</b> and intelligent workflow automations meticulously designed to maximize operational efficiency and effortless <b>scale</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/5-devices-equipment-f30a4e82ad03a762155af6a17f791077c8eaad71fbbb296ef6a7e1af3968ff9f.jpg",
@@ -379,7 +381,7 @@ export const benefits = {
                 },
                 {
                     title: "Operational Support",
-                    subtitle: "Access tools, resources, and systems that simplify business operations.",
+                    subtitle: "Access robust, ready-to-deploy <b>white-label</b> tools and comprehensive resource suites that completely streamline daily administrative tasks for your growing <b>AI business</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/3-co-working-1d1a548897e60ab876375d1222b8bbc74f0432c062ced5663d4950ecbed6e7e8.jpg",
@@ -387,7 +389,7 @@ export const benefits = {
                 },
                 {
                     title: "Speed To Market",
-                    subtitle: "Move faster by leveraging technology that would otherwise take years to build.",
+                    subtitle: "Bypass years of costly software engineering delays by immediately deploying proven <b>technology</b> and pre-built <b>infrastructure</b> tailored for commercial success.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/4-startup-stack-701f6cf48a9e3019bbed7254b83766d567a8419ce399ce541b78acd13e63fcbf.jpg",
@@ -395,7 +397,7 @@ export const benefits = {
                 },
                 {
                     title: "Scalable Foundation",
-                    subtitle: "Build upon infrastructure designed to support long-term growth and expansion.",
+                    subtitle: "Secure genuine, independent <b>business ownership</b> anchored upon a rock-solid, enterprise-level <b>infrastructure</b> explicitly optimized for long-term corporate expansion.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/4-business/4-startup-stack-701f6cf48a9e3019bbed7254b83766d567a8419ce399ce541b78acd13e63fcbf.jpg",
@@ -408,7 +410,7 @@ export const benefits = {
 
             title2: "Into Expansion.",
 
-            subTitle: "The most valuable businesses aren't built through single transactions. They're built through momentum, recurring revenue, client retention, and consistent expansion over time. BizNest Unlimited provides entrepreneurs with the opportunity to build a business designed for growth, where every client relationship, every referral, and every success can contribute to larger opportunities in the future.",
+            subTitle: "The most valuable businesses aren't built through single transactions. They're built through momentum, <b>recurring revenue</b>, client retention, and consistent expansion over time. BizNest Unlimited provides entrepreneurs with the opportunity to build an <b>AI business</b> designed for growth, where every client relationship and <b>white-label</b> solution contributes to larger <b>recurring revenue</b> streams and long-term <b>scale</b>.",
 
             benefits: [
                 {
@@ -438,7 +440,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Recurring Revenue",
-                    subtitle: "Create predictable income through ongoing client relationships and service delivery.",
+                    subtitle: "Establish secure, highly predictable financial income through systematic ongoing <b>recurring revenue</b> models and continuous digital service delivery.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
@@ -446,7 +448,7 @@ export const benefits = {
                 },
                 {
                     title: "Business Momentum",
-                    subtitle: "Turn each new client, referral, and success into future growth opportunities.",
+                    subtitle: "Systematically transform every single new client acquisition into an unshakeable cornerstone of absolute <b>business ownership</b> and compounded future growth.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
@@ -454,7 +456,7 @@ export const benefits = {
                 },
                 {
                     title: "Client Retention",
-                    subtitle: "Build long-term relationships that continue creating value over time.",
+                    subtitle: "Cultivate high-value, long-term business partnerships utilizing advanced artificial intelligence <b>technology</b> that continuously delivers exceptional utility and compounding value.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -462,7 +464,7 @@ export const benefits = {
                 },
                 {
                     title: "Expansion Potential",
-                    subtitle: "Open new pathways for growth as your business and reputation expand.",
+                    subtitle: "Unlock brand-new strategic pathways for rapid corporate <b>scale</b> as your specialized <b>AI business</b> footprint, market authority, and reputation expand globally.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
@@ -470,7 +472,7 @@ export const benefits = {
                 },
                 {
                     title: "Long-Term Wealth",
-                    subtitle: "Create a business designed to generate value, income, and opportunity for years to come",
+                    subtitle: "Architect a fully customized <b>white-label</b> corporate entity specifically engineered to consistently generate long-term asset value, high cash flow, and robust <b>recurring revenue</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -483,7 +485,7 @@ export const benefits = {
 
             title2: "Entrepreneurs Win.",
 
-            subTitle: "BizNest Unlimited was created around a simple belief: entrepreneurs should have access to the opportunities being created by artificial intelligence without needing to become software developers, technology companies, or infrastructure providers. By combining proven systems, scalable infrastructure, operational support, and business opportunity into a single ecosystem, BizNest Unlimited helps entrepreneurs focus on what matters most—building relationships, serving clients, generating revenue, and creating long-term business value.",
+            subTitle: "BizNest Unlimited was created around a simple belief: entrepreneurs should have access to the opportunities being created by artificial intelligence without needing to become software developers. By combining proven systems, scalable <b>infrastructure</b>, operational support, and a <b>white-label</b> business model into a single ecosystem, we help you focus on <b>business ownership</b>, serving clients, and generating <b>recurring revenue</b>.",
 
             benefits: [
                 {
@@ -513,7 +515,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Entrepreneur First",
-                    subtitle: "Built for business builders, operators, consultants, and growth-minded entrepreneurs.",
+                    subtitle: "Engineered specifically for ambitious independent operators, dedicated business consultants, and growth-minded entrepreneurs seeking genuine <b>business ownership</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
@@ -521,7 +523,7 @@ export const benefits = {
                 },
                 {
                     title: "Proven Foundation",
-                    subtitle: "Leverage systems, infrastructure, and resources already designed for deployment.",
+                    subtitle: "Leverage battle-tested operational systems, robust corporate <b>infrastructure</b>, and advanced <b>technology</b> already fully configured and ready for seamless market deployment.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
@@ -529,7 +531,7 @@ export const benefits = {
                 },
                 {
                     title: "Business Support",
-                    subtitle: "Access tools, guidance, and resources that help simplify the path to growth.",
+                    subtitle: "Gain unrestricted access to premium <b>white-label</b> tools, expert mentorship, and guided frameworks that dramatically simplify your path to sustainable <b>recurring revenue</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -537,7 +539,7 @@ export const benefits = {
                 },
                 {
                     title: "Shared Success",
-                    subtitle: "Our success is directly connected to the success of the partners we support.",
+                    subtitle: "Our institutional commitment to supplying world-class <b>infrastructure</b> is fundamentally intertwined with the measurable commercial success of our independent partners.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
@@ -545,7 +547,7 @@ export const benefits = {
                 },
                 {
                     title: "Long-Term Vision",
-                    subtitle: "Built to create lasting opportunities as the AI economy continues to evolve.",
+                    subtitle: "Strategically positioned to capitalize on enduring market opportunities as the global <b>AI business</b> economy continues to evolve for long-term corporate <b>scale</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -558,7 +560,7 @@ export const benefits = {
 
             title2: "To Action.",
 
-            subTitle: "Every successful business starts with a decision to move forward. BizNest Unlimited provides a clear pathway for entrepreneurs looking to establish their own position in the AI economy. Instead of spending months researching technology, building systems, and trying to figure everything out alone, partners gain access to a framework designed to help them launch, grow, and scale with greater confidence. The journey begins with a single step and evolves into building a business designed for long-term opportunity.",
+            subTitle: "Every successful business starts with a decision to move forward. BizNest Unlimited provides a clear pathway for entrepreneurs looking to establish their own <b>AI business</b> in the modern economy. Instead of spending months researching <b>technology</b>, building systems, and trying to figure everything out alone, partners gain access to a <b>white-label</b> framework designed to help them launch <b>recurring revenue</b> streams and <b>scale</b> with confidence.",
 
             benefits: [
                 {
@@ -588,7 +590,7 @@ export const benefits = {
             benefitCards: [
                 {
                     title: "Join The Partnership",
-                    subtitle: "Become part of a growing ecosystem built around opportunity, ownership, and growth.",
+                    subtitle: "Become an integral part of an elite, fast-growing entrepreneurial ecosystem built from the ground up around true <b>business ownership</b> and massive digital <b>scale</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/1-founders-table-dinners-7c4ee7d3602e8af4a43d5bc30840fad1e9b56fd44d3340211bd24d7c7e86f543.jpg",
@@ -596,7 +598,7 @@ export const benefits = {
                 },
                 {
                     title: "Launch Your Brand",
-                    subtitle: "Establish your business identity and begin building your market presence.",
+                    subtitle: "Quickly establish <b>your own brand</b> identity, deploy your proprietary client portal, and aggressively build your unique market presence within the booming <b>AI business</b> sector.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
@@ -604,7 +606,7 @@ export const benefits = {
                 },
                 {
                     title: "Position Your Business",
-                    subtitle: "Leverage available resources to identify opportunities and attract clients.",
+                    subtitle: "Effectively leverage elite available <b>infrastructure</b> and comprehensive <b>white-label</b> digital resources to seamlessly pinpoint lucrative niches and attract high-value clients.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -612,7 +614,7 @@ export const benefits = {
                 },
                 {
                     title: "Serve & Grow",
-                    subtitle: "Build relationships, deliver value, and create momentum through client success.",
+                    subtitle: "Forge deep client relationships, deliver sophisticated enterprise-grade <b>technology</b> solutions, and generate powerful, compounding <b>recurring revenue</b> momentum.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/2-member-events-1cbd8a9f9d37a4587358eb0c41f21c5c97e5c0b3c867746d42cbea7dffd1471b.jpg",
@@ -620,7 +622,7 @@ export const benefits = {
                 },
                 {
                     title: "Scale Your Opportunity",
-                    subtitle: "Expand your reach, increase your impact, and continue building long-term business value.",
+                    subtitle: "Expand your operational reach globally and continuously build valuable corporate <b>business ownership</b> equity designed for long-term, high-yield commercial <b>scale</b>.",
 
                     image:
                         "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefit-slide-bgs/5-community/3-member-created-benefits-7a2d0bc8eebfee443891c234b008406d7629168ae940d7d04b29be018390adcd.jpg",
@@ -629,7 +631,7 @@ export const benefits = {
             ],
         },
     ]
-}
+};
 
 export const partners = {
     title: "Our Partners",

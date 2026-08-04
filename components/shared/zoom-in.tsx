@@ -19,7 +19,7 @@ export default function ZoomIn({
   className = "",
   scale = 0.8,
   duration = 1,
-  delay = 1,
+  delay = 0,
 }: ZoomInProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -40,8 +40,9 @@ export default function ZoomIn({
         ease: "power3.out",
         scrollTrigger: {
           trigger: ref.current,
-          start: "top 80%",
+          start: "top bottom",
           once: true,
+          // markers: true,
         },
       }
     );
