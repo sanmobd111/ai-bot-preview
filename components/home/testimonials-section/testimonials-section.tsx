@@ -59,7 +59,8 @@ function useViewport() {
   return width;
 }
 
-export default function TestimonialSlider({data}) {
+export default function TestimonialSlider({ data }) {
+  const [hoveredCard, setHoveredCard] = useState(null);
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -125,6 +126,7 @@ export default function TestimonialSlider({data}) {
           onSlideChange={(swiper) =>
             setActiveIndex(swiper.realIndex)
           }
+
           speed={800}
           spaceBetween={24}
           slidesOffsetBefore={offset}
@@ -141,19 +143,31 @@ export default function TestimonialSlider({data}) {
           {data?.testimonials.map((item) => (
             <SwiperSlide
               key={item.id}
+              onMouseEnter={() => setHoveredCard(item.id)}
+              onMouseLeave={() => setHoveredCard(null)}
             >
               <ZoomIn
-                className="
-                h-[400px]
-                md:h-[420px]
-                rounded-[24px]
-                md:rounded-[32px]
-                border border-white/10
-                bg-white/[0.03]
-                backdrop-blur-xl
-                p-6 md:p-8 xl:p-10
-                text-white
-              "
+                className={`
+    h-[400px]
+    md:h-[420px]
+    rounded-[24px]
+    md:rounded-[32px]
+    border border-white/10
+    bg-white/[0.03]
+    backdrop-blur-xl
+    p-6 md:p-8 xl:p-10
+    text-white
+    transition-all
+    duration-500
+    ease-out
+
+    ${hoveredCard === null
+                    ? "opacity-100 blur-0 scale-100"
+                    : hoveredCard === item.id
+                      ? "opacity-100 blur-0 scale-100 shadow-[0_20px_60px_rgba(0,0,0,0.35)] border-white/20 z-20"
+                      : "opacity-40 blur-[5px] scale-[0.98]"
+                  }
+  `}
               >
                 <div className="flex h-full flex-col justify-between">
                   <div className="text-center">
