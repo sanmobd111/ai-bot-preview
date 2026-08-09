@@ -22,10 +22,10 @@ export default function Home() {
         <NetworkStatsSection data={network} />
       </Container>
       <BenefitsSection data={benefits} />
-      <PricingSection />
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />
+      <PricingSection />
       <FaqSection data={faq} />
       <FooterReveal data={footerReveal} />
     </>

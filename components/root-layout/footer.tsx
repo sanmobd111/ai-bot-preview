@@ -11,35 +11,35 @@ import AnimatedPreviewButton from "../shared/preview-button/animated-preview-but
 export default function Footer({ ref, contentRef }: { ref: React.RefObject<HTMLElement | null>, contentRef?: React.RefObject<HTMLDivElement | null> }) {
   const navigationLinks = [
     {
-      name: "Become a Member",
+      name: "Opportunity ",
       href: "#",
     },
     {
-      name: "About Us",
+      name: "Pricing ",
       href: "#",
     },
     {
-      name: "Community",
+      name: "Frequently Asked Questions ",
       href: "#",
     },
     {
-      name: "Partnerships",
+      name: "Partner Login",
       href: "#",
     },
     {
-      name: "Reviews",
+      name: "Apply / Become a White Label Partner ",
       href: "#",
     },
     {
-      name: "Press",
+      name: "Contact  ",
       href: "#",
     },
     {
-      name: "Contact",
+      name: "Terms  ",
       href: "#",
     },
     {
-      name: "Careers",
+      name: "Privacy ",
       href: "#",
     },
   ];
