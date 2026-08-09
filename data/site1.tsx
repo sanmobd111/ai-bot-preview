@@ -48,7 +48,7 @@ export const membership = {
                 "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-connect-e80f688b9ae68390b8f4f0ece251678ddaacf1f9cb807bddbde8c7a02ab6558e.jpg",
         },
         {
-            title: "Enterprise AI Infrastructure",
+            title: "AI Infrastructure",
             description:
                 "Access powerful AI systems, automation tools, and operational support designed for growth.",
             image:

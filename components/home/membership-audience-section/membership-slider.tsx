@@ -78,13 +78,14 @@ export default function MembershipSlider({data}) {
 
                                 <div className="absolute inset-0 bg-black/30" />
 
-                                <div className="absolute bottom-0 p-5 md:p-6 text-white">
+                                <div className="absolute bottom-0 p-4 2xl:p-6 text-white">
                                     <h3
                                         className="
                                        mb-3
                                        feature-display
                                        font-light
-                                       text-[20px]
+                                       2xl:text-[30px]
+                                       text-[22px]
                                        leading-tight
                                        text-center
                                      "
@@ -96,7 +97,7 @@ export default function MembershipSlider({data}) {
                                         className="
                                        max-w-xs
                                        text-xs
-                                       md:text-base
+                                       2xl:text-sm
                                        leading-snug
                                        text-white/90
                                        line-clamp-2

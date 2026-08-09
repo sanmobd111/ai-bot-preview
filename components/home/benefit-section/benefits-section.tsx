@@ -713,6 +713,7 @@ export default function TravelBenefit({ data }) {
                                         title1={
                                             item.title1
                                         }
+                                        title={"Receptionist Benefits"}
 
                                         title2={
                                             item.title2

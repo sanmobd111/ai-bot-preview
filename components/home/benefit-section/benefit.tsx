@@ -21,7 +21,7 @@ type BenefitProps = {
     subTitle: string;
 };
 
-export default function Benefit({ benefits, benefitCards, title1, title2, subTitle, index }: BenefitProps) {
+export default function Benefit({ benefits, benefitCards, title1, title2, subTitle, index, title="Enterprise Benefits"}: BenefitProps) {
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
     return (
@@ -65,7 +65,7 @@ export default function Benefit({ benefits, benefitCards, title1, title2, subTit
             {/* Slider Header */}
             <div className="mb-4 flex items-center justify-between px-10">
                 <h3 className="text-4xl lg:text-[28px] text-zinc-900 feature-display">
-                    Enterprise Benefits
+                    {title}
                 </h3>
 
                 <div className="flex gap-3">

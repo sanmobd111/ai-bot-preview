@@ -25,44 +25,46 @@ export default function MembershipAudienceSection({ data }) {
 
     return (
         <section className="px-4 pt-6 md:pt-8 lg:pt-10 bg-[#f5f5f0]">
-            <div className=" mt-12 mb-10 md:mb-14 lg:mb-20 w-[95%] mx-auto">
+
+            <div className="mb-10 md:mb-14 lg:mb-20 mt-12 lg:w-[90%] mx-auto">
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                 >
-                    OUR MEMBERS
+                    LIVE DEMONSTRATION
                 </TextReveal>
-                <CharacterReveal
-                    className="
-                            feature-display
-                            font-light
-                            leading-[1.2]
-                            tracking-[-0.04em]
-                            text-zinc-900
-                                lg:text-[88px]
-                                text-5xl
-                                my-6
-                                lg:my-0
-                            "
-                    data={<>
-                        Designed for every
-                        stage {" "}
-                        <span className="italic font-light text-zinc-500">
-                            of
-                        </span>
-                        {" "}
-                        <span className="italic font-light text-zinc-500">
-                            ambition.
-                        </span>
-                    </>}
-                >
 
-                </CharacterReveal>
-                <TextReveal
-                    className="text-base mt-6 leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text ">
-                    FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
-                </TextReveal>
+                <div className="2xl:max-w-3xl mb-4">
+                    <CharacterReveal
+                        className="
+                                        feature-display
+                                        font-light
+                                        leading-[1.2]
+                                        tracking-[-0.04em]
+                                        text-zinc-900
+                                            lg:text-[60px]
+                                            text-5xl
+                                            my-6
+                                            lg:my-0
+                                        "
+                        data={<>
+                            Experience Your AI Receptionist {" "}
+                            <span className="italic font-light text-zinc-500">
+                                Before You Decide.
+                            </span>
+                        </>}
+                    >
+
+                    </CharacterReveal>
+
+                </div>
+                <div className="flex 2xl:justify-end">
+                    <TextReveal
+                        className="lg:max-w-4xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                        Discover how your AI Receptionist answers calls, captures leads, books appointments, and supports your business—all in a live demonstration tailored to you.
+                    </TextReveal>
+                </div>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[110vh] 2xl:h-[95vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[120vh] 2xl:h-[107vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -131,12 +133,14 @@ export default function MembershipAudienceSection({ data }) {
                                 </StaggerReveal>
                             </div>
                         </div>
-                        {
-                            current.type === "tab"
-                                ? <TabContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} />
-                                : current.type === "faq"
-                                    ? <FaqContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} /> : <DefaultContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} />
-                        }
+                        <div>
+                            {
+                                current.type === "tab"
+                                    ? <TabContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} />
+                                    : current.type === "faq"
+                                        ? <FaqContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} /> : <DefaultContents parentContainerRef={parentContainerRef} activeTab={activeTab} current={current} />
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

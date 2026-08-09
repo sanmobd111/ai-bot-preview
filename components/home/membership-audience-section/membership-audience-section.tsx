@@ -30,7 +30,7 @@ export default function MembershipAudienceSection({ data }) {
                     BIZNEST UNLIMITED
                 </TextReveal>
 
-                <div className="max-w-2xl mb-4">
+                <div className="2xl:max-w-2xl mb-4">
                     <CharacterReveal
                         className="
                             feature-display
@@ -54,14 +54,14 @@ export default function MembershipAudienceSection({ data }) {
                     </CharacterReveal>
 
                 </div>
-                <div className="flex justify-end">
+                <div className="flex 2xl:justify-end">
                     <TextReveal
-                        className="lg:max-w-4xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                        className="2xl:max-w-4xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
                         Artificial intelligence is reshaping how businesses operate and creating new opportunities for entrepreneurs willing to move early. As adoption accelerates, business owners and growth-minded professionals are discovering new ways to build brands, serve growing demand, and participate in one of the largest business shifts of our generation.
                     </TextReveal>
                 </div>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh]  2xl:h-[100vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[125vh]  2xl:h-[100vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {

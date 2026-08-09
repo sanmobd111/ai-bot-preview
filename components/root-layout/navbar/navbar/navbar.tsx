@@ -78,7 +78,7 @@ export default function Navbar() {
                             src={"https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/fc-logo-navbar-2026-8b305b7c8d9108552e22b11eb0ba0c20ee37107cf1ffcfe0ba3d62054c0dc379.svg"}
                             className="w-[12%] min-w-[160px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
                         /> */}
-                        <h1 className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-[1vw] 2xl:text-[1.2vw] text-gray-300/50 font-bold">
+                        <h1 className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-[1.1vw] 2xl:text-[1.2vw] text-gray-300/50 font-bold">
                             <Link href="/">
                                 BIZNEST UNLIMITED
                             </Link>

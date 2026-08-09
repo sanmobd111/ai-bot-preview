@@ -53,8 +53,8 @@ export default function NetworkStatsSection({ data }) {
                         >
                             <h3
                                 className="
-                text-[46px]
-                md:text-[52px]
+                text-[40px]
+                2xl:text-[52px]
                 font-light
                 feature-display
                   leading-none

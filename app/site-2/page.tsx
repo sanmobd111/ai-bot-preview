@@ -5,6 +5,7 @@ import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
 import TestimonialSection from "@/components/home/testimonials-section/testimonials-section";
 import Container from "@/components/shared/container";
+import BizNestDifference from "@/components/site-2/BiznestDifference";
 import HeroSection from "@/components/site-2/hero-section";
 import MembershipAudienceSection from "@/components/site-2/membership-audience-section/membership-audience-section";
 import { banner, benefits, footerReveal, membership, membershipAudience, network, partners, testimonials } from "@/data/site2";
@@ -24,6 +25,7 @@ export default function Home() {
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />
+      <BizNestDifference />
       {/* <div className="bg-[#f4f3f1] py-24">
         <div className="w-full xl:w-1/2  text-black mx-auto flex flex-col items-center">
           <p className="mb-4 text-sm uppercase tracking-wide">
