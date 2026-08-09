@@ -6,6 +6,7 @@ import MembershipAudienceSection from "@/components/home/membership-audience-sec
 import MembershipSection from "@/components/home/membership-section";
 import NetworkStatsSection from "@/components/home/network-stats-section";
 import PartnersSection from "@/components/home/partner-section";
+import PricingSection from "@/components/home/pricing";
 import TestimonialSection from "@/components/home/testimonials-section/testimonials-section";
 import Container from "@/components/shared/container";
 import { banner, benefits, faq, footerReveal, membership, membershipAudience, network, partners, testimonials } from "@/data/site1";
@@ -21,6 +22,7 @@ export default function Home() {
         <NetworkStatsSection data={network} />
       </Container>
       <BenefitsSection data={benefits} />
+      <PricingSection />
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />

@@ -27,7 +27,7 @@ export default function MembershipAudienceSection({ data }) {
                 <TextReveal
                     className="mb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500 md:text-xs reveal-text"
                 >
-                    OUR MEMBERS
+                    BIZNEST UNLIMITED
                 </TextReveal>
 
                 <div className="max-w-2xl mb-4">
@@ -38,17 +38,15 @@ export default function MembershipAudienceSection({ data }) {
                             leading-[1.2]
                             tracking-[-0.04em]
                             text-zinc-900
-                                lg:text-[88px]
+                                lg:text-[60px]
                                 text-5xl
                                 my-6
                                 lg:my-0
                             "
                         data={<>
-                            Designed for every
-                            <br />
-                            stage{" "}
+                            THE OPPORTUNITY
                             <span className="italic font-light text-zinc-500">
-                                of ambition.
+                                AHEAD
                             </span>
                         </>}
                     >
@@ -58,12 +56,12 @@ export default function MembershipAudienceSection({ data }) {
                 </div>
                 <div className="flex justify-end">
                     <TextReveal
-                        className="lg:max-w-xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
-                        FoundersCard empowers entrepreneurs, business owners, and leaders at every stage of their journey. Whether you’re building your first company, running a growing business, or leading at the highest level, your drive deserves to be rewarded.
+                        className="lg:max-w-4xl text-base leading-relaxed text-zinc-600 md:text-lg lg:text-[1.3rem] lg:leading-[1.35] reveal-text">
+                        Artificial intelligence is reshaping how businesses operate and creating new opportunities for entrepreneurs willing to move early. As adoption accelerates, business owners and growth-minded professionals are discovering new ways to build brands, serve growing demand, and participate in one of the largest business shifts of our generation.
                     </TextReveal>
                 </div>
             </div>
-            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh]  2xl:h-[113vh] hidden lg:block"
+            <div className="relative overflow-hidden rounded-4xl xl:h-[155vh]  2xl:h-[100vh] hidden lg:block"
                 ref={parentContainerRef}
             >
                 {
@@ -118,7 +116,7 @@ export default function MembershipAudienceSection({ data }) {
                     </div>
 
                     {/* Content */}
-                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-[50%_40%] xl:grid-cols-[50%_32%] 2xl:grid-cols-[50%_35%] justify-between pt-20">
+                    <div className="relative z-[15] grid min-h-[850px] lg:grid-cols-2 justify-between pt-20">
                         {/* Left Side */}
                         <div className="flex items-end p-4 md:p-6 lg:p-10">
                             <div>

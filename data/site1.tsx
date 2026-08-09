@@ -882,6 +882,7 @@ export const footerReveal = {
                     AHEAD
                 </span>
             </>
-        )
+        ),
+        subtitle: "Artificial intelligence is reshaping how businesses operate and creating new opportunities for entrepreneurs willing to move early. As adoption accelerates, business owners and growth-minded professionals are discovering new ways to build brands, serve growing demand, and participate in one of the largest business shifts of our generation.",
     }
 }

@@ -11,7 +11,7 @@ type AnimatedPreviewButtonProps = {
 };
 
 export default function AnimatedPreviewButton({
-    text = "Preview Membership",
+    text = "Become A White Label Partner",
     className = "",
     bgColor = "#ffffff",
     textColor = "#000000",

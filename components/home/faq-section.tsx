@@ -18,32 +18,25 @@ const FaqSection: React.FC = ({ data }) => {
 
   return (
     <div className="bg-[#f4f3f1]">
-      <div className="xl:w-[90%] mx-auto px-5 lg:px-4 py-12 ">
+      <div className="xl:w-[90%] px-5 lg:px-4 py-12 mx-auto">
         {/* Header Section */}
-        <p className="mb-8 text-sm uppercase tracking-wide">
+        {/* <p className="mb-8 text-sm uppercase tracking-wide text-center">
           FAQS
-        </p>
-        <div className="grid lg:grid-cols-[46%_45%] xl:grid-cols-[40%_50%] justify-between md:items-start gap-12 md:gap-8 lg:gap-0">
-          <div className="space-y-8 w-full">
-            <h2 className="text-5xl font-light leading-[1.15] md:text-6xl feature-display">
+        </p> */}
+        <div className="">
+          <div className="space-y-8 w-full mb-10 max-w-2xl mx-auto">
+            <h2 className="text-5xl font-light leading-[1.15] md:text-6xl feature-display text-center">
               Have Questions?
             </h2>
-            <p className="max-w-lg text-base font-medium text-zinc-600 ">
+            <p className="text-base font-medium text-zinc-600 text-center">
               Founded in 2009 to empower entrepreneurs with the exceptional
               benefits and access they deserve, FoundersCard has grown into a
               global community of over 300,000 members.
             </p>
-            {/* Button */}
-            <button className="cursor-pointer inline-flex items-center gap-3 rounded-xl bg-black px-4 py-3 text-white font-medium shadow-md">
-              {data?.btnText}
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
-                <ArrowRight size={16} />
-              </span>
-            </button>
           </div>
 
           {/*  faqs */}
-          <div className="grid w-full grid-cols-1 gap-4">
+          <div className="grid w-full grid-cols-1 gap-4 max-w-5xl mx-auto mb-10">
             {data?.faqs.map((item, index) => (
               <div
                 key={index}
@@ -76,6 +69,15 @@ const FaqSection: React.FC = ({ data }) => {
                 </div>
               </div>
             ))}
+          </div>
+          {/* Button */}
+          <div className="flex justify-center">
+            <button className="cursor-pointer inline-flex items-center gap-3 rounded-xl bg-black px-4 py-3 text-white font-medium shadow-md">
+              {data?.btnText}
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
+                <ArrowRight size={16} />
+              </span>
+            </button>
           </div>
         </div>
       </div>
