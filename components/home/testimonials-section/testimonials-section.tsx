@@ -83,7 +83,7 @@ export default function TestimonialSlider({ data }) {
         className="mb-4 text-center md:mb-7 2xl:mb-8 tracking-[0.2em] text-white text-xs reveal-text flex justify-center items-center gap-1"
       >
         <GrStar className="text-green-400 text-lg -mt-1" />
-        Trustpilot
+        Trusted By Growing Businesses
         <GrStar className="text-sm -mt-1" />
         <GrStar className="text-sm -mt-1" />
         <GrStar className="text-sm -mt-1" />
