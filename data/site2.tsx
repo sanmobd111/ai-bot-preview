@@ -24,28 +24,28 @@ export const membership = {
             description:
                 "Every call answered. Every opportunity captured.",
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-travel-b2ad9d86d872895799a9ae654f43b07857774e0cbfe8548cf424095546ff068f.jpg",
+                "/ChatGPT Image Aug 15, 2026, 06_09_24 PM.png",
         },
         {
             title: "Turn Calls Into Customers",
             description:
                 "Convert more conversations into qualified leads.",
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-connect-e80f688b9ae68390b8f4f0ece251678ddaacf1f9cb807bddbde8c7a02ab6558e.jpg",
+                "/ChatGPT Image Aug 15, 2026, 06_18_49 PM.png",
         },
         {
             title: "Fill Your Calendar",
             description:
                 "Book appointments automatically—even after hours.",
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-benefits-00267a432b889babc23bad083be97a708800e592f55ae2e0a916d9680b9811c1.jpg",
+                "/ChatGPT Image Aug 15, 2026, 06_21_23 PM.png",
         },
         {
             title: "Reduce Staff Workload",
             description:
                 "Let your team focus on people, not the phone.",
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/value-bg-business-06c64a737a85944dc7759e471ae570bb27bb13faa0ae3d71bcbf40fc7b57e7cf.jpg",
+                "/ChatGPT Image Aug 15, 2026, 06_22_19 PM.png",
         },
     ]
 };
