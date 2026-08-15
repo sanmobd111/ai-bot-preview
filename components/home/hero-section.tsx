@@ -2,16 +2,16 @@ import { ChevronDown } from "lucide-react";
 import AnimatedPreviewButton from "../shared/preview-button/animated-preview-button/animated-preview-button";
 import ScrollMarquee from "../shared/scroll-marque";
 const logos = [
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/stripe-b55043bb176ed277e6da0e540ea5b0763160550354d3d0b58dfb1fbefc9e19d3.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/ihg-d02ef1ed385f722af5296be29ce349efe814e99a6915610f7d1f5f3e6508b586.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/aa-86811decf5bdf23f1ba3d84c5ca41a105aeac1be07241ab172c35314d944ddb8.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/dell-2d6f46f38b339818aafaf2bed3b6cc1e930fafadd7928c7630cea216a8004db2.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/adidas-de397a2348927fd8a1469db727cb9ae3467c4590861f4f21df940e40beb86785.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/singapore-airlines-9531a70596f70100711ec8054a2eeb2dfb5281ac075e40463d0ea7ffd2c7c952.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/bang-olufsen-8b921ad8b7579be23f785db374142a761fb8be4db56324ebe1d637b15ce4d3d5.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/virgin-atlantic-1446556c96be249050810258da0f6c68a0e21347602971961b38e7fb031fd5af.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/audi-e727df1dfd6730a85217b74d785b80ee122c4e9ed8f90b7450808fd15aa1b1a0.svg",
-    "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/hero-marquee/united-e9f3084a208f24775c2cf990337699872983d7bc690d3424bc6052ab0cc0580b.svg"
+    "/Advisors.png",
+    "/Agencies.png",
+    "/Builders.png",
+    "/Coaches.png",
+    "/Consultants.png",
+    "/Entrepreneurs.png",
+    "/Founders.png",
+    "/Innovators.png",
+    "/Leaders.png",
+    "/Operators.png"
 ]
 
 export default function HeroSection({ data }) {
@@ -53,23 +53,23 @@ export default function HeroSection({ data }) {
                     >
                         <img src={logos?.[1]} alt="logo" className="mx-10 flex w-28 items-center justify-center opacity-70" />
 
-                        <img src={logos?.[2]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-40" />
+                        <img src={logos?.[2]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[3]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-12" />
+                        <img src={logos?.[3]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[4]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-16" />
+                        <img src={logos?.[4]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[0]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-20" />
+                        <img src={logos?.[0]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
                         <img src={logos?.[5]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[6]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-8" />
+                        <img src={logos?.[6]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[7]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-40" />
+                        <img src={logos?.[7]} alt="logo" className="mx-10 flex items-center justify-center opacity-70 w-28" />
 
                         <img src={logos?.[8]} alt="logo" className="mx-12 flex items-center justify-center opacity-70 w-28" />
 
-                        <img src={logos?.[9]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-32" />
+                        <img src={logos?.[9]} alt="logo" className="mx-16 flex items-center justify-center opacity-70 w-28" />
                     </ScrollMarquee>
                     <div className="">
                         <ChevronDown

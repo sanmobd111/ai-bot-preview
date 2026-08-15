@@ -15,7 +15,7 @@ export default function JoinFounderSection({ ref, data }: { ref: React.RefObject
         playsInline
         className="absolute inset-0 w-full h-full object-cover object-center -z-10"
       >
-        <source src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/raining-cards-e35ae06dd5e29ab7f33269c9ed89d1d6c9bcb60eea83d1695eaaa32b275cd2bf.mp4" type="video/mp4" data-src="https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/raining-cards-e35ae06dd5e29ab7f33269c9ed89d1d6c9bcb60eea83d1695eaaa32b275cd2bf.mp4" />
+        <source src="/iStock-2190794499.mov" />
       </video>
 
       {/* Content */}

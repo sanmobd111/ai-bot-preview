@@ -549,21 +549,26 @@ export default function TravelBenefit({ data }) {
     // ];
 
     const images = [
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-travel-edbf353d1a867718be0f537d771502131460c6c51b1bcb831bc807dbb0f3ffe9.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-hotels-9d9f2d9a5422d8f494f555132f902f7d18308ebe94a1d319232ceac25bd14858.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-lifestyle-a3ca1ded5c8ac10bb45c8f5fddf4d75752534848c7be59af76b06528907831db.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-business-d9e4df62efb2c5966a559a970c8b4e40d3867e1ef097918ec1d45ac18b871d8c.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-community-2e93334772c6b3017a2c208b36c0baa8b2a3ecda57e0bed91f6964c7dd8dccd0.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-travel-edbf353d1a867718be0f537d771502131460c6c51b1bcb831bc807dbb0f3ffe9.jpg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-bg-hotels-9d9f2d9a5422d8f494f555132f902f7d18308ebe94a1d319232ceac25bd14858.jpg",
+        "/Opportunity.jpg",
+        "/Brand.jpg",
+        "/Clientel R.jpg",
+        "/system.jpg",
+        "/Growth.jpg",
+        "/BizNest.jpg",
+        "/Getting Started.jpg",
     ];
 
     const logos = [
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-marquee/2-hotels/rosewood-352900933e86425d19fabe30397929fade74db6ee0960d97e645267e0dca6ba2.svg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-marquee/2-hotels/peninsula-60e5580735574547253b3fb8abd8c49e00353ef0adb8703e66141fc787df3c5d.svg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-marquee/2-hotels/hilton-8d93e64ace94e0a2121347588257877d7bc673f9751d991baadae98f2e415cf1.svg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-marquee/2-hotels/raffles-db154f1f0d8758a897553a5082cad669855cd76bebfc0c3a35bf7452ab40e8de.svg",
-        "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/benefits-marquee/2-hotels/w-hotels-13d689e6f41d08000141b80560357da9e39ae5446adc278a7151e4e03855bf5f.svg"
+        "/tab Create Real Equity.png",
+        "/tab Build Your Brand.png",
+        "/tab Build Wealth.png",
+        "/tab Lead Your Market.png",
+        "/tab Leverage AI.png",
+        "/tab Own Your Future.png",
+        "/tab Recurring Revenue.png",
+        "/tab Scale With Ease.png",
+        "/tab Serve More Clients.png",
+        "/tab Unlimited Growth.png"
     ]
 
 
@@ -641,7 +646,7 @@ export default function TravelBenefit({ data }) {
                         ))
                     }
 
-                    <div className="absolute inset-0 bg-black/35" />
+                    <div className="absolute inset-0 bg-black/50 z-10" />
 
                     {/* Categories */}
                     <div className="absolute left-6 top-6 lg:left-8 lg:top-8 z-10 flex flex-col text-[55px] 2xl:text-[75px] space-y-8">
@@ -670,18 +675,23 @@ export default function TravelBenefit({ data }) {
 
                     {/* Brands */}
                     <ScrollMarquee
-                        containerClasseName="py-6 2xl:max-w-6xl absolute! left-1/2 -translate-x-1/2 bottom-0 z-10"
+                        containerClasseName="py-6 2xl:max-w-6xl absolute! left-1/2 -translate-x-1/2 bottom-4 z-10"
                         gradientColor="transparent"
                     >
-                        <img src={logos?.[0]} alt="logo-0" className="mx-10 w-24 flex items-center justify-center opacity-70 w-20" />
+                        <img src={logos?.[0]} alt="logo-0" className="mx-10 w-24 flex items-center justify-center opacity-70" />
 
-                        <img src={logos?.[1]} alt="logo-1" className="mx-10 flex w-32 items-center justify-center opacity-70" />
+                        <img src={logos?.[1]} alt="logo-1" className="mx-10 flex w-24 items-center justify-center opacity-70" />
 
-                        <img src={logos?.[2]} alt="logo-2" className="mx-10 w-28 flex items-center justify-center opacity-70 " />
+                        <img src={logos?.[2]} alt="logo-2" className="mx-10 w-24 flex items-center justify-center opacity-70 " />
 
                         <img src={logos?.[3]} alt="logo-3" className="mx-10 flex items-center justify-center opacity-70 w-24" />
 
-                        <img src={logos?.[4]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-32" />
+                        <img src={logos?.[4]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-24" />
+                        <img src={logos?.[5]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-24" />
+                        <img src={logos?.[6]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-24" />
+                        <img src={logos?.[7]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-24" />
+                        <img src={logos?.[8]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-24" />
+                        <img src={logos?.[9]} alt="logo-4" className="mx-10 flex items-center justify-center opacity-70 w-24" />
 
                     </ScrollMarquee>
                 </div>

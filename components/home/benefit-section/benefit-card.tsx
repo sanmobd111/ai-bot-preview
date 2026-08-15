@@ -12,7 +12,8 @@ export default function BenefitCard({ card }) {
   return (
     <div className="group relative overflow-hidden rounded-xl aspect-[9/10.8]">
       <img
-        src={card.image}
+        // src={card.image}
+        src={"/Benefits Cards Background.jpg"}
         alt={card.title}
         className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
       />
