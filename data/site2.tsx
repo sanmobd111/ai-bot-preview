@@ -31,7 +31,7 @@ export const membership = {
             description:
                 "Convert more conversations into qualified leads.",
             image:
-                "/ChatGPT Image Aug 15, 2026, 06_18_49 PM.png",
+                "/c0b0c11a-47a4-4148-b625-a3653e57d6cc.png",
         },
         {
             title: "Fill Your Calendar",
@@ -87,6 +87,15 @@ export const network = {
 
 
 export const benefits = {
+    images: [
+        "/1acca9dc-3064-45d5-a13e-bb35ef6c0eae.png",
+        "/c567d8c8-776e-48a1-a8c8-0e29ffa6c00a.png",
+        "/1c68fa2f-54ea-4d30-9fab-b17609fecd7d.png",
+        "/1ba539ed-d69e-4a7c-8dce-5ed96ee9e610.png",
+        "/20f80c29-ce35-4002-ae3c-678cb5bd923b.png",
+        "/c37990e5-b777-47be-a221-9e0b521a250b.png",
+        "/da5e3d3a-ffe9-4644-b58f-2f1ce6f532f0.png",
+    ],
     categories: [
         "Receptionists",
         "Productivity",
@@ -464,7 +473,7 @@ export const membershipAudience = {
             tab: "Why Businesses Choose Us",
 
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-leaders-a3c6646619763dc4fecde22d8b76826e9517608bb092b59ffe4608044cbfe1f0.jpg",
+                "/ChatGPT Image Aug 16, 2026, 09_34_59 AM.png",
 
             heroTitle: "Built for Business.",
             heroItalic: "Designed for Growth.",
@@ -488,7 +497,7 @@ export const membershipAudience = {
             tab: "Pricing",
             type: "tab",
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-entrepreneurs-3e4f19ae20054f93ba5fb6547f21c64c01ef12fd452fd4b0f9bd9300b3b22c44.jpg",
+                "/83904d83-608f-4bd4-ad56-8e4f09303f61.png",
             heroTitle: "Powerful AI.",
             heroItalic: "Simple Pricing.",
             tabs: [
@@ -528,7 +537,7 @@ export const membershipAudience = {
             tab: "Frequently Asked Questions",
             type: "faq",
             image:
-                "https://d2q86wmri3hsp2.cloudfront.net/assets/redesign_2025/members-professionals-900229f36358a5a61451dba3902d569cc80ede236cf686bec0303977e275a724.jpg",
+                "/55a47172-32af-445a-8c86-29260c5a2fa9.png",
 
             heroTitle: "Common Questions,",
             heroItalic: "Clear Answers.",

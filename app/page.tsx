@@ -21,7 +21,7 @@ export default function Home() {
         <MembershipSection data={membership} />
         <NetworkStatsSection data={network} />
       </Container>
-      <BenefitsSection data={benefits} />
+      <BenefitsSection data={benefits} images={benefits.images} />
       <PartnersSection data={partners} />
       <TestimonialSection data={testimonials} />
       <MembershipAudienceSection data={membershipAudience} />

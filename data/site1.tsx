@@ -100,6 +100,15 @@ export const network = {
 }
 
 export const benefits = {
+    images: [
+        "/Opportunity.jpg",
+        "/Brand.jpg",
+        "/Clientel R.jpg",
+        "/system.jpg",
+        "/Growth.jpg",
+        "/BizNest.jpg",
+        "/Getting Started.jpg",
+    ],
     categories: ["Opportunity", "Brand", "Clients", "Systems", "Growth", "BizNest", "Getting Started"],
     benefits: [
         {

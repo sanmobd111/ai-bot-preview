@@ -12,7 +12,7 @@ import Benefit from "./benefit";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
-export default function TravelBenefit({ data }) {
+export default function TravelBenefit({ data, images }) {
     const sectionRef = useRef(null);
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -547,16 +547,6 @@ export default function TravelBenefit({ data }) {
     //         ],
     //     },
     // ];
-
-    const images = [
-        "/Opportunity.jpg",
-        "/Brand.jpg",
-        "/Clientel R.jpg",
-        "/system.jpg",
-        "/Growth.jpg",
-        "/BizNest.jpg",
-        "/Getting Started.jpg",
-    ];
 
     const logos = [
         "/tab Create Real Equity.png",
