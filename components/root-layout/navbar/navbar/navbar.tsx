@@ -22,6 +22,10 @@ export default function Navbar() {
             link: "/site-2",
         },
         {
+            name: "Site 3",
+            link: "/site-3",
+        },
+        {
             name: "Become a representative",
             link: "/become-a-rep",
         },
