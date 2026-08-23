@@ -10,7 +10,7 @@ export default function Home() {
 
         <>
             <div className="pt-32 bg-[#ebebe6]"></div>
-            <TravelBenefit data={benefits} />
+            <TravelBenefit data={benefits} images={benefits.images}/>
             <FooterReveal data={footerReveal} />
         </>
     );
